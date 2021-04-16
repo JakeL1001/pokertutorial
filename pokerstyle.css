@@ -1,0 +1,18 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+audio {
+    display: none;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
