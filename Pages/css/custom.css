@@ -22,6 +22,9 @@ p {
     font-size: 20px;
 }
 
+
+/* div.form and form used to center current login page forms, may be removed if login page functionality changes */
+
 div.form {
     display: block;
     text-align: center;
