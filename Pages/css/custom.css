@@ -53,6 +53,11 @@ p {
     color: rgba(255, 255, 255, .75);
 }
 
+.card-body {
+    padding: 10px;
+}
+
+
 .main {
     margin-left: 140px;
     /* Same width as the sidebar + left position in px */
