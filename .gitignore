@@ -28,5 +28,7 @@
 
 # Virtual Environment #
 venv/
+
+# Other #
 __pycache__/
 .vscode/
