@@ -27,4 +27,8 @@
 *.sqlite
 
 # Virtual Environment #
-venv/
+/venv/
+
+# Other #
+/__pycache__/
+/.vscode/

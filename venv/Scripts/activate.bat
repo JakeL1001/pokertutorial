@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\jakel\OneDrive\Documents\GitHub\pokertutorial\venv
+set VIRTUAL_ENV=C:\Users\kaneb.DESKTOP-A94UFDN\OneDrive\Documents\pokertutorial\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
