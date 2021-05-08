@@ -9,18 +9,7 @@ from werkzeug.urls import url_parse
 @pokerpack.route("/index")
 @login_required
 def index():
-
-    posts = [
-        {
-            "author": {"username":"John"},
-            "body": "nice"
-        },
-        {
-            "author": {"username": "Jhony"},
-            "body": "not nice"
-        }
-    ]
-    return render_template("index.html", title="Home", posts=posts)
+    return render_template("index.html", title="Home")
 
 @pokerpack.route("/login", methods=["GET", "POST"])
 def login():
