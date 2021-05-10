@@ -71,3 +71,15 @@ def lessons():
         return render_template("/Lessons/lessonshome.html")
     else:
         return render_template("Lesson1Blocked.html") #change routing
+
+@pokerpack.route("/lesson1")
+def lesson1():
+    return render_template("/Lessons/lesson1.html")
+
+@pokerpack.route("/lesson2")
+def lesson2():
+    return render_template("/Lessons/lesson2.html")
+
+@pokerpack.route("/lesson3")
+def lesson3():
+    return render_template("/Lessons/lesson3.html")
