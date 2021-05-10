@@ -7,7 +7,6 @@ from werkzeug.urls import url_parse
 
 @pokerpack.route("/")
 @pokerpack.route("/index")
-@login_required
 def index():
     return render_template("index.html", title="Home")
 
@@ -35,10 +34,6 @@ def assess():
 @pokerpack.route('/stats')
 def stats():
     return render_template("stats.html", title = "Stats")
-
-@pokerpack.route("/lessons")
-def lessons():
-    return render_template ("Lessons/lessonshome.html", title = "Lessons")
 
 @pokerpack.route("/logout")
 def logout():
@@ -69,3 +64,10 @@ def user(username):
         {"author": user, "body": "Test post #2"}
     ]
     return render_template("user.html", user=user, posts=posts)
+
+@pokerpack.route("/lessons", methods=["GET", "POST"])
+def lessons():
+    if current_user.is_authenticated:
+        return render_template("Lesson1.html")
+    else:
+        return render_template("Lesson1Blocked.html")
