@@ -37,7 +37,7 @@ class Post(db.Model):
         return '<Post {}>'.format(self.body)
     
 class Results(db.Model):
-    user_id = db.Column(db.Integer, primary_key=True, db.ForeignKey('user.id'))
+    user_id = db.Column(db.Integer, db.ForeignKey('user.id'), primary_key=True)
     quiz1 = db.Column(db.Float)
     quiz2 = db.Column(db.Float)
     quiz3 = db.Column(db.Float)
