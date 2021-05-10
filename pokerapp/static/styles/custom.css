@@ -61,6 +61,19 @@ p {
     padding: 0px 10px;
 }
 
+.background-image{
+
+    background-image: url("homephoto.PNG");
+    /* https://image.freepik.com/free-photo/close-up-casino-chips-stack-green-poker-table_23-2147937911.jpg   */
+    background-repeat: no-repeat; 
+    background-position: 100% 100%;
+    }
+    
+.responsive {
+    width: 100%;
+    height: auto;
+    }
+
 @media screen and (max-height: 450px) {
     .sidenav {
         padding-top: 15px;

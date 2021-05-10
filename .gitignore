@@ -32,5 +32,3 @@ venv/
 # Other #
 __pycache__/
 .vscode/
-pokerdb.db
-pokerapp/__pycache__/
