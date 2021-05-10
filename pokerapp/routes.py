@@ -36,10 +36,15 @@ def assess():
 def stats():
     return render_template("stats.html", title = "Stats")
 
+@pokerpack.route("/lessons")
+def lessons():
+    return render_template ("Lessons/lessonshome.html", title = "Lessons")
+
 @pokerpack.route("/logout")
 def logout():
     logout_user()
     return redirect(url_for('index'))
+
 
 @pokerpack.route("/register", methods=["GET", "POST"])
 def register():
