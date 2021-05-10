@@ -70,7 +70,7 @@ def lessons():
     if current_user.is_authenticated:
         return render_template("/Lessons/lessonshome.html")
     else:
-        return render_template("Lesson1Blocked.html") #change routing
+        return render_template("/Lessons/lesson1.html") #change routing
 
 @pokerpack.route("/lesson1")
 def lesson1():

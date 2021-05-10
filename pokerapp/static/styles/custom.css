@@ -63,7 +63,7 @@ p {
 
 .background-image{
 
-    background-image: url("homephoto.PNG");
+    background-image: url("../homephoto.PNG");
     /* https://image.freepik.com/free-photo/close-up-casino-chips-stack-green-poker-table_23-2147937911.jpg   */
     background-repeat: no-repeat; 
     background-position: 100% 100%;
