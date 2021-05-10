@@ -26,7 +26,7 @@ class RegistrationForm(FlaskForm):
         if user is not None:
             raise ValidationError("This email address alredy exists")
         
-class QuizForm1(FlaskForm):
+class QuizForm1(FlaskForm): #make all data required
     question_1 = RadioField(u"Favorite Breakfast Meat1", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
     question_2 = RadioField(u"Favorite Breakfast Meat2", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
     question_3 = RadioField(u"Favorite Breakfast Meat3", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
