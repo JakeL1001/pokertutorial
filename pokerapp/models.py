@@ -26,6 +26,7 @@ class User(UserMixin, db.Model):
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
 
+# DOnt think needed
 class Post(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     body = db.Column(db.String(140))
@@ -34,3 +35,12 @@ class Post(db.Model):
     
     def __repr__(self):
         return '<Post {}>'.format(self.body)
+    
+class Results(db.Model):
+    user_id = db.Column(db.Integer, primary_key=True, db.ForeignKey('user.id'))
+    quiz1 = db.Column(db.Float)
+    quiz2 = db.Column(db.Float)
+    quiz3 = db.Column(db.Float)
+    
+    def __repr__(self):
+        return '<Results {}>'.format(self.Results)
