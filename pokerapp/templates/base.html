@@ -2,17 +2,18 @@
 <html lang="en">
 
 <head>
-    <title>{% block title %}{% endblock %} - Intuitive Poker</title>
+    <title>{% block title %}{% endblock %} - Poker Basics</title>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="https://toppng.com/uploads/preview/casino-cards-png-falling-poker-chips-11562995898mdvm5phghg.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/custom.css') }}"> {% block style %}{% endblock %}
 </head>
 
-<body>
+<body>  
     <nav class="navbar navbar-dark navbar-expand-sm mt-3" style="background-color: rgb(153, 27, 27);">
         <a class="navbar-brand" href="splash.html">
-            <img src="{{url_for('static', filename='pic.jpg')}}" width="30" height="30" alt="logo"> Intuitive Poker
+            <img src='https://images.vexels.com/media/users/3/151229/isolated/preview/3fbd44975e2287324c2ee8d5f4017c67-spades-card-icon-by-vexels.png' width = '30px' height= 'auto' alt="logo"> Poker Basics 
         </a>
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,42 +51,45 @@
 
     {% block content %} {% endblock %}
 
-    <footer class="page-footer font-small pt-4">
-
-        <div class="container-fluid text-center text-md-left">
-      
-          <div class="row">
-     
-            <div style = "color:rgb(161, 153, 153);" class="col-md-6 mt-md-0 mt-3">
-              <h5 class="text-uppercase">Agile Web Development 2021</h5>
-              <p class="text-muted">2021 project for students Kane Alexander, Jordan Lee and Jake Lyell.</p>
+    <footer>
+      <div class="container">
+        <div class="row">
+          
+          <div class="col-lg-4 col-md-6 footer">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="TODO">Login</a></li>
+              <li><a class="text-muted" href="TODO">Home</a></li>
+              <li><a class="text-muted" href="TODO">Lessons</a></li>
+            </ul>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 footer">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="TODO">Login</a></li>
+              <li><a class="text-muted" href="TODO">Home</a></li>
+              <li><a class="text-muted" href="TODO">Lessons</a></li>
+            </ul>
             </div>
-      
-            <hr class="clearfix w-100 d-md-none pb-3">
-      
-            <div style = "color:rgb(161, 153, 153);"   class="col-6 col-md">
-              <h5>Features</h5>
-              <ul class="list-unstyled text-small">
-                <li><a class="text-muted" href="TODO">Login</a></li>
-                <li><a class="text-muted" href="TODO">Home</a></li>
-                <li><a class="text-muted" href="TODO">Lessons</a></li>
-              </ul>
-            </div>
-      
-  
-            <div style = "color:rgb(161, 153, 153);" class="col-6 col-md">
-              <h5>Contact Us</h5>
+           
+          
+          <div class="col-lg-4 col-md-6 footer">
+            <h5>Contact Us</h5>
               <ul class="list-unstyled text-small">
               <li><a class="text-muted" href="mailto: 22710428@student.uwa.edu.au">Kane Alexander</a></li>
               <li><a class="text-muted" href="mailto: 22705507@student.uwa.edu.au">Jordan Lee</a></li>
               <li><a class="text-muted" href="mailto: 22704832@student.uwa.edu.au">Jake Lyell</a></li>
             </ul>
-  
-            </div>
-          </div> 
+          </div>
+          
         </div>
-      </footer>
-
+      </div>
+      <div class="text-muted text-center">
+       <span><a href="https://teaching.csse.uwa.edu.au/units/CITS3403/">2021 Agile Web Development Project</a></span>
+      </div>
+    </footer>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
