@@ -65,7 +65,7 @@ def user(username):
     ]
     return render_template("user.html", user=user, posts=posts)
 
-@pokerpack.route("/lessons", methods=["GET", "POST"])
+@pokerpack.route("/lessons")
 def lessons():
     if current_user.is_authenticated:
         return render_template("/Lessons/lessonshome.html")
@@ -89,3 +89,17 @@ def lesson2():
 def lesson3():
     quiz_form = QuizForm3()
     return render_template("/Lessons/lesson3.html", quiz_form=quiz_form)
+
+@pokerpack.route("/submit", methods=["GET", "POST"])
+@login_required
+def submit():
+    return render_template("/Lessons/lessonshome.html")
+    """
+    form = QuizForm1()
+    if form.validate_on_submit():
+        user = User(username=form.username.data, email=form.email.data)
+        user.set_password(form.password.data)
+        db.session.add(user)
+        db.session.commit()
+        flash("Congratulations! You are now registered!")
+        return redirect(url_for("login")) """

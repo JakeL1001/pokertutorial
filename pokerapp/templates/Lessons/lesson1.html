@@ -14,74 +14,74 @@
     </p>
 </div>
 <div id="quiz" class="tabcontent">
-    <h3>lesson1/h3>
-        <p>lol</p>
-        <form method="post" action="/submit">
-            <!-- SUbmit to the new database-->
-            <div class="card-deck">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">swag</div>
-                        <div class="card-text">
-                            {{ quiz_form.question_1.label }} {% for subfield in quiz_form.question_1 %}
-                            <ul class="list-group" style="list-style-type:none;color:black;">
-                                <li class="list-group-item" style="background-color: white">{{ subfield }}|{{ subfield.label }}</li>
-                            </ul>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">swag</div>
-                        <div class="card-text">
-                            {{ quiz_form.question_2.label }} {% for subfield in quiz_form.question_2 %}
-                            <ul class="list-group" style="list-style-type:none;color:black;">
-                                <li class="list-group-item" style="background-color: white">{{ subfield }}|{{ subfield.label }}</li>
-                            </ul>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">swag</div>
-                        <div class="card-text">
-                            {{ quiz_form.question_3.label }} {% for subfield in quiz_form.question_3 %}
-                            <ul class="list-group" style="list-style-type:none;color:black;">
-                                <li class="list-group-item" style="background-color: white">{{ subfield }}|{{ subfield.label }}</li>
-                            </ul>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">swag</div>
-                        <div class="card-text">
-                            {{ quiz_form.question_4.label }} {% for subfield in quiz_form.question_4 %}
-                            <ul class="list-group" style="list-style-type:none;color:black;">
-                                <li class="list-group-item" style="background-color: white">{{ subfield }}|{{ subfield.label }}</li>
-                            </ul>
-                            {% endfor %}
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-body">
-                        <div class="card-title">swag</div>
-                        <div class="card-text">
-                            {{ quiz_form.question_5.label }} {% for subfield in quiz_form.question_5 %}
-                            <ul class="list-group" style="list-style-type:none;color:black;">
-                                <li class="list-group-item" style="background-color: white">{{ subfield }}|{{ subfield.label }}</li>
-                            </ul>
-                            {% endfor %}
-                        </div>
+    <h3>Quiz 1</h3>
+    <p></p>
+    <form method="post" action="/submit">
+        <!-- SUbmit to the new database-->
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">swag</div>
+                    <div class="card-text">
+                        {{ quiz_form.question_1.label }} {% for subfield in quiz_form.question_1 %}
+                        <ul class="list-group">
+                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+                        </ul>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
-            {{ quiz_form.submit }}
-        </form>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">swag</div>
+                    <div class="card-text">
+                        {{ quiz_form.question_2.label }} {% for subfield in quiz_form.question_2 %}
+                        <ul class="list-group">
+                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">swag</div>
+                    <div class="card-text">
+                        {{ quiz_form.question_3.label }} {% for subfield in quiz_form.question_3 %}
+                        <ul class="list-group">
+                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">swag</div>
+                    <div class="card-text">
+                        {{ quiz_form.question_4.label }} {% for subfield in quiz_form.question_4 %}
+                        <ul class="list-group">
+                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">swag</div>
+                    <div class="card-text">
+                        {{ quiz_form.question_5.label }} {% for subfield in quiz_form.question_5 %}
+                        <ul class="list-group">
+                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ quiz_form.submit }}
+    </form>
 </div>
 {% endblock %}{% block script %}
 
