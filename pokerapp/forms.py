@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, PasswordField, BooleanField, SubmitField
+from wtforms import StringField, PasswordField, BooleanField, SubmitField, RadioField
 from wtforms.validators import DataRequired, ValidationError, Email, EqualTo
 from pokerapp.models import User
 
@@ -25,3 +25,27 @@ class RegistrationForm(FlaskForm):
         user = User.query.filter_by(email=email.data).first()
         if user is not None:
             raise ValidationError("This email address alredy exists")
+        
+class QuizForm1(FlaskForm):
+    question_1 = RadioField(u"Favorite Breakfast Meat1", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_2 = RadioField(u"Favorite Breakfast Meat2", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_3 = RadioField(u"Favorite Breakfast Meat3", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_4 = RadioField(u"Favorite Breakfast Meat4", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_5 = RadioField(u"Favorite Breakfast Meat5", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    submit = SubmitField()
+    
+class QuizForm2(FlaskForm):
+    question_1 = RadioField(u"Favorite Breakfast Meat", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_2 = RadioField(u"Favorite Breakfast Meat", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_3 = RadioField(u"Favorite Breakfast Meat", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_4 = RadioField(u"Favorite Breakfast Meat", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_5 = RadioField(u"Favorite Breakfast Meat", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    submit = SubmitField()
+    
+class QuizForm3(FlaskForm):
+    question_1 = RadioField(u"Favorite Breakfast Meat", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_2 = RadioField(u"Favorite Breakfast Meat", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_3 = RadioField(u"Favorite Breakfast Meat", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_4 = RadioField(u"Favorite Breakfast Meat", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    question_5 = RadioField(u"Favorite Breakfast Meat", choices=[("bacon", "Bacon"), ("scrapple", "Scrapple"), ("taylor_ham", "Taylor Ham")])
+    submit = SubmitField()
