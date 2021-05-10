@@ -1,9 +1,8 @@
-{% extends "base.html"%} {%block title%}Home{%endblock%} {% block content %}
+    {% extends "base.html"%} {%block title%}Home{%endblock%} {% block content %}
 
-<style> 
 
-.background-image{
 
+<<<<<<< HEAD
   background-image: url("../static/homephoto.png");
   /* https://image.freepik.com/free-photo/close-up-casino-chips-stack-green-poker-table_23-2147937911.jpg   */
   background-repeat: no-repeat; 
@@ -28,36 +27,73 @@
           <h2 class="display-5">Fast and Effective</h2>
           <p class="lead">Learn the core poker mechanics in less than 10 minutes with interactive assessments and quizzes! <br><br></p>
           <img src= "https://texasholdemquestions.com/wp-content/uploads/2019/03/cropped-thumbnail_thm-website-logo-7-1.png" alt="4 suits" onclick = "TODO" class="responsive"></img>
-        </div>
-      </div>
+=======
 
-      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">Challenge Yourself</h2>
-          <p style = "color: black" class="lead">See where you rank against other players with our results page.</p>
-          <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/1280px-Standard_deviation_diagram.svg.png" alt = "distibution graph" onclick = "TODO" class = "responsive"></img>
+<div class="position-relative overflow-hidden p-3 text-center">
+    <div class="responsive" style="background-image: url('../static/homephoto.png'); background-repeat: no-repeat; background-position: 100% 100%;">
+        <div class="col-md-5 p-lg-5 mx-auto">
+            <h1 class="display-4 font-weight-normal header-main">Learn Poker</h1>
+            <p class="lead font-weight-normal subtitle-text">Poker done simply. Learn the starting hands and basics of poker in under 10 minutes, click below to begin.</p>
+            <a class="btn btn-outline-secondary" href="{{ url_for('lesson1')}}">Take Lesson One</a>
+>>>>>>> main
         </div>
+    </div>
+</div>
+
+
+<div class="card-group">
+    <div class="card" style = "border-radius: 8px; margin-top: 0px;">
+      <div class="card-body">
+        <h2 class="card-title">The Suits</h5>
+        <p class="card-text" style= "color:black">Learn the difference between spades, diamonds, clubs and hearts.</p>
+        <img src="https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png" alt="4 suits" onclick="TODO" class="responsive"></img>
       </div>
     </div>
 
+    <div class="card" style=  " margin-top: 0px; border-radius: 8px; background-color: rgb(255, 255, 255)">
+        <div class="card-body">
+          <h2 class="card-title">Challenge Yourself</h5>
+          <p class="card-text" style= "color:black">See where you rank against other players with our results page.</p>
+          <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/1280px-Standard_deviation_diagram.svg.png" alt="distibution graph" onclick="TODO" class="responsive"></img>
+        </div>
+    </div>
 
+</div>
+
+<div class="card-group">
+    <div class="card bg-dark" style=  "border-radius: 8px;">
+      <div class="card-body">
+          <h2 class="card-title">The Game</h2>
+          <p class="card-text" style= "color:black" >Learn how the game of Texas no limit holdem is played</p>
+          <img src="https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png" alt="poker, flop turn and river" onclick="TODO" class="responsive"></img>
+        </div>
+    </div>
     
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
-      
-      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="card" style=" border-radius: 8px; background-color: rgb(47, 44, 221);">
+        <div class="card-body">
+            <h2 class="card-title">Another headline</h2>
+            <p class="card-text">And an even wittier subheading.</p>
+        </div>
+        </div>
+</div>
+
+
+<div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+
+    <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 p-3">
-          <h2 class="display-5">The Game</h2>
-          <p class="lead">Learn how the game of Texas no limit holdem is played</p>
-        <img src = "https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png" alt = "poker, flop turn and river" onclick = "TODO" class = "responsive"></img>
+            <h2 class="display-5">The Game</h2>
+            <p class="lead">Learn how the game of Texas no limit holdem is played</p>
+            <img src="https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png" alt="poker, flop turn and river" onclick="TODO" class="responsive"></img>
         </div>
-        </div>
-      
-      <div  style="background-color: rgb(47, 44, 221);" class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    </div>
+
+    <div style="background-color: rgb(47, 44, 221);" class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-          <h2 class="display-5">Another headline</h2>
-          <p class="lead">And an even wittier subheading.</p>
+            <h2 class="display-5">Another headline</h2>
+            <p class="lead">And an even wittier subheading.</p>
         </div>
         <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
-      </div>
     </div>
+</div>
 {%endblock%}

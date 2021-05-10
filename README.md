@@ -8,5 +8,4 @@ pip install -r requirements.txt  #install requirements
 flask run                        #run flask
 
 
-
-ctr f5 to refresh
+TODO: change card titles to one consistent heading (h2?)

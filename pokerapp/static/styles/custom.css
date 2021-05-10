@@ -2,7 +2,7 @@
     contains the sidenav bar css too */
 
 * {
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .btn {
@@ -13,10 +13,7 @@ body {
     background-color: black;
     text-align: center;
     font-family: 'Calibri';
-}
-
-.footer{
-    color:rgb(201, 187, 187)
+    margin:15px;
 }
 
 h1 {
@@ -65,11 +62,10 @@ p {
     padding: 0px 10px;
 }
 
-    
 .responsive {
     width: 100%;
     height: auto;
-    }
+}
 
 @media screen and (max-height: 450px) {
     .sidenav {
@@ -79,61 +75,100 @@ p {
         font-size: 18px;
     }
 }
+
+
 /**kanes**/
+
 .container {
     max-width: 960px;
-  }
-  
-  /*
+}
+
+
+/*
    * Dummy devices (replace them with your own or something else entirely!)
    */
-  
-  /*
+
+
+/*
    * Extra utilities
    */
-  
-  .border-top { border-top: 1px solid #e5e5e5; }
-  .border-bottom { border-bottom: 1px solid #e5e5e5; }
-  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
-  
-  .header-main{
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+.header-main {
     color: white;
-  }
-  
-  .subtitle-text{
+}
+
+.subtitle-text {
     color: white;
-  }
-  
-  
-  
-  .flex-equal > * {
+}
+
+.flex-equal>* {
     -ms-flex: 1;
     -webkit-box-flex: 1;
     flex: 1;
-  }
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
-      -ms-flex: 1;
-      -webkit-box-flex: 1;
-      flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal>* {
+        -ms-flex: 1;
+        -webkit-box-flex: 1;
+        flex: 1;
     }
-  }
-  
-  .overflow-hidden { overflow: hidden; }
+}
 
-  .button {
-      border: none;
-      background-color: #555555;
-      padding: 15px, 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer; 
-     }
+.overflow-hidden {
+    overflow: hidden;
+}
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+.button {
+    border: none;
+    background-color: #555555;
+    padding: 15px, 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+.card{
+    background: rgb(51, 153, 56);    
+    margin: 15px;
+    padding: 10px;
+    border: 10px;  
+}
+
+
+.card-title{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.card-text{
+    font-size:1.25rem;
+    font-weight:300
+
+}
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: contain;
+    padding: 10%;
 }

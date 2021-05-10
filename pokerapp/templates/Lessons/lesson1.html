@@ -1,8 +1,8 @@
 {% extends "base.html" %}{% block style %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{% block title %}Lesson 1{% endblock %}{% block content %}
 
-<button class="tablink" onclick="openPage('content', this, 'red')">Content</button>
-<button class="tablink" onclick="openPage('quiz', this, 'green')" id="defaultOpen">Quiz</button>
+<button class="tablink" onclick="openPage('content', this, 'red')" id="defaultOpen">Content</button>
+<button class="tablink" onclick="openPage('quiz', this, 'green')">Quiz</button>
 
 <div id="content" class="tabcontent">
     <h3>Content</h3>
@@ -16,6 +16,34 @@
 <div id="quiz" class="tabcontent">
     <h3>Quiz</h3>
     <p>lol</p>
+    <form method="post" action="/submit">
+        <!-- SUbmit to the new database-->
+        {{ quiz_form.question_1.label }} {% for subfield in quiz_form.question_1 %}
+        <ul style="list-style-type:none;background-color:darkgrey;">
+            <li>{{ subfield }}|{{ subfield.label }}</li>
+        </ul>
+        {% endfor %} {{ quiz_form.question_2.label }} {% for subfield in quiz_form.question_2 %}
+
+        <ul class="list-group" style="list-style-type:none;">
+            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+        </ul>
+        {% endfor %} {{ quiz_form.question_3.label }} {% for subfield in quiz_form.question_3 %}
+
+        <ul class="list-group" style="list-style-type:none;">
+            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+        </ul>
+        {% endfor %} {{ quiz_form.question_4.label }} {% for subfield in quiz_form.question_4 %}
+
+        <ul class="list-group" style="list-style-type:none;">
+            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+        </ul>
+        {% endfor %} {{ quiz_form.question_5.label }} {% for subfield in quiz_form.question_5 %}
+
+        <ul class="list-group" style="list-style-type:none;">
+            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+        </ul>
+        {% endfor %} {{ quiz_form.submit }}
+    </form>
 </div>
 {% endblock %}{% block script %}
 
