@@ -17,34 +17,31 @@
     <h3>Quiz</h3>
     <p>lol</p>
     <form method="post" action="/submit">
+        <!-- SUbmit to the new database-->
         {{ quiz_form.question_1.label }} {% for subfield in quiz_form.question_1 %}
-        <ul>
+        <ul style="list-style-type:none;background-color:darkgrey;">
             <li>{{ subfield }}|{{ subfield.label }}</li>
         </ul>
         {% endfor %} {{ quiz_form.question_2.label }} {% for subfield in quiz_form.question_2 %}
 
-        <tr>
-            <td>{{ subfield }}</td>
-            <td>{{ subfield.label }}</td>
-        </tr>
+        <ul class="list-group" style="list-style-type:none;">
+            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+        </ul>
         {% endfor %} {{ quiz_form.question_3.label }} {% for subfield in quiz_form.question_3 %}
 
-        <tr>
-            <td>{{ subfield }}</td>
-            <td>{{ subfield.label }}</td>
-        </tr>
+        <ul class="list-group" style="list-style-type:none;">
+            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+        </ul>
         {% endfor %} {{ quiz_form.question_4.label }} {% for subfield in quiz_form.question_4 %}
 
-        <tr>
-            <td>{{ subfield }}</td>
-            <td>{{ subfield.label }}</td>
-        </tr>
+        <ul class="list-group" style="list-style-type:none;">
+            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+        </ul>
         {% endfor %} {{ quiz_form.question_5.label }} {% for subfield in quiz_form.question_5 %}
 
-        <tr>
-            <td>{{ subfield }}</td>
-            <td>{{ subfield.label }}</td>
-        </tr>
+        <ul class="list-group" style="list-style-type:none;">
+            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+        </ul>
         {% endfor %} {{ quiz_form.submit }}
     </form>
 </div>
