@@ -11,4 +11,4 @@ migrate = Migrate(pokerpack, db)
 login = LoginManager(pokerpack)
 login.login_view = "login"
 
-from pokerapp import routes, models
+from pokerapp import routes, models, errors
