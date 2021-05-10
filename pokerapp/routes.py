@@ -28,6 +28,14 @@ def login():
         return redirect(next_page)
     return render_template("login.html", title="Sign In", form=form)
 
+@pokerpack.route("/assess")
+def assess():
+    return render_template("assess.html", title = "Assessments")
+
+@pokerpack.route('/stats')
+def stats():
+    return render_template("stats.html", title = "Stats")
+
 @pokerpack.route("/logout")
 def logout():
     logout_user()
