@@ -2,7 +2,7 @@
     contains the sidenav bar css too */
 
 * {
-    border-radius: 3px;
+    border-radius: 8px;
 }
 
 .btn {
@@ -13,10 +13,7 @@ body {
     background-color: black;
     text-align: center;
     font-family: 'Calibri';
-}
-
-.footer{
-    color:rgb(201, 187, 187)
+    margin:15px;
 }
 
 h1 {
@@ -65,10 +62,6 @@ p {
     padding: 0px 10px;
 }
 
-<<<<<<< HEAD
-    
-=======
->>>>>>> 25d615ac72ee4098575da366acb9f54ece8a6d7a
 .responsive {
     width: 100%;
     height: auto;
@@ -150,7 +143,20 @@ p {
     cursor: pointer;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+
+
+.card{
+    background: rgb(51, 153, 56);    
+    margin: 50px;
+    padding: 20px;
+    border: 10px
+
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 20vw;
+    object-fit: contain;
+    padding: 10%;
 }

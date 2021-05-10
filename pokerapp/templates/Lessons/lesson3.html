@@ -1,0 +1,22 @@
+{% extends "base.html" %}{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{% block title %}Lesson 1{% endblock %}{% block content %}
+
+<button class="tablink" onclick="openPage('content', this, 'red')">Content</button>
+<button class="tablink" onclick="openPage('quiz', this, 'green')" id="defaultOpen">Quiz</button>
+
+<div id="content" class="tabcontent">
+    <h3>Content</h3>
+    <p>
+        Welcome to our first poker lesson. This is the introduction to a wealth of knowledge about the most exciting card game ever devised – poker. Either you already know it or will learn it as you go through these lessons offered up by Pokerology.com. The
+        “it” I refer to is that poker is an incredibly enjoyable, challenging and addictive game. Once the poker bug has bitten you there is seldom a cure. If that is true, and based upon the number of years I have played and enjoyed the game, I believe
+        it to be, then it is worth your time and effort to play the game well. You will soon learn that there are many different variations of poker, but the one thing they have in common is that you have to use your best five cards to make your hand.
+        All forms of poker use a fifty two card deck made up of ranks starting with a two, commonly called a deuce, and continuing by number through ten and then in order comes the Jack, Queen, King and Ace. There are four different suits; Spades;
+    </p>
+</div>
+<div id="quiz" class="tabcontent">
+    <h3>Quiz</h3>
+    <p>lol</p>
+</div>
+{% endblock %}{% block script %}
+
+<script src="{{url_for('static', filename='js/lesson1.js') }}"></script> {%endblock%}
