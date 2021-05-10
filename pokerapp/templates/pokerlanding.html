@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <style> 
+      .background-image{
+
+      background-image: url("homephoto.PNG");
+      /* https://image.freepik.com/free-photo/close-up-casino-chips-stack-green-poker-table_23-2147937911.jpg   */
+      background-repeat: no-repeat; 
+      background-position: 100% 100%;
+      }
+
+      .responsive {
+      width: 100%;
+      height: auto;
+      }
+      
+    </style>
+
+    <title>Product example for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/product/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS for this template -->
+    <link href="pokerlanding.css" rel="stylesheet">
+
+
+
+  </head>
+
+  <body style= "background-color: black">
+
+
+    <nav class="navbar navbar-dark navbar-expand-sm mt-3" style="background-color: rgb(153, 27, 27);">
+      <a class="navbar-brand" href="splash.html">
+      </a>
+      <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                  </li>
+
+                  <li>
+                      <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('user', username=current_user.username) }}">Profile</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="feedback.html" tabindex="-1">Feedback</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="stats.html" tabindex="-1">Stats</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="Lessons/lessonshome.html" tabindex="-1">Lessons</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
+    <div class="position-relative overflow-hidden p-3 text-center ">
+      <div class="background-image responsive">
+      <div class="col-md-5 p-lg-5 mx-auto">
+        <h1 class="display-4 font-weight-normal header-main" >Learn Poker</h1>
+        <p class="lead font-weight-normal subtitle-text">Poker done simply. Learn the starting hands and basics of poker in under 10 minutes, click below to begin.</p>
+        <a class="btn btn-outline-secondary" href="www.TODO.com">Take Lesson One</a>
+      </div>
+      </div>
+    </div>
+
+
+
+    
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      
+      <div style="background-color: rgb(51, 153, 56);" class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        
+        <div class="my-3 py-3">
+          <h2 class="display-5">The Suits</h2>
+          <p class="lead">Learn the difference between spades, diamonds, clubs and hearts. <br><br></p>
+          <img src= "https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png" alt="4 suits" onclick = "TODO" class="responsive"></img>
+        </div>
+      </div>
+
+      <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Challenge Yourself</h2>
+          <p class="lead">See where you rank against other players with our results page.</p>
+          <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/1280px-Standard_deviation_diagram.svg.png" alt = "distibution graph" onclick = "TODO" class = "responsive"></img>
+        </div>
+      </div>
+    </div>
+
+
+    
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+      
+      <div class="bg-dark mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">The Game</h2>
+          <p class="lead">Learn how the game of Texas no limit holdem is played</p>
+        <img src = "https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png" alt = "poker, flop turn and river" onclick = "TODO" class = "responsive"></img>
+        </div>
+        </div>
+      
+      <div  style="background-color: rgb(47, 44, 221);" class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Another headline</h2>
+          <p class="lead">And an even wittier subheading.</p>
+        </div>
+        <div class="bg-light box-shadow mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      </div>
+    </div>
+
+
+
+
+    
+
+    
+    <footer class="page-footer font-small pt-4">
+
+      <div class="container-fluid text-center text-md-left">
+    
+        <div class="row">
+   
+          <div style = "color:rgb(161, 153, 153);" class="col-md-6 mt-md-0 mt-3">
+            <h5 class="text-uppercase">Agile Web Development 2021</h5>
+            <p class="text-muted">2021 project for students Kane Alexander, Jordan Lee and Jake Lyell.</p>
+          </div>
+    
+          <hr class="clearfix w-100 d-md-none pb-3">
+    
+          <div style = "color:rgb(161, 153, 153);"   class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="TODO">Login</a></li>
+              <li><a class="text-muted" href="TODO">Home</a></li>
+              <li><a class="text-muted" href="TODO">Lessons</a></li>
+            </ul>
+          </div>
+    
+
+          <div style = "color:rgb(161, 153, 153);" class="col-6 col-md">
+            <h5>Contact Us</h5>
+            <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="mailto: 22710428@student.uwa.edu.au">Kane Alexander</a></li>
+            <li><a class="text-muted" href="mailto: 22705507@student.uwa.edu.au">Jordan Lee</a></li>
+            <li><a class="text-muted" href="mailto: 22704832@student.uwa.edu.au">Jake Lyell</a></li>
+          </ul>
+
+          </div>
+        </div> 
+      </div>
+    </footer>
+
+
+</body></html>
