@@ -56,7 +56,9 @@ def user(username):
     ]
     return render_template("user.html", user=user, posts=posts)
 
-@pokerpack.route("/quiz", methods=["GET", "POST"])
-@login_required
-def quiz():
-    return render_template("quiz.html", title="Quiz")
+@pokerpack.route("/lessons", methods=["GET", "POST"])
+def lessons():
+    if current_user.is_authenticated:
+        return render_template("Lesson1.html")
+    else:
+        return render_template("Lesson1Blocked.html")
