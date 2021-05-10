@@ -7,7 +7,6 @@ from werkzeug.urls import url_parse
 
 @pokerpack.route("/")
 @pokerpack.route("/index")
-@login_required
 def index():
     return render_template("index.html", title="Home")
 
@@ -56,3 +55,8 @@ def user(username):
         {"author": user, "body": "Test post #2"}
     ]
     return render_template("user.html", user=user, posts=posts)
+
+@pokerpack.route("/quiz", methods=["GET", "POST"])
+@login_required
+def quiz():
+    return render_template("quiz.html", title="Quiz")
