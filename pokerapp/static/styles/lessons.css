@@ -33,3 +33,12 @@
 #quiz {
     background-color: green;
 }
+
+ul.list-group {
+    list-style-type: none;
+    color: black;
+}
+
+li.list-group-item {
+    background-color: white;
+}
