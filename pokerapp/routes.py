@@ -68,6 +68,6 @@ def user(username):
 @pokerpack.route("/lessons", methods=["GET", "POST"])
 def lessons():
     if current_user.is_authenticated:
-        return render_template("lessonshome.html")
+        return render_template("/Lessons/lessonshome.html")
     else:
         return render_template("Lesson1Blocked.html") #change routing
