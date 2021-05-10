@@ -147,12 +147,24 @@ p {
 
 .card{
     background: rgb(51, 153, 56);    
-    margin: 50px;
-    padding: 20px;
-    border: 10px
-
+    margin: 15px;
+    padding: 10px;
+    border: 10px;  
 }
 
+
+.card-title{
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.card-text{
+    font-size:1.25rem;
+    font-weight:300
+
+}
 
 .card-img-top {
     width: 100%;
