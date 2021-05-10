@@ -75,7 +75,9 @@ p {
         font-size: 18px;
     }
 }
-
+footer{
+    margin: 55px;
+}
 
 /**kanes**/
 
@@ -171,4 +173,8 @@ p {
     height: 20vw;
     object-fit: contain;
     padding: 10%;
+}
+
+img{
+    max-width: 500px;
 }
