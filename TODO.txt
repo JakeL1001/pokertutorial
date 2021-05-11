@@ -1,0 +1,16 @@
+Jake
+---------------------
+store the results from the quiz in the database
+find a way to calculate the total score with the individual quizes
+have database be accessable to the graph jordan makes
+---------------------
+
+Jordan
+---------------------
+fix ur shit lol
+---------------------
+
+Kane
+---------------------
+fix ur shit lol
+---------------------
