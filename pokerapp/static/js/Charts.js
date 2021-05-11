@@ -1,18 +1,4 @@
-{% extends "base.html" %} {% block content %}
-{%block title%} Profile {%endblock%}
-<h1>User: {{ user.username }}</h1>
-<hr> {% for post in posts %}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
-<p>
-    {{ post.author.username }} Your Results: <div class="chart-container" style="position: relative; height:40vh; width:80vw">
-        <canvas id="myChart"></canvas>
-        </div>
-</p>
-
-<div class="chart-container" style="position: relative; height:40vh; width:80vw">
-<canvas id="myChart" width="400" height="400"></canvas>
-</div>
-<script>
+//Line Chart for individual user
 var ctx = document.getElementById('myChart');
 var myChart = new Chart(ctx, {
     type: 'line',
@@ -54,6 +40,6 @@ var myChart = new Chart(ctx, {
     }
   }
 });
-</script>
 
-{% endfor %} {% endblock %}
+
+//Bar Chart for users average.
