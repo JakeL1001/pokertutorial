@@ -1,6 +1,15 @@
 {% extends "base.html" %}{%block content%} {% block style %} {%endblock%}
 {%block title%} Lessons {%endblock%}
 
+<style>
+.card:hover, .cardtop:hover,.cardtop:hover, .card:hover>a{
+    text-decoration: none;
+    background-color: rgb(27, 104, 31); 
+}
+
+
+</style>
+
 
 
 <body>
@@ -19,7 +28,7 @@
       </a>
     </div>
 
-    <div class="card cardtop" style="border-radius: 8px">
+    <div class="card cardtop highlight" style="border-radius: 8px">
       <a href="{{ url_for('lesson2')}}">
         <img src="https://lh3.googleusercontent.com/proxy/xMRVa6gTAv8I2u307TegbJCTrupkZUPKXAgKZcE3Yx2-5UKgGTzxaXu7iPdl5GOGZ0yUYmOGrfF89JEifTls8QsujBA_S8Y" class="card-img-top responsive"
           alt="...">
@@ -30,7 +39,7 @@
       </a>
     </div>
 
-    <div class="card cardtop" style="border-radius: 8px">
+    <div class="card cardtop highlight" style="border-radius: 8px">
       <a href="{{ url_for('lesson3')}}"></a>
       <img src="https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png"
         class="card-img-top responsive" alt="...">
