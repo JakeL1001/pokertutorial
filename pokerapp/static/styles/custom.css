@@ -154,8 +154,7 @@ footer{
     border: 10px;
       
 }
-
-.card:hover, .cardtop:hover, .card:hover>a, .cardtop:hover>a{
+.hightlight:hover, .hightlight:hover>a{
     text-decoration: none;
     background-color: rgb(27, 104, 31); 
 }
