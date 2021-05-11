@@ -4,33 +4,43 @@
 
 
 <body>
-<div class="card-deck"> <!--That's meta web design...-->
-  <div class="card">
-    <img src="https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">The Suits</h5>
-      <p class="card-text">Learn the difference between spades, diamonds, clubs and hearts.</p>
-     <button type="button"class="btn btn-dark"><a href = "{{ url_for('lesson1')}}">Begin Lesson</a></button>
-    </div>
-  </div>
-  <div class="card">
-    <img src="https://www.deepstackpoker.com.au/images/poker-hand-straight-flush-big.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">The Hands</h5>
-      <p class="card-text">In this lesson you will learn the hands and their ranking.</p>
-      <button type="button"class="btn btn-dark"><a href = "{{ url_for('lesson2')}}">Begin Lesson</a></button>
-    </div>
-  </div>
+  <div class="card-group">
+    <!--That's meta web design...-->
 
-  <div class="card">
-    <img src="https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">The Game</h5>
-      <p class="card-text">In this lesson you will learn how texas hold 'em no limit is played</p>
-      <button type="button"class="btn btn-dark"><a href = "{{ url_for('lesson3')}}">Begin Lesson</a></button>
+    <div class="card cardtop" style="border-radius: 8px">
+      <a href="{{ url_for('lesson1')}}">
+        <img
+          src="https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png"
+          class="card-img-top responsive" alt="...">
+        <div class="card-body cardtop">
+          <h5 class="card-title">The Suits</h5>
+          <p class="card-text">Learn the difference between spades, diamonds, clubs and hearts.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="card cardtop" style="border-radius: 8px">
+      <a href="{{ url_for('lesson2')}}">
+        <img src="https://lh3.googleusercontent.com/proxy/xMRVa6gTAv8I2u307TegbJCTrupkZUPKXAgKZcE3Yx2-5UKgGTzxaXu7iPdl5GOGZ0yUYmOGrfF89JEifTls8QsujBA_S8Y" class="card-img-top responsive"
+          alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The Hands</h5>
+          <p class="card-text">In this lesson you will learn the hands and their ranking.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="card cardtop" style="border-radius: 8px">
+      <a href="{{ url_for('lesson3')}}"></a>
+      <img src="https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png"
+        class="card-img-top responsive" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">The Game</h5>
+        <p class="card-text">In this lesson you will learn how texas hold 'em no limit is played</p>
+      </div>
+      </a>
     </div>
   </div>
-</div>
 </body>
 
 {%endblock%}

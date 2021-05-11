@@ -1,11 +1,13 @@
-    {% extends "base.html"%} {%block title%}Home{%endblock%} {% block content %}
+{% extends "base.html"%} {%block title%}Home{%endblock%} {% block content %}
 
 
 <div class="position-relative overflow-hidden p-3 text-center">
-    <div class="responsive" style="background-image: url('../static/homephoto.png'); background-repeat: no-repeat; background-position: 100% 100%;">
+    <div class="responsive"
+        style="background-image: url('../static/homephoto.png'); background-repeat: no-repeat; background-position: 100% 100%;">
         <div class="col-md-5 p-lg-5 mx-auto">
             <h1 class="display-4 font-weight-normal header-main">Learn Poker</h1>
-            <p class="lead font-weight-normal subtitle-text">Poker done simply. Learn the starting hands and basics of poker in under 10 minutes, click below to begin.</p>
+            <p class="lead font-weight-normal subtitle-text">Poker done simply. Learn the starting hands and basics of
+                poker in under 10 minutes, click below to begin.</p>
             <a class="btn btn-outline-secondary" href="{{ url_for('lessons')}}">Begin Learning</a>
         </div>
     </div>
@@ -13,39 +15,44 @@
 
 
 <div class="card-group">
-    <div class="card" style = "border-radius: 8px; margin-top: 0px;">
-      <div class="card-body">
-        <h2 class="card-title">The Suits</h5>
-        <p class="card-text" style= "color:black">Learn the difference between spades, diamonds, clubs and hearts.</p>
-        <img src="https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png" alt="4 suits" onclick="TODO" class="responsive"></img>
-      </div>
+    <div class="card cardtop" style="border-radius: 8px">
+        <div class="card-body">
+            <h2 class="card-title">The Suits</h5>
+                <p class="card-text" style="color:black">Learn the difference between spades, diamonds, clubs and
+                    hearts.</p>
+                <img src="https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png"
+                    alt="4 suits" onclick="TODO" class="responsive"></img>
+        </div>
     </div>
 
-    <div class="card" style=  " margin-top: 0px; border-radius: 8px; background-color: rgb(255, 255, 255)">
+    <div class="card cardtop" style="border-radius: 8px; background-color: rgb(255, 255, 255)">
         <div class="card-body">
-          <h2 class="card-title">Challenge Yourself</h5>
-          <p class="card-text" style= "color:black">See where you rank against other players with our results page.</p>
-          <img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/1280px-Standard_deviation_diagram.svg.png" alt="distibution graph" onclick="TODO" class="responsive"></img>
+            <h2 class="card-title">Challenge Yourself</h5>
+                <p class="card-text" style="color:black">See where you rank against other players with our results page.
+                </p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/1280px-Standard_deviation_diagram.svg.png"
+                    alt="distibution graph" onclick="TODO" class="responsive"></img>
         </div>
     </div>
 
 </div>
 
 <div class="card-group">
-    <div class="card bg-dark" style=  "border-radius: 8px;">
-      <div class="card-body">
-          <h2 class="card-title">The Game</h2>
-          <p class="card-text" style= "color:black" >Learn how the game of Texas no limit holdem is played</p>
-          <img src="https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png" alt="poker, flop turn and river" onclick="TODO" class="responsive"></img>
+    <div class="card bg-dark" style="border-radius: 8px;">
+        <div class="card-body">
+            <h2 class="card-title">The Game</h2>
+            <p class="card-text" style="color:black">Learn how the game of Texas no limit holdem is played</p>
+            <img src="https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png"
+                alt="poker, flop turn and river" onclick="TODO" class="responsive"></img>
         </div>
     </div>
-    
+
     <div class="card" style=" border-radius: 8px; background-color: rgb(47, 44, 221);">
         <div class="card-body">
             <h2 class="card-title">Another headline</h2>
             <p class="card-text">And an even wittier subheading.</p>
         </div>
-        </div>
+    </div>
 </div>
 
 

@@ -148,11 +148,23 @@ footer{
 
 
 .card{
-    background: rgb(51, 153, 56);    
+    background-color: rgb(51, 153, 56);    
     margin: 15px;
     padding: 10px;
-    border: 10px;  
+    border: 10px;
+      
 }
+
+.card:hover, .cardtop:hover, .card:hover>a, .cardtop:hover>a{
+    text-decoration: none;
+    background-color: rgb(27, 104, 31); 
+}
+
+.cardtop{
+    margin-top: 0px; 
+}
+
+
 
 
 .card-title{
