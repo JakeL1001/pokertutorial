@@ -37,7 +37,6 @@ function showResults() {
     const answerContainers = quizContainer.querySelectorAll('.answers');
     // keep track of user's answers
     let numCorrect = 0;
-
     // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
         // find selected answer
@@ -48,14 +47,6 @@ function showResults() {
         if (userAnswer === currentQuestion.correctAnswer) {
             // add to the number of correct answers
             numCorrect++;
-
-            // color the answers green
-            answerContainers[questionNumber].style.color = 'lightgreen';
-        }
-        // if answer is wrong or blank
-        else {
-            // color the answers red
-            answerContainers[questionNumber].style.color = 'red';
         }
     });
     let resultperc = (numCorrect / myQuestions.length) * 100
@@ -77,7 +68,7 @@ function buildQuiz() {
             output.push(
                     `<div class="card">
                         <div class="card-body">
-                            <div class="card-title">Question ${questionNumber++}</div>
+                            <div class="card-title">Question ${questionNumber + 1}</div>
                             <div class="card-text">
                                 <div class="question">${currentQuestion.question}</div>`)
                 // and for each available answer...
