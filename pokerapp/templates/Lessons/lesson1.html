@@ -1,94 +1,33 @@
 {% extends "base.html" %}{% block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{% block title %}Lesson 1{% endblock %}{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{% block title %}Lesson 1{% endblock %}{% block script %}
+<script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
 
 <button class="tablink" onclick="openPage('content', this, 'red')" id="defaultOpen">Content</button>
-<button class="tablink" onclick="openPage('quiz', this, 'green')">Quiz</button>
+<button class="tablink" onclick="openPage('quiz2', this, 'green')">Quiz</button>
 
 <div id="content" class="tabcontent">
     <h3>Content</h3>
     <p>
-        Welcome to our first poker lesson. A deck of playing cards consists of four groups called suits.
-        These suits are spades and clubs which are commonly coloured black. As well as hearts and diamonds, commonly red.
+        Welcome to our first poker lesson. A deck of playing cards consists of four groups called suits. These suits are spades and clubs which are commonly coloured black. As well as hearts and diamonds, commonly red.
     </p>
-    <img src = "https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png "class = "responsive"> <!--add picture of four suits-->
+    <img src="https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png " class="responsive">
+    <!--add picture of four suits-->
     <p>
-        Each suit has thirteen cards. The cards have a numerical order. There are the "face" cards of ace, jack, queen and king. The ace acts as the number one.
-        As well as the highest value in the suit. The jack acts as the eleventh card, the queen twelth and king thirteenth.
-        A suit also has the cards two, three, four, five, six, seven, eight, nine and ten. If you had the tenth card in the suit of clubs.
-        It could be referred to as a "ten of clubs."
+        Each suit has thirteen cards. The cards have a numerical order. There are the "face" cards of ace, jack, queen and king. The ace acts as the number one. As well as the highest value in the suit. The jack acts as the eleventh card, the queen twelth and
+        king thirteenth. A suit also has the cards two, three, four, five, six, seven, eight, nine and ten. If you had the tenth card in the suit of clubs. It could be referred to as a "ten of clubs."
     </p>
-    <img src = "https://www.wsop.com/how-to-play-poker/images/how-to-card-rank.jpg" class = "responsive"> <!-- add picture of 13 cards-->
+    <img src="https://www.wsop.com/how-to-play-poker/images/how-to-card-rank.jpg" class="responsive">
+    <!-- add picture of 13 cards-->
 </div>
-<div id="quiz" class="tabcontent">
+<div id="quiz2" class="tabcontent">
     <h3>Quiz 1</h3>
     <p></p>
     <form method="post" action="/submit">
         <!-- SUbmit to the new database-->
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">swag</div>
-                    <div class="card-text">
-                        {{ quiz_form.question_1.label }} {% for subfield in quiz_form.question_1 %}
-                        <ul class="list-group">
-                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
-                        </ul>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">swag</div>
-                    <div class="card-text">
-                        {{ quiz_form.question_2.label }} {% for subfield in quiz_form.question_2 %}
-                        <ul class="list-group">
-                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
-                        </ul>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">swag</div>
-                    <div class="card-text">
-                        {{ quiz_form.question_3.label }} {% for subfield in quiz_form.question_3 %}
-                        <ul class="list-group">
-                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
-                        </ul>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">swag</div>
-                    <div class="card-text">
-                        {{ quiz_form.question_4.label }} {% for subfield in quiz_form.question_4 %}
-                        <ul class="list-group">
-                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
-                        </ul>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">swag</div>
-                    <div class="card-text">
-                        {{ quiz_form.question_5.label }} {% for subfield in quiz_form.question_5 %}
-                        <ul class="list-group">
-                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
-                        </ul>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{ quiz_form.submit }}
+        <div id="quiz"></div>
     </form>
+    <button id="submit">Submit Quiz</button>
+    <div id="results" style="color: white;"></div>
 </div>
-{% endblock %}{% block script %}
 
-<script src="{{url_for('static', filename='js/lesson1.js') }}"></script> {%endblock%}
+{% endblock %}
