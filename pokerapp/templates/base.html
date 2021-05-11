@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head> <!--Title with icons-->
+<head>
+    <!--Title with icons-->
     <title>{% block title %}{% endblock %} - Poker Basics</title>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="https://toppng.com/uploads/preview/casino-cards-png-falling-poker-chips-11562995898mdvm5phghg.png">
@@ -10,10 +11,11 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/custom.css') }}"> {% block style %}{% endblock %}
 </head>
 
-<body>  <!--Jordan's cool navbar-->
+<body>
+    <!--Jordan's cool navbar-->
     <nav class="navbar navbar-dark navbar-expand-sm mt-3" style="background-color: rgb(153, 27, 27);">
         <a class="navbar-brand" href="splash.html">
-            <img src='https://images.vexels.com/media/users/3/151229/isolated/preview/3fbd44975e2287324c2ee8d5f4017c67-spades-card-icon-by-vexels.png' width = '30px' height= 'auto' alt="logo"> Poker Basics 
+            <img src='https://images.vexels.com/media/users/3/151229/isolated/preview/3fbd44975e2287324c2ee8d5f4017c67-spades-card-icon-by-vexels.png' width='30px' height='auto' alt="logo"> Poker Basics
         </a>
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,7 +26,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('index') }}">Home</a>
                     </li>
-                    {% if current_user.is_anonymous %} <!--different if logged in or out-->
+                    {% if current_user.is_anonymous %}
+                    <!--different if logged in or out-->
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url_for('login') }}">Login</a>
                     </li>
@@ -32,64 +35,65 @@
                     <li>
                         <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
                     </li>
-                    <li class="nav-item"> <!--Profile Page will be "giving feedback to the user"-->
+                    <li class="nav-item">
+                        <!--Profile Page will be "giving feedback to the user"-->
                         <a class="nav-link" href="{{ url_for('user', username=current_user.username) }}">Profile</a>
                     </li>
                     {% endif %}
-                    <li class="nav-item"> <!--Link to lessons home page-->
+                    <li class="nav-item">
+                        <!--Link to lessons home page-->
                         <a class="nav-link" href="{{url_for('lessons')}}" tabindex="-1">Lessons</a>
                     </li>
-                    <li class="nav-item"> <!--link to page for aggregate data display-->
+                    <li class="nav-item">
+                        <!--link to page for aggregate data display-->
                         <a class="nav-link" href="{{ url_for('stats')}}" tabindex="-1">Stats</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-
-
-
     {% block content %} {% endblock %}
 
-    <footer> <!--Footer at bottom of page-->
-      <div class="container">
-        <div class="row">
-          
-          <div class="col-lg-4 col-md-6 footer">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="TODO">Login</a></li>
-              <li><a class="text-muted" href="TODO">Home</a></li>
-              <li><a class="text-muted" href="TODO">Lessons</a></li>
-            </ul>
-          </div>
-          
-          <div class="col-lg-4 col-md-6 footer">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="TODO">Login</a></li>
-              <li><a class="text-muted" href="TODO">Home</a></li>
-              <li><a class="text-muted" href="TODO">Lessons</a></li>
-            </ul>
+    <footer>
+        <!--Footer at bottom of page-->
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 footer">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="TODO">Login</a></li>
+                        <li><a class="text-muted" href="TODO">Home</a></li>
+                        <li><a class="text-muted" href="TODO">Lessons</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="TODO">Login</a></li>
+                        <li><a class="text-muted" href="TODO">Home</a></li>
+                        <li><a class="text-muted" href="TODO">Lessons</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 footer">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="mailto: 22710428@student.uwa.edu.au">Kane Alexander</a></li>
+                        <li><a class="text-muted" href="mailto: 22705507@student.uwa.edu.au">Jordan Lee</a></li>
+                        <li><a class="text-muted" href="mailto: 22704832@student.uwa.edu.au">Jake Lyell</a></li>
+                    </ul>
+                </div>
+
             </div>
-           
-          
-          <div class="col-lg-4 col-md-6 footer">
-            <h5>Contact Us</h5>
-              <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="mailto: 22710428@student.uwa.edu.au">Kane Alexander</a></li>
-              <li><a class="text-muted" href="mailto: 22705507@student.uwa.edu.au">Jordan Lee</a></li>
-              <li><a class="text-muted" href="mailto: 22704832@student.uwa.edu.au">Jake Lyell</a></li>
-            </ul>
-          </div>
-          
         </div>
-      </div>
-      <div >
-       <a class="text-muted text-center" href="https://teaching.csse.uwa.edu.au/units/CITS3403/">2021 Agile Web Development Project</a>
-      </div>
+        <div>
+            <a class="text-muted text-center" href="https://teaching.csse.uwa.edu.au/units/CITS3403/">2021 Agile Web Development Project</a>
+        </div>
     </footer>
-    
+
     <!--Optimisation scripts-->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
