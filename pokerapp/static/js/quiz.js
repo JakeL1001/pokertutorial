@@ -27,19 +27,14 @@ function showResults() {
     const answerContainers = quizContainer.querySelectorAll('.answers');
     // keep track of user's answers
     let numCorrect = 0;
-    resultsContainer.innerHTML = 1
 
     // for each question...
     myQuestions.forEach((currentQuestion, questionNumber) => {
         // find selected answer
-        resultsContainer.innerHTML = 2
         const answerContainer = answerContainers[questionNumber];
-        resultsContainer.innerHTML = 3
         const selector = `input[name=question${questionNumber}]:checked`;
-        resultsContainer.innerHTML = 4
         const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-        resultsContainer.innerHTML = 5
-            // if answer is correct
+        // if answer is correct
         if (userAnswer === currentQuestion.correctAnswer) {
             // add to the number of correct answers
             numCorrect++;
@@ -55,7 +50,6 @@ function showResults() {
     });
     let resultperc = (numCorrect / myQuestions.length) * 100
         // show number of correct answers out of total
-    resultsContainer.innerHTML = 6
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length} | ${resultperc}`;
 }
 
@@ -73,7 +67,7 @@ function buildQuiz() {
             output.push(
                     `<div class="card">
                         <div class="card-body">
-                            <div class="card-title">Question ${questionNumber}</div>
+                            <div class="card-title">Question ${questionNumber++}</div>
                             <div class="card-text">
                                 <div class="question">${currentQuestion.question}</div>`)
                 // and for each available answer...
@@ -82,7 +76,9 @@ function buildQuiz() {
                 // ...add an HTML radio button
                 answers.push(
                     `<ul class="list-group">
-                        <li class="list-group-item"> <input type="radio" name="question${questionNumber}" value="${letter}"> ${letter} : ${currentQuestion.answers[letter]}</li>
+                        <li class="list-group-item"> 
+                        <input type="radio" name="question${questionNumber}" value="${letter}"> ${letter} : ${currentQuestion.answers[letter]}
+                        </li>
                     </ul>`
                 );
             }
