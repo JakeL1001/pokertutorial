@@ -5,11 +5,15 @@ from flask_login import current_user, login_user, logout_user, login_required
 from pokerapp.models import User
 from werkzeug.urls import url_parse
 
+#Routes are used to link things. like a hyperlink to another page.
+
+#splash page route
 @pokerpack.route("/")
 @pokerpack.route("/index")
 def index():
     return render_template("pokerlanding.html", title="Home")
 
+#Major login route
 @pokerpack.route("/login", methods=["GET", "POST"])
 def login():
     if current_user.is_authenticated:
@@ -27,6 +31,7 @@ def login():
         return redirect(next_page)
     return render_template("login.html", title="Sign In", form=form)
 
+#extra page routes
 @pokerpack.route("/assess")
 def assess():
     return render_template("assess.html", title = "Assessments")
@@ -35,6 +40,8 @@ def assess():
 def stats():
     return render_template("stats.html", title = "Stats")
 
+
+#login routes pt2
 @pokerpack.route("/logout")
 def logout():
     logout_user()
@@ -55,6 +62,8 @@ def register():
         return redirect(url_for("login"))
     return render_template("register.html", title="Register", form=form)
 
+#Lesson routes
+#logins are required for lessons
 @pokerpack.route("/user/<username>")
 @login_required
 def user(username):
@@ -65,7 +74,7 @@ def user(username):
     ]
     return render_template("user.html", user=user, posts=posts)
 
-@pokerpack.route("/lessons", methods=["GET", "POST"])
+@pokerpack.route("/lessons")
 def lessons():
     if current_user.is_authenticated:
         return render_template("/Lessons/lessonshome.html")
@@ -89,3 +98,17 @@ def lesson2():
 def lesson3():
     quiz_form = QuizForm3()
     return render_template("/Lessons/lesson3.html", quiz_form=quiz_form)
+
+@pokerpack.route("/submit", methods=["GET", "POST"])
+@login_required
+def submit():
+    return render_template("/Lessons/lessonshome.html")
+    """
+    form = QuizForm1()
+    if form.validate_on_submit():
+        user = User(username=form.username.data, email=form.email.data)
+        user.set_password(form.password.data)
+        db.session.add(user)
+        db.session.commit()
+        flash("Congratulations! You are now registered!")
+        return redirect(url_for("login")) """

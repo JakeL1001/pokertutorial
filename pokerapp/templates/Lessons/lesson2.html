@@ -1,30 +1,92 @@
 {% extends "base.html" %}{% block style %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{% block title %}Lesson 1{% endblock %}{% block content %}
 
-<button class="tablink" onclick="openPage('content', this, 'red')">Content</button>
-<button class="tablink" onclick="openPage('quiz', this, 'green')" id="defaultOpen">Quiz</button>
+<button class="tablink" onclick="openPage('content', this, 'red')" id="defaultOpen">Content</button>
+<button class="tablink" onclick="openPage('quiz', this, 'green')">Quiz</button>
 
 <div id="content" class="tabcontent">
     <h3>Content</h3>
     <p>
-       Welcome to our second poker lesson. In this lesson you will learn about the different poker "hands". In the game of poker, the player with the best hand wins.
-       A hand is a combination of five cards. Players have two cards in their hand and at the end of of each round there are five cards on the table. 
-       Here is a chart of the poker hands that are possible.
+        Welcome to our second poker lesson. In this lesson you will learn about the different poker "hands". In the game of poker, the player with the best hand wins. A hand is a combination of five cards. Players have two cards in their hand and at the end of
+        of each round there are five cards on the table. Here is a chart of the poker hands that are possible.
     </p>
-    <img src = "https://clearrenew.weebly.com/uploads/1/2/5/2/125263785/694445454.jpg">
+    <img src="https://clearrenew.weebly.com/uploads/1/2/5/2/125263785/694445454.jpg">
     <p>
-        Players compete to have the best five out of seven cards at the end of a round (unless all other players have 'folded').
-        The first way to win a round of poker is called having a high card. This means one of your cards are higher in the suit than
-        the other players. An example is if you have 'ace high' and the other player has a 'ten high'. Then you win that round.
-        This concept applies to all the other possible hands. If one player has a pair, and the other has a two pair. The player
-        with a two pair will win that round. The hands are ranked in the order shown above and the goal is to have a better hand than the other players.
-        If players have the same effective hand, they will 'split the pot.'
+        Players compete to have the best five out of seven cards at the end of a round (unless all other players have 'folded'). The first way to win a round of poker is called having a high card. This means one of your cards are higher in the suit than the other
+        players. An example is if you have 'ace high' and the other player has a 'ten high'. Then you win that round. This concept applies to all the other possible hands. If one player has a pair, and the other has a two pair. The player with a two pair
+        will win that round. The hands are ranked in the order shown above and the goal is to have a better hand than the other players. If players have the same effective hand, they will 'split the pot.'
     </p>
 
 </div>
 <div id="quiz" class="tabcontent">
-    <h3>Quiz</h3>
-    <p>lol</p>
+    <h3>Quiz 1</h3>
+    <p></p>
+    <form method="post" action="/submit">
+        <!-- SUbmit to the new database-->
+        <div class="card-deck">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">swag</div>
+                    <div class="card-text">
+                        {{ quiz_form.question_1.label }} {% for subfield in quiz_form.question_1 %}
+                        <ul class="list-group">
+                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">swag</div>
+                    <div class="card-text">
+                        {{ quiz_form.question_2.label }} {% for subfield in quiz_form.question_2 %}
+                        <ul class="list-group">
+                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">swag</div>
+                    <div class="card-text">
+                        {{ quiz_form.question_3.label }} {% for subfield in quiz_form.question_3 %}
+                        <ul class="list-group">
+                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">swag</div>
+                    <div class="card-text">
+                        {{ quiz_form.question_4.label }} {% for subfield in quiz_form.question_4 %}
+                        <ul class="list-group">
+                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">swag</div>
+                    <div class="card-text">
+                        {{ quiz_form.question_5.label }} {% for subfield in quiz_form.question_5 %}
+                        <ul class="list-group">
+                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
+                        </ul>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ quiz_form.submit }}
+    </form>
 </div>
 {% endblock %}{% block script %}
 
