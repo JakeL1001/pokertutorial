@@ -43,6 +43,7 @@ function showResults() {
         if (userAnswer === currentQuestion.correctAnswer) {
             // add to the number of correct answers
             numCorrect++;
+
         }
     });
     let resultperc = (numCorrect / myQuestions.length) * 100

@@ -1,6 +1,6 @@
 from pokerapp import pokerpack, db
 from flask import render_template, flash, redirect, url_for, request
-from pokerapp.forms import LoginForm, RegistrationForm, QuizForm1, QuizForm2, QuizForm3
+from pokerapp.forms import LoginForm, RegistrationForm
 from flask_login import current_user, login_user, logout_user, login_required
 from pokerapp.models import User
 from werkzeug.urls import url_parse
@@ -83,24 +83,24 @@ def lessons():
 @pokerpack.route("/lesson1")
 @login_required
 def lesson1():
-    quiz_form = QuizForm1()
-    return render_template("/Lessons/lesson1.html", quiz_form=quiz_form)
+    return render_template("/Lessons/lesson1.html")
 
 @pokerpack.route("/lesson2")
 @login_required
 def lesson2():
-    quiz_form = QuizForm2()
-    return render_template("/Lessons/lesson2.html", quiz_form=quiz_form)
+    return render_template("/Lessons/lesson2.html")
 
 @pokerpack.route("/lesson3")
 @login_required
 def lesson3():
-    quiz_form = QuizForm3()
-    return render_template("/Lessons/lesson3.html", quiz_form=quiz_form)
+    return render_template("/Lessons/lesson3.html")
 
 @pokerpack.route("/submit", methods=["GET", "POST"])
 @login_required
 def submit():
+    
+    if form.validate_on_submit():
+        
     return render_template("/Lessons/lessonshome.html")
     """
     form = QuizForm1()
