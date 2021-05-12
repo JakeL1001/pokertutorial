@@ -13,7 +13,7 @@ body {
     background-color: black;
     text-align: center;
     font-family: 'Calibri';
-    margin:15px;
+    margin: 15px;
 }
 
 h1 {
@@ -75,19 +75,16 @@ p {
         font-size: 18px;
     }
 }
-footer{
+
+footer {
     margin: 55px;
 }
+
 
 /**kanes**/
 
 .container {
     max-width: 960px;
-}
-
-.container-big{
-        max-width:1080px;
-        max-height: 800px;
 }
 
 
@@ -150,38 +147,35 @@ footer{
     cursor: pointer;
 }
 
-
-
-.card{
-    background-color: rgb(51, 153, 56);    
+.card {
+    background-color: rgb(51, 153, 56);
     margin: 15px;
     padding: 10px;
     border: 10px;
-      
 }
-.hightlight:hover, .hightlight:hover>a{
+
+.card:hover,
+.cardtop:hover,
+.card:hover>a,
+.cardtop:hover>a {
     text-decoration: none;
-    background-color: rgb(27, 104, 31); 
+    background-color: rgb(27, 104, 31);
 }
 
-.cardtop{
-    margin-top: 0px; 
+.cardtop {
+    margin-top: 0px;
 }
 
-
-
-
-.card-title{
+.card-title {
     color: black;
     font-size: 2.5rem;
     font-weight: 400;
     line-height: 1.2;
 }
 
-.card-text{
-    font-size:1.25rem;
-    font-weight:300
-
+.card-text {
+    font-size: 1.25rem;
+    font-weight: 300
 }
 
 .card-img-top {
@@ -191,6 +185,6 @@ footer{
     padding: 10%;
 }
 
-img{
+img {
     max-width: 500px;
 }

@@ -1,12 +1,8 @@
 $(".flipper").click(function() {
-    var target = $( event.target );
-      $(this).toggleClass("flip");
+    var target = $(event.target);
+    $(this).toggleClass("flip");
     return false;
-  });
-
-
-
-
+});
 
 function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
@@ -47,6 +43,7 @@ function showResults() {
         if (userAnswer === currentQuestion.correctAnswer) {
             // add to the number of correct answers
             numCorrect++;
+
         }
     });
     let resultperc = (numCorrect / myQuestions.length) * 100
