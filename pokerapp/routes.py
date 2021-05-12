@@ -99,7 +99,7 @@ def lesson3():
 @login_required
 def submit():
     
-    if form.validate_on_submit():
+    #if form.validate_on_submit():
         
     return render_template("/Lessons/lessonshome.html")
     """
