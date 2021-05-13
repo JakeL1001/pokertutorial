@@ -1,11 +1,21 @@
 {% extends "base.html" %}{% block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{% block title %}Lesson 1{% endblock %}{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> 
+{% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
+<script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
 
-<button class="tablink" onclick="openPage('content', this, 'red')" id="defaultOpen">Content</button>
-<button class="tablink" onclick="openPage('quiz', this, 'green')">Quiz</button>
+<button class="tablink" onclick="openPage('content', this, 'rgb(39, 42, 200)')" id="defaultOpen">Lesson 3</button>
+<button class="tablink" onclick="openPage('quiz2', this, 'green')">Quiz</button>
 
 <div id="content" class="tabcontent">
     <h3>Content</h3>
+
+
+
+    <img id = "flopAnimate" src = '../../static/lesson3animations/flop.jpg'>
+    <img id = "turnAnimate" src = '../../static/lesson3animations/turn.jpg'>
+    <img id = "riverAnimate" src = '../../static/lesson3animations/river.jpg'>
+
+
     <p>
         Poker is a turn based game. There are stages of play that come in an order. That is: the pre-flop, flop, post-flop, turn, post turn, the river then the final round of betting. In all these stages of play there is either action of betting, or cards being
         laid onto the table. Here is what post-flop looks like for example:
@@ -25,77 +35,5 @@
     <img src="https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png">
 </div>
 <div id="quiz" class="tabcontent">
-    <h3>Quiz 1</h3>
-    <p></p>
-    <form method="post" action="/submit">
-        <!-- SUbmit to the new database-->
-        <div class="card-deck">
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">swag</div>
-                    <div class="card-text">
-                        {{ quiz_form.question_1.label }} {% for subfield in quiz_form.question_1 %}
-                        <ul class="list-group">
-                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
-                        </ul>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">swag</div>
-                    <div class="card-text">
-                        {{ quiz_form.question_2.label }} {% for subfield in quiz_form.question_2 %}
-                        <ul class="list-group">
-                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
-                        </ul>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">swag</div>
-                    <div class="card-text">
-                        {{ quiz_form.question_3.label }} {% for subfield in quiz_form.question_3 %}
-                        <ul class="list-group">
-                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
-                        </ul>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">swag</div>
-                    <div class="card-text">
-                        {{ quiz_form.question_4.label }} {% for subfield in quiz_form.question_4 %}
-                        <ul class="list-group">
-                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
-                        </ul>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                    <div class="card-title">swag</div>
-                    <div class="card-text">
-                        {{ quiz_form.question_5.label }} {% for subfield in quiz_form.question_5 %}
-                        <ul class="list-group">
-                            <li class="list-group-item">{{ subfield }}|{{ subfield.label }}</li>
-                        </ul>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>
-        {{ quiz_form.submit }}
-    </form>
-</div>
-
-
-{% endblock %}{% block script %}
-
-<script src="{{url_for('static', filename='js/lesson1.js') }}"></script> {%endblock%}
+    
+{% endblock %}
