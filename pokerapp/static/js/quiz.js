@@ -87,16 +87,11 @@ function showResults() {
         }
     });
     let resultperc = (numCorrect / myQuestions.length) * 100
-<<<<<<< HEAD
         // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length} | ${resultperc} `;
     document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`
         //document.getElementById("subbutton").innerHTML = `<p>{{form.submit2}}</p>`
     document.getElementById("submit-continue").style.visibility = "visible";
-=======
-    // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length} | ${resultperc}`;
->>>>>>> workingbranch_kane
 }
 
 
