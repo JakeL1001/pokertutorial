@@ -1,5 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField, RadioField
+from wtforms.fields.core import FloatField, IntegerField
 from wtforms.validators import DataRequired, ValidationError, Email, EqualTo
 from pokerapp.models import User
 
@@ -25,4 +26,9 @@ class RegistrationForm(FlaskForm):
         user = User.query.filter_by(email=email.data).first()
         if user is not None:
             raise ValidationError("This email address alredy exists")
+        
+class QuizForm(FlaskForm):
+    id = IntegerField("User ID")
+    score = FloatField("Score")
+    submit2 = SubmitField("Submit to db")
         
