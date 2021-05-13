@@ -1,8 +1,22 @@
 $(".flipper").click(function() {
-    var target = $(event.target);
     $(this).toggleClass("flip");
     return false;
 });
+
+$(".glow").click(function() {
+    $(this).addClass("cardglow");
+    return false;
+});
+
+$(".reject").click(function() {
+    $(this).addClass("cardreject");
+    return false;
+});
+
+
+
+
+
 
 function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
