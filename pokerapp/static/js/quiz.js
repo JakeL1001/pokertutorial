@@ -1,17 +1,43 @@
-$(".flipper").click(function() {
+$(".flipper").click(function () {
     $(this).toggleClass("flip");
     return false;
 });
 
-$(".glow").click(function() {
+$(".glow").click(function () {
     $(this).addClass("cardglow");
     return false;
 });
 
-$(".reject").click(function() {
+$(".reject").click(function () {
     $(this).addClass("cardreject");
     return false;
 });
+
+
+$(document).ready(function () {
+    $("#flopAnimate").hover(
+        function () {
+            $(this).attr("src", "../../static/lesson3animations/flop.gif");
+        },
+        function () {
+            $(this).attr("src", "../../static/lesson3animations/flop.jpg");
+        });
+    $("#turnAnimate").hover(
+        function () {
+            $(this).attr("src", "../../static/lesson3animations/turn.gif");
+        },
+        function () {
+            $(this).attr("src", "../../static/lesson3animations/turn.jpg");
+        });
+    $("#riverAnimate").hover(
+        function () {
+            $(this).attr("src", "../../static/lesson3animations/river.gif");
+        },
+        function () {
+            $(this).attr("src", "../../static/lesson3animations/river.jpg");
+        });
+});
+
 
 
 
@@ -61,11 +87,16 @@ function showResults() {
         }
     });
     let resultperc = (numCorrect / myQuestions.length) * 100
+<<<<<<< HEAD
         // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length} | ${resultperc} `;
     document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`
         //document.getElementById("subbutton").innerHTML = `<p>{{form.submit2}}</p>`
     document.getElementById("submit-continue").style.visibility = "visible";
+=======
+    // show number of correct answers out of total
+    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length} | ${resultperc}`;
+>>>>>>> workingbranch_kane
 }
 
 
@@ -74,19 +105,19 @@ function buildQuiz() {
     const output = [];
 
     output.push(`<div class="card-deck">`)
-        // for each question...
+    // for each question...
     myQuestions.forEach(
         (currentQuestion, questionNumber) => {
 
             // variable to store the list of possible answers
             const answers = [];
             output.push(
-                    `<div class="card">
+                `<div class="card">
                         <div class="card-body">
                             <div class="card-title">Question ${questionNumber + 1}</div>
                             <div class="card-text">
                                 <div class="question">${currentQuestion.question}</div>`)
-                // and for each available answer...
+            // and for each available answer...
             for (letter in currentQuestion.answers) {
 
                 // ...add an HTML radio button
@@ -111,32 +142,32 @@ const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 const myQuestions = [{
-        question: "Who invented JavaScript?",
-        answers: {
-            a: "Douglas Crockford",
-            b: "Sheryl Sandberg",
-            c: "Brendan Eich"
-        },
-        correctAnswer: "c"
+    question: "Who invented JavaScript?",
+    answers: {
+        a: "Douglas Crockford",
+        b: "Sheryl Sandberg",
+        c: "Brendan Eich"
     },
-    {
-        question: "Which one of these is a JavaScript package manager?",
-        answers: {
-            a: "Node.js",
-            b: "TypeScript",
-            c: "npm"
-        },
-        correctAnswer: "c"
+    correctAnswer: "c"
+},
+{
+    question: "Which one of these is a JavaScript package manager?",
+    answers: {
+        a: "Node.js",
+        b: "TypeScript",
+        c: "npm"
     },
-    {
-        question: "Which tool can you use to ensure code quality?",
-        answers: {
-            a: "Angular",
-            b: "jQuery",
-            c: "RequireJS",
-            d: "ESLint"
-        },
-        correctAnswer: "d"
+    correctAnswer: "c"
+},
+{
+    question: "Which tool can you use to ensure code quality?",
+    answers: {
+        a: "Angular",
+        b: "jQuery",
+        c: "RequireJS",
+        d: "ESLint"
+    },
+        correctAnswer: "a"
     },
     {
         question: "who's the man?",
