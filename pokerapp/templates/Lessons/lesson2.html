@@ -1,281 +1,308 @@
 {% extends "base.html" %}{% block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}">
 {% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
 <script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
 
 <button class="tablink" onclick="openPage('content', this, 'rgb(39, 42, 200)')" id="defaultOpen">Lesson 2</button>
 <button class="tablink" onclick="openPage('quiz2', this, 'green')">Quiz</button>
 
-<style>
-    h4 {
-            display: flex;
-            flex-direction: row;
-        }
-    
-    h4:before,
-        h4:after {
-            content: "";
-            flex: 1 1;
-            border-bottom: 2px solid white;
-            margin: auto;
-        }
-
-
-</style>
-
-
 <div id="content" class="tabcontent">
-    <h3 class = "display-4 font-weight-normal header-main">Hand Rankings</h3>
-    <p>
-        In this lesson you will learn about the different poker "hands". A hand is a combination of five cards. Players have two cards in their hand and at the end of
-        of each round there are five cards on the table. Each player makes their hand by choosing what cards from the table or their hand give them the highest ranking. 
-        The highest ranked hand out of all players wins. If multiple players have hands with the same 'rank', the highest number card within this rank wins (recall 
-        lesson 1 on card rankings).
-    </p>
-    <br><br>
-    <h4>&nbsp;High Card&nbsp;</h4>
-    <br>
-    <div class ="container">
-        <div class = "row">
-       <div class = "col">
-         <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png"
-          class="responsive normalcard glow" alt=""/>
-        </div><div class = "col">
-          <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" 
-            class="responsive normalcard reject" alt=""/>
-        </div><div class = "col">
-          <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_8.png" 
-            class="responsive normalcard reject" alt=""/>
-        </div><div class = "col">
-          <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_6.png" 
-            class="responsive normalcard reject" alt=""/>
-        </div><div class = "col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_5.png" 
-                  class="responsive normalcard reject" alt=""/>
-        </div>
+  <h3 class="display-4 font-weight-normal header-main">Hand Rankings</h3>
+  <p>
+    In this lesson you will learn about the different poker "hands". A hand is a combination of five cards. Players have
+    two cards in their hand and at the end of
+    of each round there are five cards on the table. Each player makes their hand by choosing what cards from the table
+    or their hand give them the highest ranking.
+    The highest ranked hand out of all players wins. If multiple players have hands with the same 'rank', the highest
+    number card within this rank wins (recall
+    lesson 1 on card rankings).
+  </p>
+  <br><br>
+  <h4>&nbsp;High Card&nbsp;</h4>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png"
+          class="responsive normalcard glow" alt="" />
       </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png"
+          class="responsive normalcard reject" alt="" />
       </div>
-      <br>
-
-      <p>The lowest ranked hand in poker is 'high card'. This happens when none of the other hands can be made and the player is left 
-          with just their highest card. 
-      </p>
-
-      <br>
-
-    <h4>&nbsp;Pair&nbsp;</h4>
-    <br>
-    <div class ="container">
-        <div class = "row">
-       <div class = "col">
-         <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_queen.png"
-          class="responsive normalcard glow" alt=""/>
-        </div><div class = "col">
-          <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_5.png" 
-            class="responsive normalcard reject" alt=""/>
-        </div><div class = "col">
-          <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_jack.png" 
-            class="responsive normalcard reject" alt=""/>
-        </div><div class = "col">
-          <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_queen.png" 
-            class="responsive normalcard glow" alt=""/>
-        </div><div class = "col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" 
-                  class="responsive normalcard reject" alt=""/>
-        </div>
-        </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_8.png"
+          class="responsive normalcard reject" alt="" />
       </div>
-      <br>
-      <p>The next ranked hand if 'pair' or 'two of a kind'. This happens when a player has two matching cards.
-      </p>
-
-      <h4>&nbsp; Two Pair&nbsp;</h4>
-    <br>
-    <div class ="container">
-        <div class = "row">
-       <div class = "col">
-         <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png"
-          class="responsive normalcard glow" alt=""/>
-        </div><div class = "col">
-          <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_2.png" 
-            class="responsive normalcard glow" alt=""/>
-        </div><div class = "col">
-          <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" 
-            class="responsive normalcard reject" alt=""/>
-        </div><div class = "col">
-          <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" 
-            class="responsive normalcard glow" alt=""/>
-        </div><div class = "col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_jack.png" 
-                  class="responsive normalcard glow" alt=""/>
-        </div>
-        </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_6.png"
+          class="responsive normalcard reject" alt="" />
       </div>
-      <br>
-      <p>The next ranked hand is 'two pair'. This is where a player has two sets of matching cards.
-      </p>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_5.png"
+          class="responsive normalcard reject" alt="" />
+      </div>
+    </div>
+  </div>
+  <br>
 
-      <h4>&nbsp;Three of a Kind&nbsp;</h4>
-      <br>
-      <div class ="container">
-          <div class = "row">
-         <div class = "col">
-           <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png"
-            class="responsive normalcard reject" alt=""/>
-          </div><div class = "col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_8.png" 
-              class="responsive normalcard glow" alt=""/>
-          </div><div class = "col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png" 
-              class="responsive normalcard reject" alt=""/>
-          </div><div class = "col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_8.png" 
-              class="responsive normalcard glow" alt=""/>
-          </div><div class = "col">
-                  <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_8.png" 
-                    class="responsive normalcard glow" alt=""/>
-          </div>
-          </div>
-        </div>
-        <br>
-        <p>The next ranked hand is 'thre of a kind' or 'trips'. This is where a player has 3 of one type of card.
-        </p>
+  <p>The lowest ranked hand in poker is 'high card'. This happens when none of the other hands can be made and the
+    player is left
+    with just their highest card.
+  </p>
 
-        <h4>&nbsp;Straight&nbsp;</h4>
-        <br>
-        <div class ="container">
-            <div class = "row">
-           <div class = "col">
-             <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png"
-              class="responsive normalcard glow" alt=""/>
-            </div><div class = "col">
-              <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_6.png" 
-                class="responsive normalcard glow" alt=""/>
-            </div><div class = "col">
-              <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png" 
-                class="responsive normalcard glow" alt=""/>
-            </div><div class = "col">
-              <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" 
-                class="responsive normalcard glow" alt=""/>
-            </div><div class = "col">
-                    <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_5.png" 
-                      class="responsive normalcard glow" alt=""/>
-            </div>
-            </div>
-          </div>
-          <br>
-          <p>A straight is when a player has 5 cards in consecutive rank order. The order on the board does not matter, it can be 
-              rearranged to the players desire. Recall from the last lesson that an ace can be a 1 or a 14.</p>
-              
-              
-              <h4>&nbsp;Flush&nbsp;</h4>
-              <br>
-              <div class ="container">
-                  <div class = "row">
-                 <div class = "col">
-                   <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_10.png"
-                    class="responsive normalcard glow" alt=""/>
-                  </div><div class = "col">
-                    <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_king.png" 
-                      class="responsive normalcard glow" alt=""/>
-                  </div><div class = "col">
-                    <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_2.png" 
-                      class="responsive normalcard glow" alt=""/>
-                  </div><div class = "col">
-                    <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_7.png" 
-                      class="responsive normalcard glow" alt=""/>
-                  </div><div class = "col">
-                          <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_ace.png" 
-                            class="responsive normalcard glow" alt=""/>
-                  </div>
-                  </div>
-                </div>
-                <br>
-                <p>A flush is when a player has 5 cards all of the same suit. </p>
+  <br>
 
-                <h4>&nbsp;Full House&nbsp;</h4>
-                <br>
-                <div class ="container">
-                    <div class = "row">
-                   <div class = "col">
-                     <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_4.png"
-                      class="responsive normalcard glow" alt=""/>
-                    </div><div class = "col">
-                      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_jack.png" 
-                        class="responsive normalcard glow" alt=""/>
-                    </div><div class = "col">
-                      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" 
-                        class="responsive normalcard glow" alt=""/>
-                    </div><div class = "col">
-                      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" 
-                        class="responsive normalcard glow" alt=""/>
-                    </div><div class = "col">
-                            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_jack.png" 
-                              class="responsive normalcard glow" alt=""/>
-                    </div>
-                    </div>
-                  </div>
-                  <br>
-                  <p>A Full House is when a player has 3 of the same cards as well as 2 of a different type. The same as having three of a kind and a pair. </p>
+  <h4>&nbsp;Pair&nbsp;</h4>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_queen.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_5.png"
+          class="responsive normalcard reject" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_jack.png"
+          class="responsive normalcard reject" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_queen.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png"
+          class="responsive normalcard reject" alt="" />
+      </div>
+    </div>
+  </div>
+  <br>
+  <p>The next ranked hand if 'pair' or 'two of a kind'. This happens when a player has two matching cards.
+  </p>
 
-                  <h4>&nbsp;Four of a Kind&nbsp;</h4>
-                <br>
-                <div class ="container">
-                    <div class = "row">
-                   <div class = "col">
-                     <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_3.png"
-                      class="responsive normalcard glow" alt=""/>
-                    </div><div class = "col">
-                      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png" 
-                        class="responsive normalcard glow" alt=""/>
-                    </div><div class = "col">
-                      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" 
-                        class="responsive normalcard reject" alt=""/>
-                    </div><div class = "col">
-                      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png" 
-                        class="responsive normalcard glow" alt=""/>
-                    </div><div class = "col">
-                            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_3.png" 
-                              class="responsive normalcard glow" alt=""/>
-                    </div>
-                    </div>
-                  </div>
-                  <br>
-                  <p>Four of a kind or quads is when a player has all 4 of the same type of card. Their are only 4 of each type of card, one for each suit, in the whole card deck!  </p>
-                  
-                  <h4>&nbsp;Straight Flush&nbsp;</h4>
-                  <br>
-                  <div class ="container">
-                      <div class = "row">
-                     <div class = "col">
-                       <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png"
-                        class="responsive normalcard glow" alt=""/>
-                      </div><div class = "col">
-                        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png" 
-                          class="responsive normalcard glow" alt=""/>
-                      </div><div class = "col">
-                        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" 
-                          class="responsive normalcard glow" alt=""/>
-                      </div><div class = "col">
-                        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" 
-                          class="responsive normalcard glow" alt=""/>
-                      </div><div class = "col">
-                              <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_10.png" 
-                                class="responsive normalcard glow" alt=""/>
-                      </div>
-                      </div>
-                    </div>
-                    
-                    <br>
-                    <p>Like the name suggests a 'Straight Flush' is when a player both has a straight and a flush at the same time. The player must 
-                        have 5 cards in order and of the same suit. This is the strongest hand in poker, and when it starts from the highest card (the ace) 
-                    it is known as the Royal Flush. </p>
-      
+  <h4>&nbsp; Two Pair&nbsp;</h4>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_2.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png"
+          class="responsive normalcard reject" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_jack.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+    </div>
+  </div>
+  <br>
+  <p>The next ranked hand is 'two pair'. This is where a player has two sets of matching cards.
+  </p>
+
+  <h4>&nbsp;Three of a Kind&nbsp;</h4>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png"
+          class="responsive normalcard reject" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_8.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png"
+          class="responsive normalcard reject" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_8.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_8.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+    </div>
+  </div>
+  <br>
+  <p>The next ranked hand is 'thre of a kind' or 'trips'. This is where a player has 3 of one type of card.
+  </p>
+
+  <h4>&nbsp;Straight&nbsp;</h4>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_6.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_5.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+    </div>
+  </div>
+  <br>
+  <p>A straight is when a player has 5 cards in consecutive rank order. The order on the board does not matter, it can
+    be
+    rearranged to the players desire. Recall from the last lesson that an ace can be a 1 or a 14.</p>
+
+
+  <h4>&nbsp;Flush&nbsp;</h4>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_10.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_king.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_2.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_7.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_ace.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+    </div>
+  </div>
+  <br>
+  <p>A flush is when a player has 5 cards all of the same suit. </p>
+
+  <h4>&nbsp;Full House&nbsp;</h4>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_4.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_jack.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_jack.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+    </div>
+  </div>
+  <br>
+  <p>A Full House is when a player has 3 of the same cards as well as 2 of a different type. The same as having three of
+    a kind and a pair. </p>
+
+  <h4>&nbsp;Four of a Kind&nbsp;</h4>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_3.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png"
+          class="responsive normalcard reject" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_3.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+    </div>
+  </div>
+  <br>
+  <p>Four of a kind or quads is when a player has all 4 of the same type of card. Their are only 4 of each type of card,
+    one for each suit, in the whole card deck! </p>
+
+  <h4>&nbsp;Straight Flush&nbsp;</h4>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+      <div class="col">
+        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_10.png"
+          class="responsive normalcard glow" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <p>Like the name suggests a 'Straight Flush' is when a player both has a straight and a flush at the same time. The
+    player must
+    have 5 cards in order and of the same suit. This is the strongest hand in poker, and when it starts from the highest
+    card (the ace)
+    it is known as the Royal Flush. </p>
+
 
 </div>
 
 <div id="quiz" class="tabcontent">
-    
+
 </div>
 
 {% endblock %}

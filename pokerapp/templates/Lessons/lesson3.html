@@ -1,5 +1,5 @@
 {% extends "base.html" %}{% block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}">
 {% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
 <script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
 
@@ -7,33 +7,80 @@
 <button class="tablink" onclick="openPage('quiz2', this, 'green')">Quiz</button>
 
 <div id="content" class="tabcontent">
-    <h3>Content</h3>
-
-
-
-    <img id = "flopAnimate" src = '../../static/lesson3animations/flop.jpg'>
-    <img id = "turnAnimate" src = '../../static/lesson3animations/turn.jpg'>
-    <img id = "riverAnimate" src = '../../static/lesson3animations/river.jpg'>
-
-
+    <h3 class="display-4 font-weight-normal header-main">The Game of Poker</h3>
     <p>
-        Poker is a turn based game. There are stages of play that come in an order. That is: the pre-flop, flop, post-flop, turn, post turn, the river then the final round of betting. In all these stages of play there is either action of betting, or cards being
-        laid onto the table. Here is what post-flop looks like for example:
+        Poker is a turn based game. The are stages of play come in an order: pre-flop, flop,
+        turn and then the river. Players make betting actions during these phases. Players can fold, bet, raise or
+        check.
+    <div class="card-group">
+        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+            <div class="card-body">
+                <h2 class="card-title" style="color:white">Fold</h5>
+                    <p class="card-text" style="color:white">A fold means the player
+                        forfeits the round, places their cards out of their hand and sits out.
+                    </p>
+            </div>
+        </div>
+        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+            <div class="card-body">
+                <h2 class="card-title" style="color:white">Bet</h5>
+                    <p class="card-text" style="color:white">A bet means the player is placing a bet
+                        into the community pot of chips.
+                    </p>
+            </div>
+        </div>
+        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+            <div class="card-body">
+                <h2 class="card-title" style="color:white">Raise</h5>
+                    <p class="card-text" style="color:white"> A raise means the player is increasing the minimum bet
+                        size with their own bet.
+                    </p>
+            </div>
+        </div>
+        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+            <div class="card-body">
+                <h2 class="card-title" style="color:white">Check</h5>
+                    <p class="card-text" style="color:white"> A check is when the player does
+                        not bet further as they have already put in an amount that satisfies the current bet.
+                    </p>
+            </div>
+        </div>
+    </div>
+
     </p>
-    <img src="...">
-    <!-- image of postflop or some other round-->
-    <p>
-        Players make actions during these betting phases. Players can fold, bet, raise or check. A fold means the player forfeits the round, places their cards out of their hand and sits out. A bet means the player is placing a bet into the community pot of chips.
-        A raise means the player is increasing the minimum bet size with their own bet. A check is when the player does not bet further as they have already put in an amount that satisfies the current bet.
-    </p>
-    <img src="...">
-    <!-- relevant image-->
-    <p>
-        Cards come down onto the table in three stages; the flop, the turn and the river. On the flop, three cards come down, face up after one has been discarded from the deck. On the turn, a fourth card is placed on the table after one has been discarded. The
-        last card called the river is placed on the table on the penultimate stage of play.
-    </p>
-    <img src="https://1ednx3tnfmz1xmk99kw15ns1-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/flop-turn-river.png">
+    <br><br>
+    <h4>&nbsp;Pre-Flop&nbsp;</h4>
+    <br>
+    <p> Preflop explanation MUST INCLUDE REFERENCE TO IVEY LEAGUE FOR ANIMATIONS
+        :https://www.youtube.com/watch?v=09jmSZ-lKRM</p>
+
+    <br><br>
+    <h4>&nbsp;Flop, Turn and River&nbsp;</h4>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <img id="flopAnimate" src='../../static/lesson3animations/flop.jpg' style = "min-width: 200px;">
+                <p>Hover to animate flop. Preflop .</p>
+            </div>
+            <div class="col">
+                <img id="turnAnimate" src='../../static/lesson3animations/turn.jpg'  style = "min-width: 200px;">
+                <p>Hover to animate flop. Preflop.</p>
+            </div>
+            <div class="col">
+                <img id="riverAnimate" src='../../static/lesson3animations/river.jpg' style = "min-width: 200px;">
+                <p>Hover to animate flop. Preflop .</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    
 </div>
 <div id="quiz" class="tabcontent">
-    
-{% endblock %}
+
+    {% endblock %}
