@@ -1,8 +1,8 @@
 from pokerapp import pokerpack, db
 from flask import render_template, flash, redirect, url_for, request
-from pokerapp.forms import LoginForm, RegistrationForm
+from pokerapp.forms import LoginForm, RegistrationForm, QuizForm
 from flask_login import current_user, login_user, logout_user, login_required
-from pokerapp.models import User
+from pokerapp.models import User, Results
 from werkzeug.urls import url_parse
 
 #Routes are used to link things. like a hyperlink to another page.
@@ -80,10 +80,25 @@ def lessons():
     else:
         return render_template("/Lessons/lessonshomeLOCKED.html")#return render_template("/Lessons/lesson1.html") #change routing
 
-@pokerpack.route("/lesson1")
+@pokerpack.route("/lesson1", methods=["GET", "POST"])
 @login_required
 def lesson1():
-    return render_template("/Lessons/lesson1.html")
+    #return render_template("/Lessons/lessonshomeLOCKED.html")
+    form = QuizForm()
+    if form.validate_on_submit():
+        Accountcheck = Results.query.filter_by(user_id=current_user.id).first()
+        if Accountcheck is not None:
+            Accountcheck.quiz1=form.score.data
+            db.session.commit()
+            return redirect(url_for("lesson2"))
+        else:
+            UserScore = Results(user_id=current_user.id, quiz1=form.score.data)
+            db.session.add(UserScore)   
+            db.session.commit()
+            return redirect(url_for("lesson2"))
+    #else:
+        #return render_template("/Lessons/lessonshomeLOCKED.html")
+    return render_template("/Lessons/lesson1.html", form=form)
 
 @pokerpack.route("/lesson2")
 @login_required

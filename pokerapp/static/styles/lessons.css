@@ -41,6 +41,10 @@ background-size: cover;
     background-size: cover;
 }
 
+#submit-continue {
+    visibility: hidden;
+}
+
 ul.list-group {
     list-style-type: none;
     color: black;
