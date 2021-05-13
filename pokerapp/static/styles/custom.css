@@ -177,6 +177,7 @@ footer{
 }
 
 .card-text{
+    color: black;
     font-size:1.25rem;
     font-weight:300
 
