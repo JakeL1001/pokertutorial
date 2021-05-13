@@ -7,64 +7,12 @@ block title %}Lesson 1{% endblock %}{% block script %}
 <button class="tablink" onclick="openPage('quiz2', this, 'green')">Quiz</button>
 
 <style>
-    .card {
+    .cardflip {
       transition: 0.6s;
       transform-style: preserve-3d;
       position: relative;
       background-color: transparent;
     }
-    .flipper {
-      padding-left: 0px;
-      padding-right: 0px;
-      perspective: 1000px;
-    }
-
-    .flipper.flip .card {
-      transform: rotateY(180deg);
-    }
-    .front,
-    .back {
-      width: 100%;
-      padding: 5px;
-      backface-visibility: hidden;
-      position: absolute;
-    }
-
-    .front {
-      z-index: 2;
-      transform: rotateY(0deg);
-      height: auto;
-    }
-
-    .back {
-      transform: rotateY(180deg);
-      height: auto;
-    }
-
-    .rowtop{
-    width: 100%;
-    height: 30vw;
-    overflow: hidden; 
-    }
-
-    .cardimg{  
-    width: 100%;
-    height: auto;
-    height: 20vw;
-    object-fit: contain;
-    padding: 10%;
-    cursor: grab;
-    }
-    .cardimg:hover {
-    opacity: .8;
-    }
-    .normalcard{
-      max-width: 150px;
-    }
-    .padding-0{
-    padding-right:0;
-    padding-left:0;
-}
 
 
 </style>
@@ -74,7 +22,7 @@ block title %}Lesson 1{% endblock %}{% block script %}
   <div class = "container-fluid">
     <div class="row rowtop">
     <div class = "flipper col">
-      <div class = "card">
+      <div class = "card cardflip">
               <div class="front">
                   <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png" class ="cardimg">
               </div>
@@ -85,7 +33,7 @@ block title %}Lesson 1{% endblock %}{% block script %}
           </div>
         </div>
           <div class="flipper  col">
-            <div class = "card">
+            <div class = "card cardflip">
               <div class="front">
                   <img src=" https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png"  class ="cardimg">
               </div>
@@ -96,7 +44,7 @@ block title %}Lesson 1{% endblock %}{% block script %}
               </div>
             </div>
           <div class="flipper col">
-            <div class = "card">
+            <div class = "card cardflip">
               <div class="front">
                   <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png" class ="cardimg">
               </div>
@@ -107,7 +55,7 @@ block title %}Lesson 1{% endblock %}{% block script %}
           </div>
         </div>
           <div class="flipper col">
-            <div class = "card">
+            <div class = "card cardflip">
                 <div class="front">
                   <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png" class ="cardimg">
                 </div>
@@ -170,48 +118,48 @@ block title %}Lesson 1{% endblock %}{% block script %}
     <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_10.png" 
     onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_10.png'"
     onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_10.png'"
-    class="responsive" alt="" style= " width: 100px;" />
+    class="responsive" alt="" style= " width: 90px;" />
 
     </div><div class = "col">
       <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_9.png" 
     onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_9.png'"
     onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_9.png'"
-    class="responsive" alt="" style= " width: 100px;"/>
+    class="responsive" alt="" style= " width: 90px;"/>
     </div><div class = "col">
       <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_8.png" 
       onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_8.png'"
       onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_8.png'"
-      class="responsive" alt="" style= " width: 100px;"/>
+      class="responsive" alt="" style= " width: 90px;"/>
     </div><div class = "col">
       <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_7.png" 
       onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_7.png'"
       onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_7.png'"
-      class="responsive" alt="" style= " width: 100px;"/>
+      class="responsive" alt="" style= " width: 90px;"/>
     </div><div class = "col">
       <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_6.png" 
       onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_6.png'"
       onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_6.png'"
-      class="responsive" alt="" style= " width: 100px;"/>
+      class="responsive" alt="" style= " width: 90px;"/>
     </div><div class = "col">
       <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_5.png" 
       onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_5.png'"
       onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_5.png'"
-      class="responsive" alt="" style= " width: 100px;"/>
+      class="responsive" alt="" style= " width: 90px;"/>
     </div><div class = "col">
       <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" 
     onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_4.png'"
     onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png'"
-    class="responsive" alt="" style= " width: 100px;"/>
+    class="responsive" alt="" style= " width: 90px;"/>
     </div><div class = "col">
       <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png" 
       onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png'"
       onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png'"
-      class="responsive" alt="" style= " width: 100px;"/>
+      class="responsive" alt="" style= " width: 90px;"/>
     </div><div class = "col">
       <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" 
       onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_2.png'"
       onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png'"
-      class="responsive" alt="" style= " width: 100px;"/>
+      class="responsive" alt="" style= " width: 90px;"/>
       </div>
   </div>
 </div>
