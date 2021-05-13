@@ -30,5 +30,5 @@ class RegistrationForm(FlaskForm):
 class QuizForm(FlaskForm):
     id = IntegerField("User ID")
     score = FloatField("Score")
-    submit2 = SubmitField("Submit to db")
+    submit2 = SubmitField("Submit and Continue")
         

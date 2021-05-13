@@ -131,12 +131,12 @@
     <h3>Quiz 1</h3>
 
     <div id="quiz"></div>
-    <button id="submit">Submit Quiz</button>
+    <button id="submit">Mark Quiz</button>
     <div id="results" style="color: white;"></div>
     <form action="" method="post">
         {{ form.hidden_tag() }}
-        <p id="fauxscore"></p>
-        <p>{{form.submit2}}</p>
+        <p id="finalscore"></p>
+        <p id="submit-continue"> {{form.submit2}} </p>
     </form>
 </div>
 

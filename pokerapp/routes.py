@@ -90,10 +90,12 @@ def lesson1():
         if Accountcheck is not None:
             Accountcheck.quiz1=form.score.data
             db.session.commit()
+            return redirect(url_for("lesson2"))
         else:
             UserScore = Results(user_id=current_user.id, quiz1=form.score.data)
             db.session.add(UserScore)   
             db.session.commit()
+            return redirect(url_for("lesson2"))
     #else:
         #return render_template("/Lessons/lessonshomeLOCKED.html")
     return render_template("/Lessons/lesson1.html", form=form)
