@@ -9,8 +9,8 @@ from werkzeug.urls import url_parse
 
 #splash page route
 @pokerpack.route("/")
-@pokerpack.route("/index")
-def index():
+@pokerpack.route("/Home")
+def home():
     return render_template("pokerlanding.html", title="Home")
 
 #Major login route
@@ -21,8 +21,11 @@ def login():
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
-        if user is None or not user.check_password(form.password.data):
-            flash('invalid usernmae of password')
+        if user is None:
+            flash('No account exists with that username, Please Register')
+            return redirect(url_for('register'))
+        if not user.check_password(form.password.data):
+            flash("Incorrect Password")
             return redirect(url_for('login'))
         login_user(user, remember=form.remember_me.data)
         next_page = request.args.get("next")
@@ -39,7 +42,6 @@ def assess():
 @pokerpack.route('/stats')
 def stats():
     return render_template("stats.html", title = "Stats")
-
 
 #login routes pt2
 @pokerpack.route("/logout")
