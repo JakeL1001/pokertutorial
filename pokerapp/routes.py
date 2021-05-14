@@ -4,6 +4,7 @@ from pokerapp.forms import LoginForm, RegistrationForm, QuizForm
 from flask_login import current_user, login_user, logout_user, login_required
 from pokerapp.models import User, Results
 from werkzeug.urls import url_parse
+from sqlalchemy.sql import func
 
 #Routes are used to link things. like a hyperlink to another page.
 
@@ -70,10 +71,11 @@ def register():
 @login_required
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
-    posts = [
-        {"author": user, "body": "Test post #1"}
-    ]
-    return render_template("user.html", user=user, posts=posts)
+    userResult = Results.query.filter_by(user_id=current_user.id).first()
+    avg1 = db.session.query(func.avg(Results.quiz1)).scalar()
+    avg2 = db.session.query(func.avg(Results.quiz2)).scalar()
+    avg3 = db.session.query(func.avg(Results.quiz3)).scalar()
+    return render_template("user.html", user=user, userResult=userResult, avg1=avg1, avg2=avg2, avg3=avg3)
 
 @pokerpack.route("/lessons")
 def lessons():
