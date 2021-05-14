@@ -3,6 +3,15 @@
 
 function updateanswers(question, answer) {
     clientresponse[question] = answer;
+    
+
+    
+    for( i =0; i<document.getElementsByClassName("question")[question].getElementsByClassName("answer").length;i++ ){
+        if(document.getElementsByClassName("question")[question].getElementsByClassName("answer")[i].classList.contains("chosen"))
+        document.getElementsByClassName("question")[question].getElementsByClassName("answer")[i].classList.remove("chosen");  
+    }
+    document.getElementsByClassName("question")[question].getElementsByClassName("answer")[answer].classList.add("chosen");
+    
   }
 
 function findresult(){
