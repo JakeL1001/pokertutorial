@@ -1,21 +1,5 @@
-{% extends "base.html" %} {%block title%} Profile {%endblock%}{%block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/charts.css') }}"> {%endblock%}{% block content %}
+function generateCharts() {
 
-<h1>User: {{ user.username }}</h1>
-<p>
-    {{ user.username }} Your Results: {{ userResult.quiz1, userResult.quiz2 }} {{avg1}} {{avg2}} {{avg3}}
-</p>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
-
-
-<div class="chart-container">
-    <canvas id="myChart" width="400" height="100"></canvas>
-</div>
-<div class="chart-container">
-    <canvas id="barChart" width="400" height="100"></canvas>
-</div>
-
-<script>
     var ctx = document.getElementById('myChart');
     var myChart = new Chart(ctx, {
         type: 'line',
@@ -23,7 +7,7 @@
             labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz'],
             datasets: [{
                 label: 'Your % Correct ',
-                data: [`{{userResult.quiz1}}`, `{{userResult.quiz2}}`, `{{userResult.quiz3}}`, `{{userResult.total}}`], //replace 50 with final quiz score
+                data: [12, 19, 3, 5],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -40,7 +24,7 @@
 
             }, {
                 label: 'Site Average % Correct',
-                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`,`{{avgfinal}}`], //replace 58 with avg final quiz score
+                data: [29, 39, 49, 58],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -105,6 +89,6 @@
                 }
             }
         }
-    });
-</script>
-{% endblock %}
+    })
+};
+generateCharts();
