@@ -76,14 +76,14 @@
 </div>
 <div id="quiz2" class="tabcontent">
     <h3>Quiz 3</h3>
-    <button id="Quiz3">Begin</button>
+    <button id="Quiz3" class="btn btn-dark">Begin</button>
     <div id="quiz"></div>
-    <button id="submit">Mark Quiz</button>
+    <button id="submit" class="btn btn-dark">Mark Quiz</button>
     <div id="results" style="color: white;"></div>
     <form action="" method="post">
         {{ form.hidden_tag() }}
         <p id="finalscore"></p>
-        <p id="submit-continue"> {{form.submit2}} </p>
+        <p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" value="Submit and Continue"> </p>
     </form>
 </div>
 

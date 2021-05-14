@@ -138,15 +138,15 @@
 
 
 <div id="quiz2" class="tabcontent">
-    <h3>Quiz 1</h3>
-    <button id="Quiz1">Begin</button>
+    <h2>Quiz 1: The Suits</h2>
+    <button id="Quiz1" class="btn btn-dark">Begin</button>
     <div id="quiz"></div>
-    <button id="submit">Mark Quiz</button>
+    <button id="submit" class="btn btn-dark">Mark Quiz</button>
     <div id="results" style="color: white;"></div>
     <form action="" method="post">
         {{ form.hidden_tag() }}
         <p id="finalscore"></p>
-        <p id="submit-continue"> {{form.submit2}} </p>
+        <p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" value="Submit and Continue"> </p>
     </form>
 </div>
 
