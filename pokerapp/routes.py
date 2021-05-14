@@ -136,6 +136,13 @@ def lesson3():
             return redirect(url_for("lessons"))
     return render_template("/Lessons/lesson3.html", form=form)
 
+@pokerpack.route("/finalquiz")
+@login_required
+def finalquiz():
+    return render_template("/finalquiz.html")
+
+
+
 @pokerpack.route("/submit", methods=["GET", "POST"])
 @login_required
 def submit():

@@ -1,0 +1,79 @@
+{% extends "base.html" %}{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
+<script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
+<style>
+html, body {
+margin: 0;
+padding: 0;
+background-image:url(greybg.png);
+font-family: Arial, Helvetica, sans-serif;
+}
+#navContent{
+margin:auto;
+width:800px;
+height:400px;
+position:relative;
+overflow:hidden;
+}
+
+#game1{
+margin:auto;
+width:800px;
+height:400px;
+right:0px;
+position:absolute;
+}
+
+#game2{
+margin:auto;
+width:800px;
+height:400px;
+right:-800px;
+position:absolute;
+}
+.questionText{
+font-size:18px;
+color:#FFF;
+}
+
+.pix{
+width:80px;
+height:80px;
+margin:15px;
+float:left;
+border: 5px solid white;
+cursor:pointer;
+}
+
+.pix:hover{
+border:#FC0 solid 5px;
+}
+#topbar{
+height:100px;
+margin:auto;
+margin-top:50px;
+color:#FFF;
+font-size:36px;
+font-family:Arial, Helvetica, sans-serif;
+width:800px;
+}
+
+.spacer{
+height:30px;
+}
+
+
+</style>
+
+
+
+<div id="topbar">HTML5 Picture Quiz</div>
+<div class="spacer"></div>
+<div id="navContent">
+<div id="game1"></div>
+<div id="game2"></div>
+
+
+
+
+{% endblock %}
