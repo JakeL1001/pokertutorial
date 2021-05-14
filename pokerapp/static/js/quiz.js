@@ -83,11 +83,11 @@ function showResults() {
     let resultperc = (numCorrect / QuizQuestions.length) * 100;
     // show number of correct answers out of total
     if (resultperc < 50.0) {
-        resultsContainer.innerHTML = `<div class=card2 style="background-color: red;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
+        resultsContainer.innerHTML = `<div class="card card2" style="background-color: red;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
     } else if (resultperc >= 50.0 && resultperc != 100) {
-        resultsContainer.innerHTML = `<div class=card2 style="background-color: green;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
+        resultsContainer.innerHTML = `<div class="card card2" style="background-color: green;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
     } else if (resultperc == 100) {
-        resultsContainer.innerHTML = `<div class=card2 style="background-color: gold;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
+        resultsContainer.innerHTML = `<div class="card card2" style="background-color: gold;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
     }
     document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`;
     document.getElementById("submit-continue").style.visibility = "visible";
