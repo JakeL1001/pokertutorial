@@ -23,7 +23,7 @@
             labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz'],
             datasets: [{
                 label: 'Your % Correct ',
-                data: [`{{userResult.quiz1}}`, `{{userResult.quiz2}}`, `{{userResult.quiz3}}`, 50], //replace 50 with final quiz score
+                data: [`{{userResult.quiz1}}`, `{{userResult.quiz2}}`, `{{userResult.quiz3}}`, `{{userResult.total}}`], //replace 50 with final quiz score
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -40,7 +40,7 @@
 
             }, {
                 label: 'Site Average % Correct',
-                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`, 58], //replace 58 with avg final quiz score
+                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`,`{{avgfinal}}`], //replace 58 with avg final quiz score
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',

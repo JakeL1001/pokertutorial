@@ -75,7 +75,8 @@ def user(username):
     avg1 = db.session.query(func.avg(Results.quiz1)).scalar()
     avg2 = db.session.query(func.avg(Results.quiz2)).scalar()
     avg3 = db.session.query(func.avg(Results.quiz3)).scalar()
-    return render_template("user.html", user=user, userResult=userResult, avg1=avg1, avg2=avg2, avg3=avg3)
+    avgfinal = db.session.query(func.avg(Results.total)).scalar()
+    return render_template("user.html", user=user, userResult=userResult, avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal)
 
 @pokerpack.route("/lessons")
 def lessons():
@@ -138,10 +139,22 @@ def lesson3():
             return redirect(url_for("lessons"))
     return render_template("/Lessons/lesson3.html", form=form)
 
-@pokerpack.route("/finalquiz")
+@pokerpack.route("/finalquiz", methods=["GET", "POST"])
 @login_required
 def finalquiz():
-    return render_template("/finalquiz.html")
+    form = QuizForm()
+    if form.validate_on_submit():
+        accountcheck = Results.query.filter_by(user_id=current_user.id).first()
+        if accountcheck is not None:
+            accountcheck.total=form.score.data
+            db.session.commit()
+            return redirect(url_for('user', username=current_user.username))
+        else:
+            userscore = Results(user_id=current_user.id, total=form.score.data)
+            db.session.add(userscore)   
+            db.session.commit()
+            return redirect(url_for('user', username=current_user.username))
+    return render_template("/finalquiz.html", form=form)
 
 
 

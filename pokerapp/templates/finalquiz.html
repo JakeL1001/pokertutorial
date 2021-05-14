@@ -72,9 +72,10 @@ background-size: cover;
 
 <br>
 <button id="submit" class="btn btn-dark" style="visibility: visible;">Mark Quiz</button>
-<p id="finalscore"></p>
-<p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" value="Submit and Continue"> </p>
-
-
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p id="finalscore"></p>
+    <p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" style="visibility: visible;" value="Submit and Continue"> </p>
+</form>
 
 {% endblock %}
