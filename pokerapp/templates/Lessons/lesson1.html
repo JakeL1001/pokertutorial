@@ -1,6 +1,5 @@
 {% extends "base.html" %}{% block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> 
-{% endblock %}{%block title %}Lesson 1{% endblock %}{% block script %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 1{% endblock %}{% block script %}
 <script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
 
 <button class="tablink" onclick="openPage('content', this, 'rgb(39, 42, 200)')" id="defaultOpen">Lesson 1</button>
@@ -8,164 +7,147 @@
 
 
 <div id="content" class="tabcontent">
-  <h1 class="display-4 font-weight-normal header-main">Click to Reveal the Suits</h1>
-  <div class = "container-fluid">
-    <div class="row rowtop">
-    <div class = "flipper col">
-      <div class = "card cardflip">
-              <div class="front">
-                  <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png" class ="cardimg">
-              </div>
-              <div class="back">
-               <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_ace.png" class ="cardimg">
-               <p>HEARTS</p>
-              </div>
-          </div>
-        </div>
-          <div class="flipper  col">
-            <div class = "card cardflip">
-              <div class="front">
-                  <img src=" https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png"  class ="cardimg">
-              </div>
-              <div class="back">
-                  <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png" class ="cardimg">
-                  <p>CLUBS</p>
-              </div>
-              </div>
-            </div>
-          <div class="flipper col">
-            <div class = "card cardflip">
-              <div class="front">
-                  <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png" class ="cardimg">
-              </div>
-              <div class="back">
-                  <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_ace.png" class ="cardimg">
-                  <p>DIAMONDS</p>
-            </div>
-          </div>
-        </div>
-          <div class="flipper col">
-            <div class = "card cardflip">
-                <div class="front">
-                  <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png" class ="cardimg">
-                </div>
-                <div class="back">
-                  <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png" class ="cardimg">
-                  <p>SPADES</p>
+    <h1 class="display-4 font-weight-normal header-main">Click to Reveal the Suits</h1>
+    <div class="container-fluid">
+        <div class="row rowtop">
+            <div class="flipper col">
+                <div class="card cardflip">
+                    <div class="front">
+                        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png" class="cardimg">
+                    </div>
+                    <div class="back">
+                        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_ace.png" class="cardimg">
+                        <p>HEARTS</p>
+                    </div>
                 </div>
             </div>
-          </div>
+            <div class="flipper  col">
+                <div class="card cardflip">
+                    <div class="front">
+                        <img src=" https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png" class="cardimg">
+                    </div>
+                    <div class="back">
+                        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png" class="cardimg">
+                        <p>CLUBS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flipper col">
+                <div class="card cardflip">
+                    <div class="front">
+                        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png" class="cardimg">
+                    </div>
+                    <div class="back">
+                        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_ace.png" class="cardimg">
+                        <p>DIAMONDS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flipper col">
+                <div class="card cardflip">
+                    <div class="front">
+                        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/backs/png_96_dpi/red.png" class="cardimg">
+                    </div>
+                    <div class="back">
+                        <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png" class="cardimg">
+                        <p>SPADES</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
-      </div>
-<p>
-  Welcome to our first poker lesson. A deck of playing cards consists of four groups called suits. These suits are
-  spades and clubs which are commonly coloured black. As well as hearts and diamonds, commonly red.<br>
-</p>
-<img src="https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png "
-  class="responsive">
-<!--add picture of four suits-->
-<p><br>
-  Each suit has thirteen cards. The cards have a numerical order. There are the "face" cards of ace, king, queen and
-  jack. The ace acts as the number one. As well as the highest value in the suit. The jack acts as the eleventh card,
-  the queen twelth and king thirteenth.<br> </p>
+    </div>
+    <p>
+        Welcome to our first poker lesson. A deck of playing cards consists of four groups called suits. These suits are spades and clubs which are commonly coloured black. As well as hearts and diamonds, commonly red.<br>
+    </p>
+    <img src="https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png " class="responsive">
+    <!--add picture of four suits-->
+    <p><br> Each suit has thirteen cards. The cards have a numerical order. There are the "face" cards of ace, king, queen and jack. The ace acts as the number one. As well as the highest value in the suit. The jack acts as the eleventh card, the queen twelth
+        and king thirteenth.<br> </p>
 
-<div class ="container">
-  <div class = "row">
- <div class = "col">
-   <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png" 
-    onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_ace.png'"
-    onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png'"
-    class="responsive normalcard" alt=""/>
-  </div><div class = "col">
-    <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png" 
-      onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_king.png'"
-      onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png'"
-      class="responsive normalcard" alt=""/>
-  </div><div class = "col">
-    <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" 
-      onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_queen.png'"
-      onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png'"
-      class="responsive normalcard" alt=""/>
-  </div><div class = "col">
-    <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" 
-      onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_jack.png'"
-      onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png'"
-      class="responsive normalcard" alt=""/>
-  </div>
-  </div>
-</div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_ace.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png'"
+                    class="responsive normalcard" alt="" />
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_king.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png'"
+                    class="responsive normalcard" alt="" />
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_queen.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png'"
+                    class="responsive normalcard" alt="" />
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_jack.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png'"
+                    class="responsive normalcard" alt="" />
+            </div>
+        </div>
+    </div>
 
-<p><br>
-  A suit also has the cards two, three, four, five, six, seven, eight, nine and ten. If you had the
-  tenth card in the suit of clubs. It could be referred to as a "ten of clubs."
-  <br></p>
-  <div class ="container-fluid">
-    <div class = "row">
-   <div class = "col">
-    <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_10.png" 
-    onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_10.png'"
-    onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_10.png'"
-     alt="" style= " min-width: 75px;" />
+    <p><br> A suit also has the cards two, three, four, five, six, seven, eight, nine and ten. If you had the tenth card in the suit of clubs. It could be referred to as a "ten of clubs."
+        <br></p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_10.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_10.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_10.png'"
+                    alt="" style=" min-width: 75px;" />
 
-    </div><div class = "col">
-      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_9.png" 
-    onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_9.png'"
-    onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_9.png'"
-     alt="" style= " min-width: 75px;"/>
-    </div><div class = "col">
-      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_8.png" 
-      onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_8.png'"
-      onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_8.png'"
-      alt="" style= " min-width: 75px;"/>
-    </div><div class = "col">
-      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_7.png" 
-      onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_7.png'"
-      onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_7.png'"
-       alt="" style= " min-width: 75px;"/>
-    </div><div class = "col">
-      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_6.png" 
-      onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_6.png'"
-      onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_6.png'"
-       alt="" style= " min-width: 75px;"/>
-    </div><div class = "col">
-      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_5.png" 
-      onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_5.png'"
-      onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_5.png'"
-       alt="" style= "min-width: 75px;"/>
-    </div><div class = "col">
-      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" 
-    onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_4.png'"
-    onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png'"
-    alt="" style= " min-width: 75px;"/>
-    </div><div class = "col">
-      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png" 
-      onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png'"
-      onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png'"
-      alt="" style= " min-width: 75px;"/>
-    </div><div class = "col">
-      <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" 
-      onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_2.png'"
-      onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png'"
-      alt="" style= " min-width: 75px;"/>
-      </div>
-  </div>
-</div>
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_9.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_9.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_9.png'"
+                    alt="" style=" min-width: 75px;" />
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_8.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_8.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_8.png'"
+                    alt="" style=" min-width: 75px;" />
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_7.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_7.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_7.png'"
+                    alt="" style=" min-width: 75px;" />
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_6.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_6.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_6.png'"
+                    alt="" style=" min-width: 75px;" />
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_5.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_5.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_5.png'"
+                    alt="" style="min-width: 75px;" />
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_4.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png'"
+                    alt="" style=" min-width: 75px;" />
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png'"
+                    alt="" style=" min-width: 75px;" />
+            </div>
+            <div class="col">
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_2.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png'"
+                    alt="" style=" min-width: 75px;" />
+            </div>
+        </div>
+    </div>
 
 
 </div>
 
+
+</div>
 
 
 <div id="quiz2" class="tabcontent">
-  <h3>Quiz 1</h3>
-  <p></p>
-  <form method="post" action="/submit">
-    <!-- SUbmit to the new database-->
+    <h3>Quiz 1</h3>
+    <button id="Quiz1">Begin</button>
     <div id="quiz"></div>
-  </form>
-  <button id="submit">Submit Quiz</button>
-  <div id="results" style="color: white;"></div>
+    <button id="submit">Mark Quiz</button>
+    <div id="results" style="color: white;"></div>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p id="finalscore"></p>
+        <p id="submit-continue"> {{form.submit2}} </p>
+    </form>
 </div>
 
 {% endblock %}
