@@ -40,16 +40,16 @@ $(document).ready(function() {
 
 function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    var i, tabcontenttoclear, tablinksdecolour;
+    tabcontenttoclear = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontenttoclear.length; i++) {
+        tabcontenttoclear[i].style.display = "none";
     }
 
     // Remove the background color of all tablinks/buttons
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
+    tablinksdecolour = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinksdecolour.length; i++) {
+        tablinksdecolour[i].style.backgroundColor = "";
     }
 
     // Show the specific tab content
@@ -65,13 +65,14 @@ document.getElementById("defaultOpen").click();
 function showResults() {
     // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll('.answers');
+    var numCorrect = 0;
     // keep track of user's answers
     // for each question...
     QuizQuestions.forEach((currentQuestion, questionNumber) => {
         // find selected answer
         const answerContainer = answerContainers[questionNumber];
-        const selector = `input[name=question${questionNumber}]:checked`;
-        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+        const answerfinder = `input[name=question${questionNumber}]:checked`;
+        const userAnswer = (answerContainer.querySelector(answerfinder) || {}).value;
         // if answer is correct
         if (userAnswer === currentQuestion.correctAnswer) {
             // add to the number of correct answers
@@ -81,8 +82,14 @@ function showResults() {
     });
     let resultperc = (numCorrect / QuizQuestions.length) * 100;
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${QuizQuestions.length} | ${resultperc} `;
-    document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`
+    if (resultperc < 50.0) {
+        resultsContainer.innerHTML = `<div class=card2 style="background-color: red;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
+    } else if (resultperc >= 50.0 && resultperc != 100) {
+        resultsContainer.innerHTML = `<div class=card2 style="background-color: green;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
+    } else if (resultperc == 100) {
+        resultsContainer.innerHTML = `<div class=card2 style="background-color: gold;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
+    }
+    document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`;
     document.getElementById("submit-continue").style.visibility = "visible";
 }
 
@@ -100,12 +107,12 @@ function buildQuiz() {
             // variable to store the list of possible answers
             const answers = [];
             output.push(
-                    `<div class="card">
+                `<div class="card">
                         <div class="card-body">
                             <div class="card-title">Question ${questionNumber + 1}</div>
                             <div class="card-text">
-                                <div class="question">${currentQuestion.question}</div>`)
-                // and for each available answer...
+                                <div class="question">${currentQuestion.question}</div>`);
+            // and for each available answer...
             for (letter in currentQuestion.answers) {
 
                 // ...add an HTML radio button
@@ -150,7 +157,6 @@ const startQuiz1 = document.getElementById("Quiz1");
 const startQuiz2 = document.getElementById("Quiz2");
 const startQuiz3 = document.getElementById("Quiz3");
 let QuizQuestions = "";
-let numCorrect = 0;
 const Quiz1Qs = [
     { question: "Who invented JavaScript?", answers: { a: "Douglas Crockford", b: "Sheryl Sandberg", c: "Brendan Eich" }, correctAnswer: "c" },
     { question: "Which one of these is a JavaScript package manager?", answers: { a: "Node.js", b: "TypeScript", c: "npm" }, correctAnswer: "c" },
@@ -166,9 +172,6 @@ const Quiz3Qs = [
     { question: "test2Q3", answers: { a: "not right", b: "wrong", c: "right" }, correctAnswer: "c" }
 ];
 
-// display quiz right away
-//buildQuiz();
-
 // on submit, show results
 submitButton.addEventListener('click', showResults);
 if (startQuiz1) {
@@ -179,18 +182,4 @@ if (startQuiz2) {
 }
 if (startQuiz3) {
     startQuiz3.addEventListener('click', beginQuiz3);
-}
-
-// if answer is correct
-if (userAnswer === currentQuestion.correctAnswer) {
-    // add to the number of correct answers
-    numCorrect++;
-
-    // color the answers green
-    answerContainers[questionNumber].style.color = 'lightgreen';
-}
-// if answer is wrong or blank
-else {
-    // color the answers red
-    answerContainers[questionNumber].style.color = 'red';
 }

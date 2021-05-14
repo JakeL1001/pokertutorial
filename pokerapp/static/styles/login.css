@@ -7,8 +7,8 @@ div.form {
 }
 
 div h2 {
-    margin-top: 150px;
-    color: rgba(255, 255, 255, .5);
+    margin-top: 100px;
+    color: whitesmoke;
 }
 
 form {
@@ -20,9 +20,24 @@ form {
     color: rgba(255, 255, 255, .5);
 }
 
-div.container {
+div.logincontainer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
     width: 350px;
     height: 350px;
+    border-color: rgb(153, 27, 27);
+    background-color: rgb(153, 27, 27);
+}
+
+div.regcontainer {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 350px;
+    height: 500px;
     border-color: rgb(153, 27, 27);
     background-color: rgb(153, 27, 27);
 }
