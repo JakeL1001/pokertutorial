@@ -66,7 +66,6 @@ function showResults() {
     // gather answer containers from our quiz
     const answerContainers = quizContainer.querySelectorAll('.answers');
     // keep track of user's answers
-    let numCorrect = 0;
     // for each question...
     QuizQuestions.forEach((currentQuestion, questionNumber) => {
         // find selected answer
@@ -80,8 +79,8 @@ function showResults() {
 
         }
     });
-    let resultperc = (numCorrect / QuizQuestions.length) * 100
-        // show number of correct answers out of total
+    let resultperc = (numCorrect / QuizQuestions.length) * 100;
+    // show number of correct answers out of total
     resultsContainer.innerHTML = `${numCorrect} out of ${QuizQuestions.length} | ${resultperc} `;
     document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`
     document.getElementById("submit-continue").style.visibility = "visible";
@@ -91,9 +90,10 @@ function showResults() {
 function buildQuiz() {
     // variable to store the HTML output
     const output = [];
+    document.getElementById("submit").style.visibility = "visible";
 
-    output.push(`<div class="card-deck">`)
-        // for each question...
+    output.push(`<div class="card-deck">`);
+    // for each question...
     QuizQuestions.forEach(
         (currentQuestion, questionNumber) => {
 
@@ -128,17 +128,19 @@ function buildQuiz() {
 
 function beginQuiz1() {
     QuizQuestions = Quiz1Qs;
+    startQuiz1.style.visibility = "hidden";
     buildQuiz();
 }
 
 function beginQuiz2() {
-    console.log("MADE IT");
     QuizQuestions = Quiz2Qs;
+    startQuiz2.style.visibility = "hidden";
     buildQuiz();
 }
 
 function beginQuiz3() {
     QuizQuestions = Quiz3Qs;
+    startQuiz3.style.visibility = "hidden";
     buildQuiz();
 }
 const quizContainer = document.getElementById('quiz');
@@ -148,17 +150,21 @@ const startQuiz1 = document.getElementById("Quiz1");
 const startQuiz2 = document.getElementById("Quiz2");
 const startQuiz3 = document.getElementById("Quiz3");
 let QuizQuestions = "";
-const Quiz1Qs = [{ question: "Who invented JavaScript?", answers: { a: "Douglas Crockford", b: "Sheryl Sandberg", c: "Brendan Eich" }, correctAnswer: "c" },
+let numCorrect = 0;
+const Quiz1Qs = [
+    { question: "Who invented JavaScript?", answers: { a: "Douglas Crockford", b: "Sheryl Sandberg", c: "Brendan Eich" }, correctAnswer: "c" },
     { question: "Which one of these is a JavaScript package manager?", answers: { a: "Node.js", b: "TypeScript", c: "npm" }, correctAnswer: "c" },
     { question: "Which tool can you use to ensure code quality?", answers: { a: "Angular", b: "jQuery", c: "RequireJS", d: "ESLint" }, correctAnswer: "d" },
     { question: "who's the man?", answers: { a: "Jake", b: "Not Jake", c: "Kane", d: "Jordan" }, correctAnswer: "a" }
 ];
-const Quiz2Qs = [{ question: "test", answers: { a: "wrong", b: "right", c: "wrong" }, correctAnswer: "b" },
+const Quiz2Qs = [
+    { question: "test", answers: { a: "wrong", b: "right", c: "wrong" }, correctAnswer: "b" },
     { question: "test2", answers: { a: "right", b: "wrong", c: "wrong" }, correctAnswer: "a" }
-]
-const Quiz3Qs = [{ question: "testQ3", answers: { a: "wrong", b: "right", c: "wrong" }, correctAnswer: "b" },
+];
+const Quiz3Qs = [
+    { question: "testQ3", answers: { a: "wrong", b: "right", c: "wrong" }, correctAnswer: "b" },
     { question: "test2Q3", answers: { a: "not right", b: "wrong", c: "right" }, correctAnswer: "c" }
-]
+];
 
 // display quiz right away
 //buildQuiz();
