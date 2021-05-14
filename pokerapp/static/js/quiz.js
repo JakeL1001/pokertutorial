@@ -91,6 +91,7 @@ function showResults() {
     }
     document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`;
     document.getElementById("submit-continue").style.visibility = "visible";
+    document.getElementById("submit").style.visibility = "hidden";
 }
 
 
@@ -113,6 +114,7 @@ function buildQuiz() {
                             <div class="card-text">
                                 <div class="question">${currentQuestion.question}</div>`);
             // and for each available answer...
+            let letter = "";
             for (letter in currentQuestion.answers) {
 
                 // ...add an HTML radio button
