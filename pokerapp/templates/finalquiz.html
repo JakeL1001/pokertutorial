@@ -1,78 +1,79 @@
 {% extends "base.html" %}{% block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
-<script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock
+%}{%block title %}Lesson 2{% endblock %}{% block script %}
+<script src="{{url_for('static', filename='js/finalquiz.js') }}"></script> {%endblock%}{% block content %}
 <style>
-html, body {
-margin: 0;
-padding: 0;
-background-image:url(greybg.png);
-font-family: Arial, Helvetica, sans-serif;
-}
-#navContent{
-margin:auto;
-width:800px;
-height:400px;
-position:relative;
-overflow:hidden;
-}
+    body{
+background-color: #330000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23733846'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%232d5918' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%232d5918' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.05'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+    }
 
-#game1{
-margin:auto;
-width:800px;
-height:400px;
-right:0px;
-position:absolute;
-}
-
-#game2{
-margin:auto;
-width:800px;
-height:400px;
-right:-800px;
-position:absolute;
-}
-.questionText{
-font-size:18px;
-color:#FFF;
-}
-
-.pix{
-width:80px;
-height:80px;
-margin:15px;
-float:left;
-border: 5px solid white;
-cursor:pointer;
-}
-
-.pix:hover{
-border:#FC0 solid 5px;
-}
-#topbar{
-height:100px;
-margin:auto;
-margin-top:50px;
-color:#FFF;
-font-size:36px;
-font-family:Arial, Helvetica, sans-serif;
-width:800px;
-}
-
-.spacer{
-height:30px;
-}
-
-
+    .card{
+        background-color: blueviolet;
+    }
 </style>
+<h3 class="display-4 font-weight-normal header-main">The Final Quiz</h3>
+
+<h4 style = "color:white">&nbsp;Pick the Highest Card&nbsp;</h4>
+<div class="container">
+    <div class="row question">
+        <div class="col">
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png"
+                class="responsive normalcard answer" alt="" />
+        </div>
+        <div class="col">
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png"
+                class="responsive normalcard answer" alt="" />
+        </div>
+        <div class="col">
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png"
+                class="responsive normalcard answer" alt="" />
+        </div>
+        <div class="col">
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png"
+                class="responsive normalcard answer" alt="" />
+        </div>
+        <div class="col">
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_king.png"
+                class="responsive normalcard answer" alt="" />
+        </div>
+    </div>
+</div>
+<br>
 
 
+<h4 style = "color:white">&nbsp;Select the Final Round of Poker&nbsp;</h4>
 
-<div id="topbar">HTML5 Picture Quiz</div>
-<div class="spacer"></div>
-<div id="navContent">
-<div id="game1"></div>
-<div id="game2"></div>
+<div class="card-group question">
+    <div class="card cardtop answer" style="border-radius: 8px">
+        <div class="card-body">
+            <h2 class="card-title">The Flop</h5>
+        </div>
+    </div>
+    <div class="card cardtop answer" style="border-radius: 8px">
+        <div class="card-body">
+            <h2 class="card-title">The River</h5>
+        </div>
+    </div>
+    <div class="card cardtop answer" style="border-radius: 8px">
+        <div class="card-body">
+            <h2 class="card-title">The Turn</h5>
+        </div>
+    </div>
+    <div class="card cardtop answer" style="border-radius: 8px">
+        <div class="card-body">
+            <h2 class="card-title">The Deal</h5>
+        </div>
+    </div>
+</div>
 
+
+<br>
+<button id="submit" class="btn btn-dark" style="visibility: visible;">Mark Quiz</button>
+<p id="finalscore"></p>
+<p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" value="Submit and Continue"> </p>
 
 
 
