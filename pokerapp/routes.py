@@ -17,7 +17,7 @@ def home():
 @pokerpack.route("/login", methods=["GET", "POST"])
 def login():
     if current_user.is_authenticated:
-        return redirect(url_for('index'))
+        return redirect(url_for('home'))
     form = LoginForm()
     if form.validate_on_submit():
         user = User.query.filter_by(username=form.username.data).first()
@@ -30,7 +30,7 @@ def login():
         login_user(user, remember=form.remember_me.data)
         next_page = request.args.get("next")
         if not next_page or url_parse(next_page).netloc != '':
-            next_page = url_for('index')
+            next_page = url_for('home')
         return redirect(next_page)
     return render_template("login.html", title="Sign In", form=form)
 
@@ -47,13 +47,13 @@ def stats():
 @pokerpack.route("/logout")
 def logout():
     logout_user()
-    return redirect(url_for('index'))
+    return redirect(url_for('home'))
 
 
 @pokerpack.route("/register", methods=["GET", "POST"])
 def register():
     if current_user.is_authenticated:
-        return redirect(url_for("index"))
+        return redirect(url_for("home"))
     form = RegistrationForm()
     if form.validate_on_submit():
         user = User(username=form.username.data, email=form.email.data)
@@ -88,14 +88,14 @@ def lesson1():
     #return render_template("/Lessons/lessonshomeLOCKED.html")
     form = QuizForm()
     if form.validate_on_submit():
-        Accountcheck = Results.query.filter_by(user_id=current_user.id).first()
-        if Accountcheck is not None:
-            Accountcheck.quiz1=form.score.data
+        accountcheck = Results.query.filter_by(user_id=current_user.id).first()
+        if accountcheck is not None:
+            accountcheck.quiz1=form.score.data
             db.session.commit()
             return redirect(url_for("lesson2"))
         else:
-            UserScore = Results(user_id=current_user.id, quiz1=form.score.data)
-            db.session.add(UserScore)   
+            userscore = Results(user_id=current_user.id, quiz1=form.score.data)
+            db.session.add(userscore)   
             db.session.commit()
             return redirect(url_for("lesson2"))
     #else:
@@ -107,14 +107,14 @@ def lesson1():
 def lesson2():
     form = QuizForm()
     if form.validate_on_submit():
-        Accountcheck = Results.query.filter_by(user_id=current_user.id).first()
-        if Accountcheck is not None:
-            Accountcheck.quiz2=form.score.data
+        accountcheck = Results.query.filter_by(user_id=current_user.id).first()
+        if accountcheck is not None:
+            accountcheck.quiz2=form.score.data
             db.session.commit()
             return redirect(url_for("lesson3"))
         else:
-            UserScore = Results(user_id=current_user.id, quiz2=form.score.data)
-            db.session.add(UserScore)   
+            userscore = Results(user_id=current_user.id, quiz2=form.score.data)
+            db.session.add(userscore)   
             db.session.commit()
             return redirect(url_for("lesson3"))
     return render_template("/Lessons/lesson2.html", form=form)
@@ -124,14 +124,14 @@ def lesson2():
 def lesson3():
     form = QuizForm()
     if form.validate_on_submit():
-        Accountcheck = Results.query.filter_by(user_id=current_user.id).first()
-        if Accountcheck is not None:
-            Accountcheck.quiz3=form.score.data
+        accountcheck = Results.query.filter_by(user_id=current_user.id).first()
+        if accountcheck is not None:
+            accountcheck.quiz3=form.score.data
             db.session.commit()
             return redirect(url_for("lessons"))
         else:
-            UserScore = Results(user_id=current_user.id, quiz3=form.score.data)
-            db.session.add(UserScore)   
+            userscore = Results(user_id=current_user.id, quiz3=form.score.data)
+            db.session.add(userscore)   
             db.session.commit()
             return redirect(url_for("lessons"))
     return render_template("/Lessons/lesson3.html", form=form)
