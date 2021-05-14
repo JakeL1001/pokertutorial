@@ -100,15 +100,39 @@ def lesson1():
         #return render_template("/Lessons/lessonshomeLOCKED.html")
     return render_template("/Lessons/lesson1.html", form=form)
 
-@pokerpack.route("/lesson2")
+@pokerpack.route("/lesson2", methods=["GET", "POST"])
 @login_required
 def lesson2():
-    return render_template("/Lessons/lesson2.html")
+    form = QuizForm()
+    if form.validate_on_submit():
+        Accountcheck = Results.query.filter_by(user_id=current_user.id).first()
+        if Accountcheck is not None:
+            Accountcheck.quiz2=form.score.data
+            db.session.commit()
+            return redirect(url_for("lesson3"))
+        else:
+            UserScore = Results(user_id=current_user.id, quiz2=form.score.data)
+            db.session.add(UserScore)   
+            db.session.commit()
+            return redirect(url_for("lesson3"))
+    return render_template("/Lessons/lesson2.html", form=form)
 
-@pokerpack.route("/lesson3")
+@pokerpack.route("/lesson3", methods=["GET", "POST"])
 @login_required
 def lesson3():
-    return render_template("/Lessons/lesson3.html")
+    form = QuizForm()
+    if form.validate_on_submit():
+        Accountcheck = Results.query.filter_by(user_id=current_user.id).first()
+        if Accountcheck is not None:
+            Accountcheck.quiz3=form.score.data
+            db.session.commit()
+            return redirect(url_for("lessons"))
+        else:
+            UserScore = Results(user_id=current_user.id, quiz3=form.score.data)
+            db.session.add(UserScore)   
+            db.session.commit()
+            return redirect(url_for("lessons"))
+    return render_template("/Lessons/lesson3.html", form=form)
 
 @pokerpack.route("/submit", methods=["GET", "POST"])
 @login_required
@@ -117,12 +141,3 @@ def submit():
     #if form.validate_on_submit():
         
     return render_template("/Lessons/lessonshome.html")
-    """
-    form = QuizForm1()
-    if form.validate_on_submit():
-        user = User(username=form.username.data, email=form.email.data)
-        user.set_password(form.password.data)
-        db.session.add(user)
-        db.session.commit()
-        flash("Congratulations! You are now registered!")
-        return redirect(url_for("login")) """

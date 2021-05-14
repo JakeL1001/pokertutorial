@@ -38,12 +38,6 @@ $(document).ready(function() {
         });
 });
 
-
-
-
-
-
-
 function openPage(pageName, elmnt, color) {
     // Hide all elements with class="tabcontent" by default */
     var i, tabcontent, tablinks;
@@ -74,7 +68,7 @@ function showResults() {
     // keep track of user's answers
     let numCorrect = 0;
     // for each question...
-    myQuestions.forEach((currentQuestion, questionNumber) => {
+    QuizQuestions.forEach((currentQuestion, questionNumber) => {
         // find selected answer
         const answerContainer = answerContainers[questionNumber];
         const selector = `input[name=question${questionNumber}]:checked`;
@@ -86,11 +80,10 @@ function showResults() {
 
         }
     });
-    let resultperc = (numCorrect / myQuestions.length) * 100
+    let resultperc = (numCorrect / QuizQuestions.length) * 100
         // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length} | ${resultperc} `;
+    resultsContainer.innerHTML = `${numCorrect} out of ${QuizQuestions.length} | ${resultperc} `;
     document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`
-        //document.getElementById("subbutton").innerHTML = `<p>{{form.submit2}}</p>`
     document.getElementById("submit-continue").style.visibility = "visible";
 }
 
@@ -101,7 +94,7 @@ function buildQuiz() {
 
     output.push(`<div class="card-deck">`)
         // for each question...
-    myQuestions.forEach(
+    QuizQuestions.forEach(
         (currentQuestion, questionNumber) => {
 
             // variable to store the list of possible answers
@@ -133,54 +126,54 @@ function buildQuiz() {
     quizContainer.innerHTML = output.join('');
 }
 
+function beginQuiz1() {
+    QuizQuestions = Quiz1Qs;
+    buildQuiz();
+}
+
+function beginQuiz2() {
+    console.log("MADE IT");
+    QuizQuestions = Quiz2Qs;
+    buildQuiz();
+}
+
+function beginQuiz3() {
+    QuizQuestions = Quiz3Qs;
+    buildQuiz();
+}
 const quizContainer = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
-const myQuestions = [{
-        question: "Who invented JavaScript?",
-        answers: {
-            a: "Douglas Crockford",
-            b: "Sheryl Sandberg",
-            c: "Brendan Eich"
-        },
-        correctAnswer: "c"
-    },
-    {
-        question: "Which one of these is a JavaScript package manager?",
-        answers: {
-            a: "Node.js",
-            b: "TypeScript",
-            c: "npm"
-        },
-        correctAnswer: "c"
-    },
-    {
-        question: "Which tool can you use to ensure code quality?",
-        answers: {
-            a: "Angular",
-            b: "jQuery",
-            c: "RequireJS",
-            d: "ESLint"
-        },
-        correctAnswer: "d"
-    },
-    {
-        question: "who's the man?",
-        answers: {
-            a: "Jake",
-            b: "Not Jake",
-            c: "Kane",
-            d: "Jordan",
-        },
-        correctAnswer: "a"
-    }
+const startQuiz1 = document.getElementById("Quiz1");
+const startQuiz2 = document.getElementById("Quiz2");
+const startQuiz3 = document.getElementById("Quiz3");
+let QuizQuestions = "";
+const Quiz1Qs = [{ question: "Who invented JavaScript?", answers: { a: "Douglas Crockford", b: "Sheryl Sandberg", c: "Brendan Eich" }, correctAnswer: "c" },
+    { question: "Which one of these is a JavaScript package manager?", answers: { a: "Node.js", b: "TypeScript", c: "npm" }, correctAnswer: "c" },
+    { question: "Which tool can you use to ensure code quality?", answers: { a: "Angular", b: "jQuery", c: "RequireJS", d: "ESLint" }, correctAnswer: "d" },
+    { question: "who's the man?", answers: { a: "Jake", b: "Not Jake", c: "Kane", d: "Jordan" }, correctAnswer: "a" }
 ];
+const Quiz2Qs = [{ question: "test", answers: { a: "wrong", b: "right", c: "wrong" }, correctAnswer: "b" },
+    { question: "test2", answers: { a: "right", b: "wrong", c: "wrong" }, correctAnswer: "a" }
+]
+const Quiz3Qs = [{ question: "testQ3", answers: { a: "wrong", b: "right", c: "wrong" }, correctAnswer: "b" },
+    { question: "test2Q3", answers: { a: "not right", b: "wrong", c: "right" }, correctAnswer: "c" }
+]
 
 // display quiz right away
-buildQuiz();
+//buildQuiz();
 
 // on submit, show results
 submitButton.addEventListener('click', showResults);
+if (startQuiz1) {
+    startQuiz1.addEventListener('click', beginQuiz1);
+}
+if (startQuiz2) {
+    startQuiz2.addEventListener('click', beginQuiz2);
+}
+if (startQuiz3) {
+    startQuiz3.addEventListener('click', beginQuiz3);
+}
 
 // if answer is correct
 if (userAnswer === currentQuestion.correctAnswer) {

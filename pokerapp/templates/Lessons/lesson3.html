@@ -1,6 +1,5 @@
 {% extends "base.html" %}{% block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}">
-{% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
 <script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
 
 <button class="tablink" onclick="openPage('content', this, 'rgb(39, 42, 200)')" id="defaultOpen">Lesson 3</button>
@@ -9,50 +8,44 @@
 <div id="content" class="tabcontent">
     <h3 class="display-4 font-weight-normal header-main">The Game of Poker</h3>
     <p>
-        Poker is a turn based game. The are stages of play come in an order: pre-flop, flop,
-        turn and then the river. Players make betting actions during these phases. Players can fold, bet, raise or
-        check.
-    <div class="card-group">
-        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-            <div class="card-body">
-                <h2 class="card-title" style="color:white">Fold</h5>
-                    <p class="card-text" style="color:white">A fold means the player
-                        forfeits the round, places their cards out of their hand and sits out.
-                    </p>
+        Poker is a turn based game. The are stages of play come in an order: pre-flop, flop, turn and then the river. Players make betting actions during these phases. Players can fold, bet, raise or check.
+        <div class="card-group">
+            <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+                <div class="card-body">
+                    <h2 class="card-title" style="color:white">Fold</h5>
+                        <p class="card-text" style="color:white">A fold means the player forfeits the round, places their cards out of their hand and sits out.
+                        </p>
+                </div>
+            </div>
+            <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+                <div class="card-body">
+                    <h2 class="card-title" style="color:white">Bet</h5>
+                        <p class="card-text" style="color:white">A bet means the player is placing a bet into the community pot of chips.
+                        </p>
+                </div>
+            </div>
+            <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+                <div class="card-body">
+                    <h2 class="card-title" style="color:white">Raise</h5>
+                        <p class="card-text" style="color:white"> A raise means the player is increasing the minimum bet size with their own bet.
+                        </p>
+                </div>
+            </div>
+            <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+                <div class="card-body">
+                    <h2 class="card-title" style="color:white">Check</h5>
+                        <p class="card-text" style="color:white"> A check is when the player does not bet further as they have already put in an amount that satisfies the current bet.
+                        </p>
+                </div>
             </div>
         </div>
-        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-            <div class="card-body">
-                <h2 class="card-title" style="color:white">Bet</h5>
-                    <p class="card-text" style="color:white">A bet means the player is placing a bet
-                        into the community pot of chips.
-                    </p>
-            </div>
-        </div>
-        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-            <div class="card-body">
-                <h2 class="card-title" style="color:white">Raise</h5>
-                    <p class="card-text" style="color:white"> A raise means the player is increasing the minimum bet
-                        size with their own bet.
-                    </p>
-            </div>
-        </div>
-        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-            <div class="card-body">
-                <h2 class="card-title" style="color:white">Check</h5>
-                    <p class="card-text" style="color:white"> A check is when the player does
-                        not bet further as they have already put in an amount that satisfies the current bet.
-                    </p>
-            </div>
-        </div>
-    </div>
 
     </p>
     <br><br>
     <h4>&nbsp;Pre-Flop&nbsp;</h4>
     <br>
-    <p> Preflop explanation MUST INCLUDE REFERENCE TO IVEY LEAGUE FOR ANIMATIONS
-        :https://www.youtube.com/watch?v=09jmSZ-lKRM</p>
+    <p> Preflop explanation MUST INCLUDE REFERENCE TO IVEY LEAGUE FOR ANIMATIONS :https://www.youtube.com/watch?v=09jmSZ-lKRM
+    </p>
 
     <br><br>
     <h4>&nbsp;Flop, Turn and River&nbsp;</h4>
@@ -60,15 +53,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <img id="flopAnimate" src='../../static/lesson3animations/flop.jpg' style = "min-width: 200px;">
+                <img id="flopAnimate" src='../../static/lesson3animations/flop.jpg' style="min-width: 200px;">
                 <p>Hover to animate flop. Preflop .</p>
             </div>
             <div class="col">
-                <img id="turnAnimate" src='../../static/lesson3animations/turn.jpg'  style = "min-width: 200px;">
+                <img id="turnAnimate" src='../../static/lesson3animations/turn.jpg' style="min-width: 200px;">
                 <p>Hover to animate flop. Preflop.</p>
             </div>
             <div class="col">
-                <img id="riverAnimate" src='../../static/lesson3animations/river.jpg' style = "min-width: 200px;">
+                <img id="riverAnimate" src='../../static/lesson3animations/river.jpg' style="min-width: 200px;">
                 <p>Hover to animate flop. Preflop .</p>
             </div>
         </div>
@@ -79,8 +72,19 @@
 
 
 
-    
-</div>
-<div id="quiz" class="tabcontent">
 
-    {% endblock %}
+</div>
+<div id="quiz2" class="tabcontent">
+    <h3>Quiz 3</h3>
+    <button id="Quiz3">Begin</button>
+    <div id="quiz"></div>
+    <button id="submit">Mark Quiz</button>
+    <div id="results" style="color: white;"></div>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p id="finalscore"></p>
+        <p id="submit-continue"> {{form.submit2}} </p>
+    </form>
+</div>
+
+{% endblock %}

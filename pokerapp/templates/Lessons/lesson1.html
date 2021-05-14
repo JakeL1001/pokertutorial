@@ -139,13 +139,15 @@
 
 <div id="quiz2" class="tabcontent">
     <h3>Quiz 1</h3>
-    <p></p>
-    <form method="post" action="/submit">
-        <!-- SUbmit to the new database-->
-        <div id="quiz"></div>
-    </form>
-    <button id="submit">Submit Quiz</button>
+    <button id="Quiz1">Begin</button>
+    <div id="quiz"></div>
+    <button id="submit">Mark Quiz</button>
     <div id="results" style="color: white;"></div>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p id="finalscore"></p>
+        <p id="submit-continue"> {{form.submit2}} </p>
+    </form>
 </div>
 
 {% endblock %}
