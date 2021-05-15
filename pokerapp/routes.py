@@ -51,7 +51,8 @@ def stats():
     less1total = db.session.query(func.count(Results.quiz1)).scalar()
     less2total = db.session.query(func.count(Results.quiz2)).scalar()
     less3total = db.session.query(func.count(Results.quiz3)).scalar()
-    return render_template("stats.html", title = "Stats",avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal, less1total=less1total, less2total=less2total, less3total=less3total)
+    finaltotal = db.session.query(func.count(Results.total)).scalar()
+    return render_template("stats.html", title = "Stats",avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal, less1total=less1total, less2total=less2total, less3total=less3total, finaltotal=finaltotal)
 
 #login routes pt2
 @pokerpack.route("/logout")

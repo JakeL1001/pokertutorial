@@ -76,9 +76,9 @@ var atx = document.getElementById('barChart');
   var doughnutChart = new Chart(dtx, {
     type: 'doughnut',
     data:{
-      labels: ['Lesson 1', 'Lesson 2', 'Lesson 3'],
+      labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz'],
       datasets:[{
-      data:[`{{less1total}}`, `{{less2total}}`, `{{less3total}}`],
+      data:[`{{less1total}}`, `{{less2total}}`, `{{less3total}}`, '{{finaltotal}}'],
       backgroundColor: [
                   'rgba(255, 99, 132, 0.2)',
                   'rgba(54, 162, 235, 0.2)',
