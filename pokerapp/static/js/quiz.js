@@ -160,18 +160,18 @@ const startQuiz2 = document.getElementById("Quiz2");
 const startQuiz3 = document.getElementById("Quiz3");
 let QuizQuestions = "";
 const Quiz1Qs = [
-    { question: "Who invented JavaScript?", answers: { a: "Douglas Crockford", b: "Sheryl Sandberg", c: "Brendan Eich" }, correctAnswer: "c" },
-    { question: "Which one of these is a JavaScript package manager?", answers: { a: "Node.js", b: "TypeScript", c: "npm" }, correctAnswer: "c" },
-    { question: "Which tool can you use to ensure code quality?", answers: { a: "Angular", b: "jQuery", c: "RequireJS", d: "ESLint" }, correctAnswer: "d" },
-    { question: "who's the man?", answers: { a: "Jake", b: "Not Jake", c: "Kane", d: "Jordan" }, correctAnswer: "a" }
+    { question: "Which card has the highest value in the suit?", answers: { a: "Ace!", b: "Queen", c: "Draw Four" }, correctAnswer: "a" },
+    { question: "Which of the three is a real suit?", answers: { a: "Spades", b: "Red", c: "Blue" }, correctAnswer: "a" },
+    { question: "Which of these four is a real suit?", answers: { a: "Triangles", b: "Reverse", c: "Diamonds", d: "Spells" }, correctAnswer: "c" },
+    { question: "Which is a valid card?", answers: { a: "Joker", b: "Jack", c: "Jill", d: "Jester" }, correctAnswer: "b" }
 ];
 const Quiz2Qs = [
-    { question: "test", answers: { a: "wrong", b: "right", c: "wrong" }, correctAnswer: "b" },
-    { question: "test2", answers: { a: "right", b: "wrong", c: "wrong" }, correctAnswer: "a" }
+    { question: "A flush is four of the same card", answers: { a: "No", b: "Yes", c: "Trick Question!" }, correctAnswer: "a" },
+    { question: "A Straight is five cards in consecutive rank order", answers: { a: "Correct", b: "No", c: "Wrong that's a penta pair" }, correctAnswer: "a" }
 ];
 const Quiz3Qs = [
-    { question: "testQ3", answers: { a: "wrong", b: "right", c: "wrong" }, correctAnswer: "b" },
-    { question: "test2Q3", answers: { a: "not right", b: "wrong", c: "right" }, correctAnswer: "c" }
+    { question: "What is a fold?", answers: { a: "Betting all your chips", b: "Forfeiting cards out of your hand", c: "Betting half the community pot" }, correctAnswer: "b" },
+    { question: "Wnat is a raise?", answers: { a: "the player does not bet further as they have already put in an amount that satisfies the current bet.", b: "Betting all your chips", c: "Increasing the minimum bet size with a bet" }, correctAnswer: "c" }
 ];
 
 // on submit, show results
