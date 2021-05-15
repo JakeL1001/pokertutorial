@@ -25,6 +25,17 @@
       </div>
   </div>
 </div>
+<div class = 'container'>
+  <div class = 'row'>
+      <div class = 'col-12'>
+          <div class = 'chart-card'>
+              <div class = 'card-body'>
+                  <canvas id = bar2Chart></canvas>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
 
 <script>
 var atx = document.getElementById('barChart');
@@ -33,7 +44,7 @@ var atx = document.getElementById('barChart');
         data: {
             labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz'],
             datasets: [{
-                label: 'Site Average Results',
+                label: 'Site Average Results %',
                 data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`,`{{avgfinal}}`], //same as 2nd line above graph
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
@@ -74,22 +85,24 @@ var atx = document.getElementById('barChart');
 
   var dtx = document.getElementById('doughnutChart');
   var doughnutChart = new Chart(dtx, {
-    type: 'doughnut',
+    type: 'polarArea',
     data:{
-      labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz'],
+      labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz', 'Total Users'],
       datasets:[{
-      data:[`{{less1total}}`, `{{less2total}}`, `{{less3total}}`, '{{finaltotal}}'],
+      data:[`{{less1total}}`, `{{less2total}}`, `{{less3total}}`, '{{finaltotal}}', '{{totalusers}}'],
       backgroundColor: [
                   'rgba(255, 99, 132, 0.2)',
                   'rgba(54, 162, 235, 0.2)',
                   'rgba(255, 206, 86, 0.2)',
-                  'rgba(75, 192, 192, 0.2)'
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)'
               ],
                            borderColor: [
                   'rgba(255, 99, 132, 1)',
                   'rgba(54, 162, 235, 1)',
                   'rgba(255, 206, 86, 1)',
-                  'rgba(75, 192, 192, 1)'
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)'
               ],
     hoverOffset: 3
     }]},
@@ -102,5 +115,7 @@ var atx = document.getElementById('barChart');
       }
     }
   });
+
+  
 </script>
 {% endblock %}
