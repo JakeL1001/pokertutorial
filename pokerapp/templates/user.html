@@ -3,7 +3,7 @@
 
 <h1>User: {{ user.username }}</h1>
 <p>
-    {{ user.username }} Your Results: {{ userResult.quiz1, userResult.quiz2 }} {{avg1}} {{avg2}} {{avg3}}
+    {{ user.username }} Your Results: 
 </p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
 
@@ -75,7 +75,7 @@
             labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz'],
             datasets: [{
                 label: 'Site Average Results',
-                data: [12, 19, 3, 5, 2, 3],
+                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`,`{{avgfinal}}`], //same as 2nd line above graph
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
