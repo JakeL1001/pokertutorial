@@ -41,8 +41,8 @@ for (i = 0; i < output.length; i++) {
 
 
 var submitted = false;
-var answerkey = [1, 3];
-var clientresponse = [-1, -1];
+var answerkey = [3, 1,1,3,0];
+var clientresponse = [-1, -1,-1,-1,-1];
 const submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', findresult);
 
