@@ -19,18 +19,7 @@
       <div class = 'col-12'>
           <div class = 'chart-card'>
               <div class = 'card-body'>
-                  <canvas id = doughnutChart></canvas>
-              </div>
-          </div>
-      </div>
-  </div>
-</div>
-<div class = 'container'>
-  <div class = 'row'>
-      <div class = 'col-12'>
-          <div class = 'chart-card'>
-              <div class = 'card-body'>
-                  <canvas id = bar2Chart></canvas>
+                  <canvas id = polarAreaChart></canvas>
               </div>
           </div>
       </div>
@@ -45,7 +34,7 @@ var atx = document.getElementById('barChart');
             labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz'],
             datasets: [{
                 label: 'Site Average Results %',
-                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`,`{{avgfinal}}`], //same as 2nd line above graph
+                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`,`{{avgfinal}}`], //from routes.py
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -83,8 +72,8 @@ var atx = document.getElementById('barChart');
         }
     });
 
-  var dtx = document.getElementById('doughnutChart');
-  var doughnutChart = new Chart(dtx, {
+  var dtx = document.getElementById('polarAreaChart');
+  var polarAreatChart = new Chart(dtx, {
     type: 'polarArea',
     data:{
       labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz', 'Total Users'],

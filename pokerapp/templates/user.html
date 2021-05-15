@@ -33,7 +33,7 @@
 </div>
 
 <script>
-    var ctx = document.getElementById('myChart');
+    var ctx = document.getElementById('myChart'); // Double Line Chart, Compares user vs site
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
@@ -42,13 +42,13 @@
                 label: 'Your % Correct ',
                 data: [`{{userResult.quiz1}}`, `{{userResult.quiz2}}`, `{{userResult.quiz3}}`, `{{userResult.total}}`], //replace 50 with final quiz score
                 backgroundColor: [
-                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 99, 132, 0.2)', //0.2 is translucency
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
+                    'rgba(255, 99, 132, 1)', //solid outline
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
                     'rgba(75, 192, 192, 1)'
@@ -85,7 +85,7 @@
         }
     });
 
-    var atx = document.getElementById('barChart');
+    var atx = document.getElementById('barChart'); //Site Results Bar
     var barChart = new Chart(atx, {
         type: 'bar',
         data: {
@@ -97,13 +97,13 @@
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)'
+                    'rgba(75, 192, 192, 0.2)' 
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)'
+                    'rgba(75, 192, 192, 1)' 
                 ],
                 borderWidth: 1
             }]
