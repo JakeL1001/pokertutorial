@@ -61,6 +61,7 @@ function openPage(pageName, elmnt, color) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+document.getElementById("myForm").setAttribute("action", "");
 
 function showResults() {
     // gather answer containers from our quiz
@@ -91,7 +92,7 @@ function showResults() {
     }
     document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`;
     document.getElementById("submit-continue").style.visibility = "visible";
-    document.getElementById("submit").style.visibility = "hidden";
+    submitButton.style.display = "none";
 }
 
 
@@ -126,30 +127,30 @@ function buildQuiz() {
                     </ul>`
                 );
             }
-            output.push(`<div class="answers">${answers.join('')}</div></div></div></div>`)
+            output.push(`<div class="answers">${answers.join('')}</div></div></div></div>`);
         }
     );
 
     // finally combine our output list into one string of HTML and put it on the page
-    output.push(`</div>`)
+    output.push(`</div>`);
     quizContainer.innerHTML = output.join('');
 }
 
 function beginQuiz1() {
     QuizQuestions = Quiz1Qs;
-    startQuiz1.style.visibility = "hidden";
+    startQuiz1.style.display = "none";
     buildQuiz();
 }
 
 function beginQuiz2() {
     QuizQuestions = Quiz2Qs;
-    startQuiz2.style.visibility = "hidden";
+    startQuiz2.style.display = "none";
     buildQuiz();
 }
 
 function beginQuiz3() {
     QuizQuestions = Quiz3Qs;
-    startQuiz3.style.visibility = "hidden";
+    startQuiz3.style.display = "none";
     buildQuiz();
 }
 const quizContainer = document.getElementById('quiz');
