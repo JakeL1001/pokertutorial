@@ -82,12 +82,12 @@ def register():
 @login_required
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
-    userResult = Results.query.filter_by(user_id=current_user.id).first()
+    userresult = Results.query.filter_by(user_id=current_user.id).first()
     avg1 = db.session.query(func.avg(Results.quiz1)).scalar()
     avg2 = db.session.query(func.avg(Results.quiz2)).scalar()
     avg3 = db.session.query(func.avg(Results.quiz3)).scalar()
     avgfinal = db.session.query(func.avg(Results.total)).scalar()
-    return render_template("user.html", user=user, userResult=userResult, avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal)
+    return render_template("user.html", user=user, userresult=userresult, avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal)
 
 @pokerpack.route("/lessons")
 def lessons():
@@ -95,24 +95,26 @@ def lessons():
     quiz2bool = False
     quiz3bool = False
     if current_user.is_authenticated:
-        userResult = Results.query.filter_by(user_id=current_user.id).first()
-        if userResult is not None:
-            if userResult.quiz1 is not None and userResult.quiz1 >= 50:
+        loggedin = True
+        userresult = Results.query.filter_by(user_id=current_user.id).first()
+        if userresult is not None:
+            if userresult.quiz1 is not None:
+                if userresult.quiz1 >= 50:
                     quiz1bool = True
-            if userResult.quiz2 is not None:
-                if userResult.quiz2 >= 50:
+            if userresult.quiz2 is not None:
+                if userresult.quiz2 >= 50:
                     quiz2bool = True
-            if userResult.quiz3 is not None:
-                if userResult.quiz3 >= 50:
+            if userresult.quiz3 is not None:
+                if userresult.quiz3 >= 50:
                     quiz3bool = True
-        return render_template("/Lessons/lessonshome.html", quiz1bool=quiz1bool, quiz2bool=quiz2bool, quiz3bool=quiz3bool)
+        return render_template("/Lessons/lessonshome.html", loggedin=loggedin, quiz1bool=quiz1bool, quiz2bool=quiz2bool, quiz3bool=quiz3bool)
     else:
-        return render_template("/Lessons/lessonshomeLOCKED.html")#return render_template("/Lessons/lesson1.html") #change routing
+        loggedin = False
+        return render_template("/Lessons/lessonshome.html", loggedin=loggedin, quiz1bool=quiz1bool, quiz2bool=quiz2bool, quiz3bool=quiz3bool)
 
 @pokerpack.route("/lesson1", methods=["GET", "POST"])
 @login_required
 def lesson1():
-    #return render_template("/Lessons/lessonshomeLOCKED.html")
     form = QuizForm()
     if form.validate_on_submit():
         accountcheck = Results.query.filter_by(user_id=current_user.id).first()
@@ -125,8 +127,6 @@ def lesson1():
             db.session.add(userscore)   
             db.session.commit()
             return redirect(url_for("lessons"))
-    #else:
-        #return render_template("/Lessons/lessonshomeLOCKED.html")
     return render_template("/Lessons/lesson1.html", form=form)
 
 @pokerpack.route("/lesson2", methods=["GET", "POST"])

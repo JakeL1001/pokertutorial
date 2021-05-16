@@ -22,9 +22,8 @@ function findresult() {
         }
     }
     resultperc = (total / answerkey.length) * 100;
-    //console.log(resultperc)
-    submitButton.style.visibility = "hidden";
-    document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`;
+    submitButton.style.display = "none";
+    document.getElementById("finalscore").innerHTML = `<input id="score" name="score" display:"none" value=${resultperc}>`;
     return total;
 
 }
@@ -43,3 +42,4 @@ var answerkey = [3, 1, 1, 3, 0];
 var clientresponse = [-1, -1, -1, -1, -1];
 const submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', findresult);
+document.getElementById("myForm").setAttribute("action", "");

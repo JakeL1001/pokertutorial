@@ -7,44 +7,41 @@
 
 <div id="content" class="tabcontent">
     <h3 class="display-4 font-weight-normal header-main">The Game of Poker</h3>
-    <p>
-        Poker is a turn based game. The are stages of play come in an order: pre-flop, flop, turn and then the river. Players make betting actions during these phases. Players can fold, bet, raise or check.
-        <div class="card-group">
-            <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-                <div class="card-body">
-                    <h2 class="card-title">Fold</h2>
-                    <p class="card-text">A fold means the player forfeits the round, places their cards out of their hand and sits out.
-                    </p>
-                </div>
-            </div>
-            <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-                <div class="card-body">
-                    <h2 class="card-title">Bet</h2>
-                    <p class="card-text">A bet means the player is placing a bet into the community pot of chips.
-                    </p>
-                </div>
-            </div>
-            <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-                <div class="card-body">
-                    <h2 class="card-title">Raise</h2>
-                    <p class="card-text"> A raise means the player is increasing the minimum bet size with their own bet.
-                    </p>
-                </div>
-            </div>
-            <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-                <div class="card-body">
-                    <h2 class="card-title">Check</h2>
-                    <p class="card-text"> A check is when the player does not bet further as they have already put in an amount that satisfies the current bet.
-                    </p>
-                </div>
+    <p>Poker is a turn based game. The are stages of play come in an order: pre-flop, flop, turn and then the river. Players make betting actions during these phases. Players can fold, bet, raise or check.</p>
+    <div class="card-group">
+        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+            <div class="card-body">
+                <h2 class="card-title">Fold</h2>
+                <p class="card-text">A fold means the player forfeits the round, places their cards out of their hand and sits out.
+                </p>
             </div>
         </div>
-
-    </p>
+        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+            <div class="card-body">
+                <h2 class="card-title">Bet</h2>
+                <p class="card-text">A bet means the player is placing a bet into the community pot of chips.
+                </p>
+            </div>
+        </div>
+        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+            <div class="card-body">
+                <h2 class="card-title">Raise</h2>
+                <p class="card-text"> A raise means the player is increasing the minimum bet size with their own bet.
+                </p>
+            </div>
+        </div>
+        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
+            <div class="card-body">
+                <h2 class="card-title">Check</h2>
+                <p class="card-text"> A check is when the player does not bet further as they have already put in an amount that satisfies the current bet.
+                </p>
+            </div>
+        </div>
+    </div>
     <br><br>
     <h4>&nbsp;Pre-Flop&nbsp;</h4>
     <br>
-    <p> Preflop explanation MUST INCLUDE REFERENCE TO IVEY LEAGUE FOR ANIMATIONS :https://www.youtube.com/watch?v=09jmSZ-lKRM
+    <p> Preflop explanation MUST INCLUDE REFERENCE TO IVEY LEAGUE FOR ANIMATIONS :https://www.youtube.com/watch?v=09jmSZ-lKRM TODO
     </p>
 
     <br><br>
@@ -53,16 +50,16 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col">
-                <img id="flopAnimate" src='../../static/lesson3animations/flop.jpg' style="min-width: 200px;">
-                <p>Hover to animate flop. Preflop .</p>
+                <img id="flopAnimate" src='../../static/lesson3animations/flop.jpg' style="min-width: 200px;" alt="flop animation">
+                <p>Hover to animate the flop.</p>
             </div>
             <div class="col ">
-                <img id="turnAnimate" src='../../static/lesson3animations/turn.jpg' style="min-width: 200px;">
-                <p>Hover to animate flop. Preflop.</p>
+                <img id="turnAnimate" src='../../static/lesson3animations/turn.jpg' style="min-width: 200px;" alt="turn animation">
+                <p>Hover to animate the turn.</p>
             </div>
             <div class="col">
-                <img id="riverAnimate" src='../../static/lesson3animations/river.jpg' style="min-width: 200px;">
-                <p>Hover to animate flop. Preflop .</p>
+                <img id="riverAnimate" src='../../static/lesson3animations/river.jpg' style="min-width: 200px;" alt="river animation">
+                <p>Hover to animate the river.</p>
             </div>
         </div>
     </div>
@@ -73,7 +70,7 @@
     <div id="quiz"></div>
     <button id="submit" class="btn btn-dark">Mark Quiz</button>
     <div id="results" style="color: white;"></div>
-    <form action="" method="post">
+    <form action="#" method="post" id="myForm">
         {{ form.hidden_tag() }}
         <p id="finalscore"></p>
         <p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" value="Submit and Continue"> </p>

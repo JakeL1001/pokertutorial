@@ -1,6 +1,4 @@
-{% extends "base.html" %}{% block style %} {%endblock%} {%block title%} Lessons {%endblock%}{% block script %}
-<script src="{{url_for('static', filename='js/lessonshome.js') }}"></script> {%endblock%}{%block content%}
-
+{% extends "base.html" %}{% block style %}
 <style>
     .card:hover,
     .cardtop:hover,
@@ -14,7 +12,8 @@
     .cardtop {
         margin-top: 15px;
     }
-</style>
+</style> {%endblock%} {%block title%} Lessons {%endblock%}{% block script %}
+<script src="{{url_for('static', filename='js/lessonshome.js') }}"></script> {%endblock%}{%block content%}
 
 <div class="card-group">
     <!--That's meta web design...-->
@@ -52,7 +51,6 @@
 
 <div id="finalquiz" class="card" style="border-radius: 8px">
     <a id="finalquizlink" href="{{ url_for('finalquiz')}}">
-        <!--<img src="" class="card-img-top responsive" alt="..."> -->
         <div class="card-body">
             <h5 class="card-title">The Final Quiz</h5>
             <p id="finalquiztext" class="card-text">Time to test all the knowledge you have accumulated over your lessons!</p>
@@ -62,7 +60,8 @@
 
 
 
-<p id="quiz1pass" style="visibility: hidden;">{{quiz1bool}}</p>
-<p id="quiz2pass" style="visibility: hidden;">{{quiz2bool}}</p>
-<p id="quiz3pass" style="visibility: hidden;">{{quiz3bool}}</p>
+<p id="quiz1pass" style="display:none;">{{quiz1bool}}</p>
+<p id="quiz2pass" style="display:none;">{{quiz2bool}}</p>
+<p id="quiz3pass" style="display:none;">{{quiz3bool}}</p>
+<p id="loggedin" style="display:none;">{{loggedin}}</p>
 {%endblock%}

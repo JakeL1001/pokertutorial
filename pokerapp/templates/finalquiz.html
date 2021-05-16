@@ -1,175 +1,160 @@
 {% extends "base.html" %}{% block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock
-%}{%block title %}Lesson 2{% endblock %}{% block script %}
-<script src="{{url_for('static', filename='js/finalquiz.js') }}"></script> {%endblock%}{% block content %}
 <style>
-    body{
-background-color: #330000;
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23733846'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%232d5918' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%232d5918' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.05'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
-background-attachment: fixed;
-background-size: cover;
+    body {
+        background-color: #330000;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 400'%3E%3Cdefs%3E%3CradialGradient id='a' cx='396' cy='281' r='514' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23733846'/%3E%3Cstop offset='1' stop-color='%23330000'/%3E%3C/radialGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='400' y1='148' x2='400' y2='333'%3E%3Cstop offset='0' stop-color='%232d5918' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%232d5918' stop-opacity='0.5'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='800' height='400'/%3E%3Cg fill-opacity='0.05'%3E%3Ccircle fill='url(%23b)' cx='267.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='532.5' cy='61' r='300'/%3E%3Ccircle fill='url(%23b)' cx='400' cy='30' r='300'/%3E%3C/g%3E%3C/svg%3E");
+        background-attachment: fixed;
+        background-size: cover;
     }
-
-    .card{
+    
+    .card {
         background-color: blueviolet;
     }
-    .answer:hover{
+    
+    .answer:hover {
         cursor: grab;
         opacity: 90%;
     }
-    .chosen{
+    
+    .chosen {
         box-shadow: 0px 0px 35px rgb(0, 0, 0);
-        margin:10px;
+        margin: 10px;
         opacity: 90%;
     }
-    .correct{
+    
+    .correct {
         box-shadow: 0px 0px 35px rgb(30, 255, 0);
         opacity: 100%;
     }
-    .incorrect{
+    
+    .incorrect {
         box-shadow: 0px 0px 35px rgb(255, 0, 0);
-        opacity:  100%;
+        opacity: 100%;
     }
 </style>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
+<script src="{{url_for('static', filename='js/finalquiz.js') }}"></script> {%endblock%}{% block content %}
+
 <h3 class="display-4 font-weight-normal header-main">The Final Quiz</h3>
 
-<h4 style = "color:white">&nbsp;Pick the Highest Card&nbsp;</h4>
+<h4 style="color:white">&nbsp;Pick the Highest Card&nbsp;</h4>
 <div class="container">
     <div class="row question">
         <div class="col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png"
-                class="responsive normalcard answer" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" class="responsive normalcard answer" alt="" />
         </div>
         <div class="col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png"
-                class="responsive normalcard answer" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png" class="responsive normalcard answer" alt="" />
         </div>
         <div class="col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png"
-                class="responsive normalcard answer" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png" class="responsive normalcard answer" alt="" />
         </div>
         <div class="col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png"
-                class="responsive normalcard answer" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png" class="responsive normalcard answer" alt="" />
         </div>
         <div class="col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_king.png"
-                class="responsive normalcard answer" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_king.png" class="responsive normalcard answer" alt="" />
         </div>
     </div>
 </div>
 <br>
 
 
-<h4 style = "color:white">&nbsp;Select the Final Round of Poker&nbsp;</h4>
+<h4 style="color:white">&nbsp;Select the Final Round of Poker&nbsp;</h4>
 
 <div class="card-group question">
     <div class="card cardtop answer" style="border-radius: 8px">
         <div class="card-body">
-            <h2 class="card-title">The Flop</h5>
+            <h2 class="card-title">The Flop</h2>
         </div>
     </div>
     <div class="card cardtop answer" style="border-radius: 8px">
         <div class="card-body">
-            <h2 class="card-title">The River</h5>
+            <h2 class="card-title">The River</h2>
         </div>
     </div>
     <div class="card cardtop answer" style="border-radius: 8px">
         <div class="card-body">
-            <h2 class="card-title">The Turn</h5>
+            <h2 class="card-title">The Turn</h2>
         </div>
     </div>
     <div class="card cardtop answer" style="border-radius: 8px">
         <div class="card-body">
-            <h2 class="card-title">The Deal</h5>
+            <h2 class="card-title">The Deal</h2>
         </div>
     </div>
 </div>
 
 <br>
-<h4 style = "color:white">&nbsp;Which 'Hand' Ranks Higher?&nbsp;</h4>
+<h4 style="color:white">&nbsp;Which 'Hand' Ranks Higher?&nbsp;</h4>
 <div class="card-group question">
     <div class="card cardtop answer" style="border-radius: 8px">
         <div class="card-body">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png"
-                    class="responsive normalcard" alt="" />
-  
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_4.png"
-                    class="responsive normalcard" alt="" />
- 
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png"
-                    class="responsive normalcard" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" class="responsive normalcard" alt="" />
 
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png"
-                    class="responsive normalcard" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_4.png" class="responsive normalcard" alt="" />
 
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_king.png"
-                    class="responsive normalcard" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png" class="responsive normalcard" alt="" />
+
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png" class="responsive normalcard" alt="" />
+
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_king.png" class="responsive normalcard" alt="" />
         </div>
     </div>
     <div class="card cardtop answer" style="border-radius: 8px">
         <div class="card-body">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_king.png"
-                    class="responsive normalcard" alt="" />
-  
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_3.png"
-                    class="responsive normalcard" alt="" />
- 
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png"
-                    class="responsive normalcard" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_king.png" class="responsive normalcard" alt="" />
 
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_ace.png"
-                    class="responsive normalcard" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_3.png" class="responsive normalcard" alt="" />
 
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_10.png"
-                    class="responsive normalcard" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png" class="responsive normalcard" alt="" />
+
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_ace.png" class="responsive normalcard" alt="" />
+
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_10.png" class="responsive normalcard" alt="" />
         </div>
     </div>
 </div>
 <br>
-<h4 style = "color:white">&nbsp;Select the Spades Suit&nbsp;</h4>
+<h4 style="color:white">&nbsp;Select the Spades Suit&nbsp;</h4>
 <div class="container">
     <div class="row question">
         <div class="col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png"
-                class="responsive normalcard answer" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png" class="responsive normalcard answer" alt="" />
         </div>
         <div class="col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_ace.png"
-                class="responsive normalcard answer" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_ace.png" class="responsive normalcard answer" alt="" />
         </div>
         <div class="col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_ace.png"
-                class="responsive normalcard answer" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_ace.png" class="responsive normalcard answer" alt="" />
         </div>
         <div class="col">
-            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png"
-                class="responsive normalcard answer" alt="" />
+            <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png" class="responsive normalcard answer" alt="" />
         </div>
     </div>
 </div>
 <br>
-<h4 style = "color:white">&nbsp;Which of the Following is NOT a Betting Action&nbsp;</h4>
+<h4 style="color:white">&nbsp;Which of the Following is NOT a Betting Action&nbsp;</h4>
 
 <div class="card-group question">
     <div class="card cardtop answer" style="border-radius: 8px">
         <div class="card-body">
-            <h2 class="card-title">Turn</h5>
+            <h2 class="card-title">Turn</h2>
         </div>
     </div>
     <div class="card cardtop answer" style="border-radius: 8px">
         <div class="card-body">
-            <h2 class="card-title">Fold</h5>
+            <h2 class="card-title">Fold</h2>
         </div>
     </div>
     <div class="card cardtop answer" style="border-radius: 8px">
         <div class="card-body">
-            <h2 class="card-title">Raise</h5>
+            <h2 class="card-title">Raise</h2>
         </div>
     </div>
     <div class="card cardtop answer" style="border-radius: 8px">
         <div class="card-body">
-            <h2 class="card-title">Check</h5>
+            <h2 class="card-title">Check</h2>
         </div>
     </div>
 </div>
@@ -177,9 +162,9 @@ background-size: cover;
 
 <br>
 <button id="submit" class="btn btn-dark" style="visibility: visible;">Mark Quiz</button>
-<form action="" method="post">
+<form action="#" method="post" id="myForm">
     {{ form.hidden_tag() }}
-    <p id="finalscore"></p>
+    <p id="finalscore" style="display:none;"></p>
     <p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" style="visibility: visible;" value="Submit and Continue"> </p>
 </form>
 
