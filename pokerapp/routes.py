@@ -91,8 +91,21 @@ def user(username):
 
 @pokerpack.route("/lessons")
 def lessons():
+    quiz1bool = False
+    quiz2bool = False
+    quiz3bool = False
     if current_user.is_authenticated:
-        return render_template("/Lessons/lessonshome.html")
+        userResult = Results.query.filter_by(user_id=current_user.id).first()
+        if userResult is not None:
+            if userResult.quiz1 is not None and userResult.quiz1 >= 50:
+                    quiz1bool = True
+            if userResult.quiz2 is not None:
+                if userResult.quiz2 >= 50:
+                    quiz2bool = True
+            if userResult.quiz3 is not None:
+                if userResult.quiz3 >= 50:
+                    quiz3bool = True
+        return render_template("/Lessons/lessonshome.html", quiz1bool=quiz1bool, quiz2bool=quiz2bool, quiz3bool=quiz3bool)
     else:
         return render_template("/Lessons/lessonshomeLOCKED.html")#return render_template("/Lessons/lesson1.html") #change routing
 
@@ -106,12 +119,12 @@ def lesson1():
         if accountcheck is not None:
             accountcheck.quiz1=form.score.data
             db.session.commit()
-            return redirect(url_for("lesson2"))
+            return redirect(url_for("lessons"))
         else:
             userscore = Results(user_id=current_user.id, quiz1=form.score.data)
             db.session.add(userscore)   
             db.session.commit()
-            return redirect(url_for("lesson2"))
+            return redirect(url_for("lessons"))
     #else:
         #return render_template("/Lessons/lessonshomeLOCKED.html")
     return render_template("/Lessons/lesson1.html", form=form)
@@ -125,12 +138,12 @@ def lesson2():
         if accountcheck is not None:
             accountcheck.quiz2=form.score.data
             db.session.commit()
-            return redirect(url_for("lesson3"))
+            return redirect(url_for("lessons"))
         else:
             userscore = Results(user_id=current_user.id, quiz2=form.score.data)
             db.session.add(userscore)   
             db.session.commit()
-            return redirect(url_for("lesson3"))
+            return redirect(url_for("lessons"))
     return render_template("/Lessons/lesson2.html", form=form)
 
 @pokerpack.route("/lesson3", methods=["GET", "POST"])
