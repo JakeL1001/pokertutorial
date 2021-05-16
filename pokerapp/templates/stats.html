@@ -1,18 +1,40 @@
-{% extends "base.html" %} {% block content %}
+{% extends "base.html" %} {%block title%} Stats {%endblock%}{%block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/charts.css') }}"> {%endblock%}{% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
-<div class="chart-container" style="position: relative; height:40vh; width:80vw">
-    <canvas id="barChart"width="400" height="100" ></canvas>
+
+
+<div class = 'container'>
+  <div class = 'row'>
+      <div class = 'col-12'>
+          <div class = 'chart-card'>
+              <div class = 'card-body'>
+                  <canvas id = barChart></canvas>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+<div class = 'container'>
+  <div class = 'row'>
+      <div class = 'col-12'>
+          <div class = 'chart-card'>
+              <div class = 'card-body'>
+                  <canvas id = polarAreaChart></canvas>
+              </div>
+          </div>
+      </div>
+  </div>
 </div>
 
-  <script>
-    var atx = document.getElementById('barChart');
+<script>
+var atx = document.getElementById('barChart');
     var barChart = new Chart(atx, {
         type: 'bar',
         data: {
-            labels: ['All Lessons','Lesson 1', 'Lesson 2', 'Lesson 3'],
+            labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz'],
             datasets: [{
-                label: 'Site Completed Lessons %',
-                data: [12, 19, 3, 5,],
+                label: 'Site Average Results %',
+                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`,`{{avgfinal}}`], //from routes.py
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -29,20 +51,60 @@
             }]
         },
         options: {
-        animations: {
-          tension: {
-            duration: 1000,
-            easing: 'easeInOutQuint'
-          }
-        },
-        scales: {
-          y: { // defining min and max so hiding the dataset does not change scale range
-            min: 0,
-            max: 100
-          }
+          plugins:{
+            title:{
+                display: true,
+                text: 'Average User Results'
+            }
+          },
+            animations: {
+                tension: {
+                    duration: 1000,
+                    easing: 'easeInOutQuint'
+                }
+            },
+            scales: {
+                y: { // defining min and max so hiding the dataset does not change scale range
+                    min: 0,
+                    max: 100
+                }
+            }
+        }
+    });
+
+  var dtx = document.getElementById('polarAreaChart');
+  var polarAreatChart = new Chart(dtx, {
+    type: 'polarArea',
+    data:{
+      labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz', 'Total Users'],
+      datasets:[{
+      data:[`{{less1total}}`, `{{less2total}}`, `{{less3total}}`, '{{finaltotal}}', '{{totalusers}}'],
+      backgroundColor: [
+                  'rgba(255, 99, 132, 0.2)',
+                  'rgba(54, 162, 235, 0.2)',
+                  'rgba(255, 206, 86, 0.2)',
+                  'rgba(75, 192, 192, 0.2)',
+                  'rgba(153, 102, 255, 0.2)'
+              ],
+                           borderColor: [
+                  'rgba(255, 99, 132, 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(75, 192, 192, 1)',
+                  'rgba(153, 102, 255, 1)'
+              ],
+    hoverOffset: 3
+    }]},
+    options:{
+      plugins:{
+        title:{
+          display: true,
+          text: 'Lessons Completed by Users'
         }
       }
-    });
-    </script>
+    }
+  });
 
+  
+</script>
 {% endblock %}

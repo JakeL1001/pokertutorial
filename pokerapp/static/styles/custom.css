@@ -76,6 +76,9 @@ p {
 footer{
     margin: 55px;
 }
+.chart-card{
+    opacity: 1;
+}
 
 /**kanes**/
 
@@ -191,3 +194,4 @@ footer{
 img{
     max-width: 500px;
 }
+

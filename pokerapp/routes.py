@@ -42,7 +42,18 @@ def assess():
 
 @pokerpack.route('/stats')
 def stats():
-    return render_template("stats.html", title = "Stats")
+    #Avg User Results
+    avg1 = db.session.query(func.avg(Results.quiz1)).scalar()
+    avg2 = db.session.query(func.avg(Results.quiz2)).scalar()
+    avg3 = db.session.query(func.avg(Results.quiz3)).scalar()
+    avgfinal = db.session.query(func.avg(Results.total)).scalar()
+
+    less1total = db.session.query(func.count(Results.quiz1)).scalar()
+    less2total = db.session.query(func.count(Results.quiz2)).scalar()
+    less3total = db.session.query(func.count(Results.quiz3)).scalar()
+    finaltotal = db.session.query(func.count(Results.total)).scalar()
+    totalusers = db.session.query(func.count(User.username)).scalar()
+    return render_template("stats.html", title = "Stats",avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal, less1total=less1total, less2total=less2total, less3total=less3total, finaltotal=finaltotal, totalusers=totalusers)
 
 #login routes pt2
 @pokerpack.route("/logout")
