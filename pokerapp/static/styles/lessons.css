@@ -1,8 +1,7 @@
-/* Style tab links */
-
 .tablink {
-    background-color: #555;
-    color: white;
+    /* style the links for the tabs*/
+    background-color: rgb(117, 117, 117);
+    color: whitesmoke;
     border: none;
     outline: none;
     cursor: pointer;
@@ -16,10 +15,8 @@
     background-color: #777;
 }
 
-
-/* Style the tab content (and add height:100% for full page content) */
-
 .tabcontent {
+    /* content of lessons page, only takes 60% of vertical screen */
     color: white;
     display: none;
     padding: 20px 20px;
@@ -43,12 +40,14 @@
 #Quiz1,
 #Quiz2,
 #Quiz3 {
+    /* Quiz button visibility */
     visibility: visible;
     margin-top: 10px;
 }
 
 #submit-continue,
 #submit {
+    /* buttons hidden by default */
     margin-top: 10px;
     visibility: hidden;
 }
@@ -58,12 +57,12 @@ ul.list-group {
     color: black;
 }
 
-.card-header{
+.card-header {
     font-size: 3vw;
     min-height: 80px;
 }
 
-li.list-group-item{
+li.list-group-item {
     font-size: 2vw;
     background-color: whitesmoke;
     border: black;
@@ -71,13 +70,16 @@ li.list-group-item{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.option:hover{
+
+.option:hover {
     cursor: grab;
 }
+
 
 /* style content page */
 
 .flipper {
+    /* css for the flipping cards */
     padding-left: 0px;
     padding-right: 0px;
     perspective: 1000px;
@@ -89,6 +91,7 @@ li.list-group-item{
 
 .front,
 .back {
+    /* css for the flipping cards */
     width: 100%;
     padding: 5px;
     backface-visibility: hidden;
@@ -167,7 +170,8 @@ p.card-text {
     margin-right: auto;
     width: 30%;
 }
-.caption{
+
+.caption {
     font-size: 15px;
     color: rgb(165, 165, 165);
 }

@@ -1,11 +1,13 @@
-{% extends "base.html" %}{% block style %}
+<!-- HTML for the first lesson in the poker tutorial-->
+{% extends "base.html" %}
+<!-- contains the navbar and footer-->{% block style %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 1{% endblock %}{% block script %}
 <script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
 
 
 <button class="tablink" onclick="openPage('content', this, 'rgb(39, 42, 200)'); changebackgroundblue();" id="defaultOpen">Lesson 1</button>
 
-
+<!-- the content to learn for lesson 1 -->
 <div id="content" class="tabcontent">
     <h1 class="display-4 font-weight-normal header-main">Click to Reveal the Suits</h1>
     <div class="container-fluid">
@@ -62,8 +64,8 @@
     </p>
     <img src="https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png " class="responsive" alt="the 4 suits symbols">
     <!--add picture of four suits-->
-    <p><br> Each suit has thirteen cards. The cards have a numerical order. There are the "face" cards of ace, king, queen and jack. The ace can act as a number one but usally counts as the highest value in the suit. Following it, the king acts as the thirteenth card, the queen twelth
-        and jack eleventh.<br> </p>
+    <p><br> Each suit has thirteen cards. The cards have a numerical order. There are the "face" cards of ace, king, queen and jack. The ace can act as a number one but usally counts as the highest value in the suit. Following it, the king acts as the thirteenth
+        card, the queen twelth and jack eleventh.<br> </p>
 
     <div class="container">
         <div class="row">
@@ -125,14 +127,13 @@
             </div>
             <div class="col">
                 <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" onmouseover="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_2.png'" onmouseout="this.src='https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png'"
-                    alt="club-heart 2" style=" min-width: 75px; max-width: 150px;"  />
+                    alt="club-heart 2" style=" min-width: 75px; max-width: 150px;" />
             </div>
         </div>
     </div>
-
-
 </div>
-
+<!-- the content for the quiz -->
+<!-- all produced dynamically with JS -->
 <div id="quiz2" class="tabcontent">
     <h2>Quiz 1: The Suits</h2>
     <button id="Quiz1" class="btn btn-dark">Click to Begin!</button>
@@ -145,6 +146,4 @@
         <p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" value="Submit and Continue"> </p>
     </form>
 </div>
-<button class="tablink" onclick="openPage('quiz2', this, 'green');changebackgroundgreen();">Quiz</button>
-
-{% endblock %}
+<button class="tablink" onclick="openPage('quiz2', this, 'green');changebackgroundgreen();">Quiz</button> {% endblock %}

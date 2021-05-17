@@ -1,3 +1,5 @@
+<!-- The homepage from which you choose your lesson-->
+<!-- edited with JS to lock off quizzes you haven't earned access to yet-->
 {% extends "base.html" %}{% block style %}
 <style>
     .card:hover,
@@ -15,9 +17,8 @@
 </style> {%endblock%} {%block title%} Lessons {%endblock%}{% block script %}
 <script src="{{url_for('static', filename='js/lessonshome.js') }}"></script> {%endblock%}{%block content%}
 
+<!-- a card for each lesson -->
 <div class="card-group">
-    <!--That's meta web design...-->
-
     <div id="lesson1" class="card cardtop" style="border-radius: 8px;">
         <a id="lesson1link" href="{{ url_for('lesson1') }}">
             <img src="https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png" class="card-img-top responsive" alt="...">
@@ -58,8 +59,7 @@
     </a>
 </div>
 
-
-
+<!-- hidden fields that contain whether or not you passed each quiz-->
 <p id="quiz1pass" style="display:none;">{{quiz1bool}}</p>
 <p id="quiz2pass" style="display:none;">{{quiz2bool}}</p>
 <p id="quiz3pass" style="display:none;">{{quiz3bool}}</p>
