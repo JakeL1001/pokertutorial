@@ -31,36 +31,37 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="container-fluid"> 
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ol class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
-                    </li>
-                    {% if current_user.is_anonymous %}
-                    <!--different if logged in or out-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ url_for('login') }}">Login</a>
-                    </li>
-                    {% else %}
-                    <li>
-                        <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
-                    </li>
-                    <li class="nav-item">
-                        <!--Profile Page will be "giving feedback to the user"-->
-                        <a class="nav-link" href="{{ url_for('user', username=current_user.username) }}">Profile</a>
-                    </li>
-                    {% endif %}
-                    <li class="nav-item">
-                        <!--Link to lessons home page-->
-                        <a class="nav-link" href="{{url_for('lessons')}}" tabindex="-1">Lessons</a>
-                    </li>
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ol class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                        </li>
+                        {% if current_user.is_anonymous %}
+                        <!--different if logged in or out-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                        </li>
+                        {% else %}
+                        <li>
+                            <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                        </li>
+                        <li class="nav-item">
+                            <!--Profile Page will be "giving feedback to the user"-->
+                            <a class="nav-link" href="{{ url_for('user', username=current_user.username) }}">Profile</a>
+                        </li>
+                        {% endif %}
+                        <li class="nav-item">
+                            <!--Link to lessons home page-->
+                            <a class="nav-link" href="{{url_for('lessons')}}" tabindex="-1">Lessons</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <!--link to page for aggregate data display-->
-                        <a class="nav-link" href="{{ url_for('stats')}}" tabindex="-1">Stats</a>
-                    </li>
-                </ol>
+                        <li class="nav-item">
+                            <!--link to page for aggregate data display-->
+                            <a class="nav-link" href="{{ url_for('stats')}}" tabindex="-1">Stats</a>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
     </nav>

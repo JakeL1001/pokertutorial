@@ -62,10 +62,8 @@ ul.list-group {
     min-height: 80px;
 }
 
-
 li.list-group-item {
     font-size: 18px;
-    font-style: bold;
     background-color: whitesmoke;
     border: black;
     padding: 5px;
