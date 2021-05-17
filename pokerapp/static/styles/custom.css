@@ -67,8 +67,11 @@ footer {
 }
 
 .container-user {
-    max-height: 60px;
-    border-color: #e5e5e5;
+    background-color: transparent;
+    margin: 25px;
+    padding: 30px;
+    text-align: center;
+
 
 }
 
