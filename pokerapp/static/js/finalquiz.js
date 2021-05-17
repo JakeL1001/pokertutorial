@@ -1,4 +1,4 @@
-function updateanswers(question, answer) {
+function updateanswers(question, answer) {//makes chosen card glow and updates the current selected answer
     if (!submitted) {
         clientresponse[question] = answer;
         for (i = 0; i < document.getElementsByClassName("question")[question].getElementsByClassName("answer").length; i++) {
@@ -9,19 +9,27 @@ function updateanswers(question, answer) {
     }
 }
 
-function findresult() {
+function findresult() {//goes through answer array and selected user array to find user result
     submitted = true;
     var total = 0;
     for (i = 0; i < answerkey.length; i++) {
-        if (answerkey[i] == clientresponse[i]) {
+        if (answerkey[i] == clientresponse[i]) { //if answer correct
             console.log(document.getElementsByClassName("question")[i].getElementsByClassName("answer")[clientresponse[i]]);
             document.getElementsByClassName("question")[i].getElementsByClassName("answer")[clientresponse[i]].classList.add("correct");
             total++;
-        } else if (clientresponse[i] > -1) {
+        } else if (clientresponse[i] > -1) { //if answer false 
             document.getElementsByClassName("question")[i].getElementsByClassName("answer")[clientresponse[i]].classList.add("incorrect");
         }
     }
     resultperc = (total / answerkey.length) * 100;
+    resultsContainer = document.getElementById("results");
+    if (resultperc < 50.0) { //show in red box if fail
+        resultsContainer.innerHTML = `<div class="card card2" style="background-color: red;"><div class=card-body>${total} out of ${answerkey.length} | ${resultperc}</div></div>`;
+    } else if (resultperc >= 50.0 && resultperc != 100) { //show in green box if pass but not 100%
+        resultsContainer.innerHTML = `<div class="card card2" style="background-color: green;"><div class=card-body>${total} out of ${answerkey.length} | ${resultperc}</div></div>`;
+    } else if (resultperc == 100) { //show in gold box if 100%
+        resultsContainer.innerHTML = `<div class="card card2" style="background-color: gold;"><div class=card-body>${total} out of ${answerkey.length} | ${resultperc}</div></div>`;
+    }
     submitButton.style.display = "none";
     document.getElementById("finalscore").innerHTML = `<input id="score" name="score" display:"none" value=${resultperc}>`;
     return total;
@@ -30,7 +38,7 @@ function findresult() {
 
 
 var output = document.getElementsByClassName("question");
-for (i = 0; i < output.length; i++) {
+for (i = 0; i < output.length; i++) { //binds answer classes to correct part of the client response array
     for (x = 0; x < output[i].getElementsByClassName("answer").length; x++) {
         output[i].getElementsByClassName("answer")[x].addEventListener('click', updateanswers.bind(event, i, x));
     }

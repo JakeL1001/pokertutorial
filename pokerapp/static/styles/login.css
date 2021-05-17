@@ -1,4 +1,4 @@
-/* div.form and form used to center current login page forms, may be removed if login page functionality changes */
+/* CSS for the login and register pages */
 
 div.form {
     display: block;
@@ -7,11 +7,13 @@ div.form {
 }
 
 div h2 {
+    /* h2 formatting */
     margin-top: 100px;
     color: whitesmoke;
 }
 
 form {
+    /* form formatting */
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -19,7 +21,8 @@ form {
     text-align: left;
     color: rgba(255, 255, 255, .5);
 }
-.submit{
+
+.submit {
     outline: 0;
     background-color: #536976;
     width: 100%;
@@ -30,7 +33,6 @@ form {
     -webkit-transition: all 0.3 ease;
     transition: all 0.3 ease;
     cursor: pointer;
-  
 }
 
 .logincontainer {
@@ -46,7 +48,7 @@ form {
     height: 500px;
 }
 
-/* kanes funky shitt*/
+
 .input {
     outline: 0;
     width: 100%;
@@ -57,4 +59,4 @@ form {
     box-sizing: border-box;
     font-size: 14px;
     background: #f2f2f2;
-  }
+}
