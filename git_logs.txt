@@ -1,0 +1,1738 @@
+commit df674dcf6658ca5c5a00a27c15b34edc68fb65b6
+Merge: 974aaa3 fee6072
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 17:24:05 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 974aaa3fc4afa4451a8b1bbdc9d4a9e72d701a63
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 17:23:56 2021 +0800
+
+    Update pokerdb.db
+
+commit fee60720adb027e0185be13486a48884de5e7939
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 17:23:19 2021 +0800
+
+    final quiz fix
+
+commit 3b3fb0ead2f84a550bcf666dd019775e91af4339
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 17:22:38 2021 +0800
+
+    final bug fixes
+
+commit de393117e788784899a801c4e9c60ea08ee52800
+Merge: 1f427a9 35dc223
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 17:05:32 2021 +0800
+
+    Merge branch 'working_Jordan'
+
+commit 35dc2238ce16ee272aabb085c3483a528f6c4afa
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 17:05:16 2021 +0800
+
+    Update Lesson 3
+    
+    fixed content
+
+commit 1f427a90428614cf776daab5415771cda2820cfa
+Merge: f948a0d 70b3c04
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 17:02:33 2021 +0800
+
+    minor style changes
+
+commit f948a0dea2007e2605910d0f176bddaa085a7a84
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 17:01:34 2021 +0800
+
+    stylistic changes
+
+commit 70b3c0463474fc992c0f43aeba7d71b3a7b3d8e7
+Merge: a19a949 9651719
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 17:00:25 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 9651719524d86d17f8d59712db0e0b84cc1485c1
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 16:59:49 2021 +0800
+
+    validation checks complete
+
+commit a19a9498b57b0a163eb5791426c917a54a5eb5b8
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 16:55:04 2021 +0800
+
+    footer links todo removed as well
+
+commit 4ac9ffe0422206ecfd15debf16260c7a9ee02a6b
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 16:51:56 2021 +0800
+
+    Title Update
+    
+    YT Reference Added As Well
+
+commit 32bde875de9adb9513536b0b920dbc5167ab2819
+Merge: 72500fb a77b234
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 16:36:45 2021 +0800
+
+    Merge branch 'working_Jordan'
+
+commit 72500fb4d70439853219052c49acfa73191b0eed
+Merge: 83c21d1 9a75e2c
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 16:35:12 2021 +0800
+
+    conflict fixes
+
+commit a77b234d4be75eea00f1a945be7b867518abd1d3
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 16:33:57 2021 +0800
+
+    Referencing added to readme
+
+commit 83c21d1bb9c1e038af2a6446384bb5b4e3af93fa
+Merge: 423af77 697edce
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 16:33:30 2021 +0800
+
+    final bug fixes and changes
+
+commit 9a75e2cf8fe23a27eba8f99b4b15b7c99ea83def
+Merge: f7cf50e 61ba210
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 16:26:45 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit f7cf50e0b87c7091d05d0d6d954264f0186b11e4
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 16:26:38 2021 +0800
+
+    Update pokerdb.db
+
+commit 61ba210de4602fe99ee80b9484e3c284dad80417
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 16:26:12 2021 +0800
+
+    fixed 404 and 500 pages i messed up. added percentages for lesson home
+
+commit dee927b460de46e58d1905a8a41bea85a028c931
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 15:53:07 2021 +0800
+
+    final update #1
+
+commit be3e31809d5c1c5923a8e4067088d15ed216ff41
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 15:47:24 2021 +0800
+
+    fixed lesson 3, updated todo list
+
+commit cc8763e460804256187aea159c93e574e7c77375
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 15:20:20 2021 +0800
+
+    removed test #3
+
+commit 423af7786008148c935a8a962df98087fb71cd2a
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 15:19:16 2021 +0800
+
+    readme changes
+
+commit 697edce6106826f2c92488f19129abebfbc9bf90
+Merge: f40a281 90ceaa7
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 15:12:56 2021 +0800
+
+    pokerdb conflicts
+
+commit f40a281ac85c589fb7d4464924cc3ea1e9bbbbf5
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 15:11:47 2021 +0800
+
+    pokerdb changes
+
+commit 69a3bc8f77e2bd1e5fdba0fb85fc6cda5ee6e58a
+Merge: 52c2bca 90ceaa7
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 15:11:46 2021 +0800
+
+    Merge branch 'main' into working_Jordan
+
+commit 90ceaa7239a5432ae9d1e835ddc43f7db491ad07
+Merge: 380c4a8 569201e
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 15:10:55 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit 380c4a85af7f3b1d2d95cca76549ee1dfe7d1867
+Merge: b3cd180 8a2c706
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 15:10:48 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 569201efa9982d82a4dc2f63de830235bde2d8a1
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 15:06:15 2021 +0800
+
+    updated login
+
+commit b3cd180dee4098122c3ecbe7acf6b66ce0231b09
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 15:05:03 2021 +0800
+
+    Update pokerdb.db
+
+commit 9d793db71a8f0f78c3948211c8204967bf624ae6
+Merge: 4efc533 65d9ea5
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 15:04:28 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit 8a2c706475635920731a61ed6625e70351b1e082
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 15:04:17 2021 +0800
+
+    commenting of all pages
+    
+    commented everything :) :+1:
+
+commit 52c2bcacc794b0254c37cd5ac816e2d941a54469
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 15:04:14 2021 +0800
+
+    selenium update #3
+
+commit 4efc533506bb02a2b1c54e6a876b80904f048752
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 15:03:48 2021 +0800
+
+    changed sign in and register page
+
+commit 65d9ea5a82b37d46bd30fec8cc348100a93482ca
+Merge: 318ddc8 1986a3f
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 14:10:08 2021 +0800
+
+    Merge branch 'main' into working_Jordan
+
+commit 318ddc857f0142e256e91ea588ad245c4226edbc
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 14:09:15 2021 +0800
+
+    added lesson login test
+    
+    updated selenium
+
+commit 5fc31833d890d836d17a2735fa5cacc10ab65453
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 13:55:27 2021 +0800
+
+    log file added
+
+commit 1986a3fde680921d93136b4b656956e210bd3426
+Merge: 660793d 18d8c54
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 13:52:39 2021 +0800
+
+    pokerdb change
+
+commit 18d8c54c4b0953b3cf5d290f8ad6d5cf4e664349
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 17 13:51:05 2021 +0800
+
+    quizzes style edits and functionality changes, background changes
+
+commit 6fa930e110f477b771e065129e81bd6b558bd0c4
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 17 13:42:36 2021 +0800
+
+    update tests.py
+
+commit 660793df11bde68df0615cd16e53da64e48e51ee
+Merge: 398c1c9 3b13c65
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 12:22:33 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 398c1c983ea61cf75586541f72ab23f31d6f32aa
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 12:22:20 2021 +0800
+
+    Update pokerdb.db
+    
+    updated
+
+commit 3b13c6583806f0c1a20213712e69c838a07075a1
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 17 12:21:39 2021 +0800
+
+    Added some testing stuff
+    
+    python unit tester
+
+commit c162a728df2b5f79e84ddce4c68245f62c01db0e
+Merge: fce697f 66ec20d
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun May 16 19:21:55 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit fce697f11877137405bf69aef36ec51783eb3861
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun May 16 19:21:52 2021 +0800
+
+    Added many extra users and quiz data for them
+
+commit 66ec20d712d4c00eccb7cf9c9b47c87f7ac8561b
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun May 16 19:21:01 2021 +0800
+
+    html, css and js validated, removed unecessary js and css files, updated TODO list
+    
+    added all remaining tasks to TODO.txt, removed unecessary charts js and css, edited all html and css files to be compliant with the validators, Removed the locked lessons page and put the functionality of it onto the regular lessonshome page, other minor fixes
+
+commit 20daaa2ebbadae5f9d7e6baa876cabc266b5fca9
+Merge: 529d9c4 6ea6b8b
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun May 16 16:52:03 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 529d9c4104915cf96b5c6729486470d66767c11b
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun May 16 16:51:58 2021 +0800
+
+    Update pokerdb.db
+
+commit 6ea6b8bed0593e1073512cade864c2b238d9e9ac
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun May 16 16:51:15 2021 +0800
+
+    Added many db entries. Quizzes are now locked until passing previous quizzes
+    
+    Must get a passing grade in the previous quiz to unlock the next one. Added final quiz to the lesson page. Added lots of new users and their scores to the database
+
+commit be6d16667558a1be9b4c9e7464367da8eb714722
+Merge: 765fc61 7e20be8
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun May 16 14:59:26 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit 765fc61c3e7d9b5d86fb4435e26976b19abb65cd
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun May 16 14:59:05 2021 +0800
+
+    Update pokerdb.db
+    
+    new scores
+
+commit 7e20be868de652520d9cf4549c35e21b7c87c8c0
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Sat May 15 17:37:47 2021 +0800
+
+    final quiz questions added
+
+commit 79a2e1b0c260349306634922521ae91163323d09
+Merge: 3170ea8 e9a4ca0
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Sat May 15 17:21:45 2021 +0800
+
+    final quiz work
+
+commit e9a4ca09f499ee569e47d64a28279b5eb527726d
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Sat May 15 17:19:22 2021 +0800
+
+    final quiz shows correct or inncorrect
+
+commit 3170ea858dc6e228632aca482cc0bb59614b85f3
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Sat May 15 16:43:33 2021 +0800
+
+    change to polar #2
+    
+    sorry forgot to remove some things
+
+commit 0e04814729aaff61fd61f7e010662714724a3cd4
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Sat May 15 16:39:09 2021 +0800
+
+    Added Total User to polarchart
+    
+    Changed doughnut to polar
+
+commit 3253a341c396920f9e62b4e24e431bb37e5733f3
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Sat May 15 16:13:59 2021 +0800
+
+    Added final quiz results to graphs
+
+commit 3269a707eb7409cfc52df2c830eaffb35c83fc01
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Sat May 15 16:03:06 2021 +0800
+
+    Quiz Question Update
+    
+    added poker related questions
+    
+    also confirmed properly linked to graphs
+
+commit 390b293cced0beeabc19e9f62752f004a87d55e3
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Sat May 15 15:45:38 2021 +0800
+
+    Stats Charts + Other Charts Updates
+    
+    Fixed btstrap of charts and connected them to DB
+    
+    Stats now has charts
+
+commit 1960160b93a0917bb31f067b5552213f11af71cb
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Sat May 15 12:36:40 2021 +0800
+
+    Read Me Update + Minors
+    
+    Push Before Writing the Testing
+    Updated Read Me to answer the proj reqs
+    Removed from user results after Your Results: (It looks cleaner)
+    Linked bar to {avgs}
+
+commit e905d818e4dc8bd8c14582b046091f4468676e8d
+Merge: b7bf43c 1abad9e
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Fri May 14 23:52:44 2021 +0800
+
+    final quiz work
+
+commit 1abad9e13ea9888fd6a567961ff48208003a9108
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Fri May 14 23:51:11 2021 +0800
+
+    final quiz selection working
+
+commit 1ac1c5ae7bbc299d4a762fe53207be965ac98681
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 22:33:18 2021 +0800
+
+    Update pokerdb.db
+
+commit 334978096fc42d297636a2084500fd9fb738088e
+Merge: db21ef7 b7bf43c
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 22:33:02 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit b7bf43cfe20eafacd4784a23d0ec2b2fc719ae83
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 22:30:26 2021 +0800
+
+    Update pokerdb.db
+
+commit db21ef75d9194e1004d2041466338b0b86d1a369
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 22:30:04 2021 +0800
+
+    final quiz
+    
+    added final quiz to db and stats page
+
+commit 3b41923666e4bbd6055b15e1a6202947a944c53c
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Fri May 14 22:23:29 2021 +0800
+
+    added final quiz to db
+
+commit 3acde067c84cb20bf13a4b8ed33ffee6a31f3cbd
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Fri May 14 22:03:32 2021 +0800
+
+    db changes
+
+commit d5b14f577df9df6090f75d8e029b0a0112c496e7
+Merge: 6d7579d 55b92c9
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Fri May 14 22:00:00 2021 +0800
+
+    final quiz work
+
+commit 55b92c9edf53fa863516528276fddda2bf93c817
+Merge: fdd19b4 f199b15
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 21:58:36 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit fdd19b44acaa5ac8db9ce794d46c9da9c9636fb5
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 21:58:32 2021 +0800
+
+    Update pokerdb.db
+    
+    ...
+
+commit f199b15316f64122a76342baa52b6cd27d421e39
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 21:57:15 2021 +0800
+
+    Working charts with data from db
+    
+    charts now pull data from database on creation.
+
+commit 6d7579d90ead13f66ae4786f165d9038cf0ea3c2
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Fri May 14 21:56:45 2021 +0800
+
+    final quiz, js and html for final quiz works!
+
+commit 5c5debf793cb6b66fc063f0393429064f677b0ec
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Fri May 14 19:38:38 2021 +0800
+
+    final quiz setup
+
+commit f5ee7ebebb47fd81346a9530aa6e19fd1188c211
+Merge: bf53f0e 4ddc3be
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 18:13:56 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit bf53f0e148c2956da82dd2b3f737c8a0f74d82b1
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 18:13:53 2021 +0800
+
+    Update pokerdb.db
+
+commit 4ddc3be49fa07ecd9796203d81484b78c06bc36c
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 18:13:18 2021 +0800
+
+    lesson3 fix
+    
+    Fixed lesson3 quiz
+
+commit 5db30348f2967ae1a32a324cbe8780e9b68a232f
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 17:42:41 2021 +0800
+
+    added database to gitignore
+    
+    too many unnecessary commits from database changes
+
+commit b01e70aba6d98262eaceac260e00e9b925e19a3e
+Merge: 4d3656e 4f6821f
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 17:40:39 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit 4d3656e6755cfb4b502b3f3e86be151de1467391
+Merge: de7ac86 f49aba7
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 17:39:25 2021 +0800
+
+    Merge branch 'workingbranchJake' of https://github.com/Kanealex/pokertutorial into workingbranchJake
+
+commit de7ac8648678d76fed6785ac2e674d531783e268
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 17:39:20 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 4f6821f2bb512461764e9a6fd98625f92b73ecab
+Merge: 982619e f49aba7
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 14:34:23 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 982619ef700f0dce3afc4a809712fa5f4ed09e15
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 14:34:19 2021 +0800
+
+    Update pokerdb.db
+    
+    still requires update for every commit FIX
+
+commit f49aba7c18be9a0111c1ab4b3b350409a7b520e9
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 14:33:21 2021 +0800
+
+    Cleanup of code
+    
+    Added pass or fail colours for quiz results. Edited other code
+
+commit 5a0c1adfcef07942c2b3f1a7159a82120308bf17
+Merge: b09ee90 d159370
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 11:58:15 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit b09ee9001e97954607556fa5c086011fcb297ca1
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 11:58:10 2021 +0800
+
+    Update pokerdb.db
+    
+    how do we fix this, dont want to double commit every time the db changes
+
+commit d1593706424170982ad4b6abc75bdc9d175bcdc3
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 11:55:49 2021 +0800
+
+    Quiz formatting
+    
+    added better looking buttons to the Quizzes
+
+commit 53e96ae9fa8b478b85e2fb043b2eeb02a88db165
+Merge: 5d6f3b6 050a850
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 11:22:55 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 5d6f3b6e8814dd11ef1e141ad31d5adf4a6c1b26
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 11:22:28 2021 +0800
+
+    Update pokerdb.db
+
+commit 050a850938dd65d1bfbf1e6bbe35aaa7be82a06e
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 11:19:34 2021 +0800
+
+    Quiz now fully dynamic and modular for each lesson
+    
+    very cool! Now every quiz can easily be edited from the JS, and only a single JS file is needed for all of the quizzes
+
+commit 69c2d3bd929c85cb40cdb0292385686499061ebf
+Merge: 6339ed2 686d66b
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 10:08:23 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit 6339ed25fe8ad703ec82aef911af58d8f5960760
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 14 10:06:51 2021 +0800
+
+    fixing merge conflicts
+
+commit 686d66bbeff7448e041df315a33e260c09273746
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 13 20:46:46 2021 +0800
+
+    fixing merge conflicts
+
+commit 28107a35ddcdd848009e36b99f6c81f3c1799fda
+Merge: 52f44fb 929a064
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 13 20:37:37 2021 +0800
+
+    merging jake and kanes work
+
+commit 929a06479a812777b9cb529039dc834a7d1431a8
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 13 20:28:34 2021 +0800
+
+    lesson 3 gif and image additions
+
+commit 52f44fb7b94d1df8ceac02a5e606b4bea092e86a
+Merge: 2585490 d95ec60
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Thu May 13 20:23:15 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 25854908f810f529bfce5dda31161ca6aa51529d
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Thu May 13 20:23:04 2021 +0800
+
+    Update pokerdb.db
+
+commit d95ec60422f0a984f9ff372733867181590f770e
+Merge: d31a483 22051ea
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Thu May 13 20:22:22 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit d31a483ed462621ffb4e60d139f00bde85f202e8
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Thu May 13 19:46:50 2021 +0800
+
+    better quiz for lesson 1
+    
+    next try and make the JS more general to use for all 3 quizzes
+
+commit e7cba48cc24fb96a13bb0b774c93a6670d34c3f9
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 13 18:30:45 2021 +0800
+
+    working flop/turn/river stills with gifs!
+
+commit 784d8225b8693bc31ac7b6548242c2ad99b05338
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Thu May 13 17:05:52 2021 +0800
+
+    Working quiz database for question 1
+    
+    successful form submission into the database to record quiz scores for the current user
+
+commit 22051eae1357eb4723bfc6f21fa8475075421864
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 13 15:55:10 2021 +0800
+
+    lesson 2 complete revamp- now with clickable cards!!
+
+commit 179c9de5ff801c3af47f27782b1c73bcbbbb2fa7
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 13 13:26:29 2021 +0800
+
+    home page work
+
+commit b815bec1b2df59bebd4f1c03f9088c0f46013ad5
+Merge: e93585a 7441848
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 13 11:23:29 2021 +0800
+
+    minor tweaks
+
+commit e93585a2e49ddb95874f8e3756d4a19b527a162c
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 13 11:16:42 2021 +0800
+
+    minor bug tweaks
+
+commit 74418480ddafe834fe3a94bc3ee85e57f03c282e
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 13 11:06:13 2021 +0800
+
+    moved css from lesson html to own css file
+
+commit 2f89d3af401207b5ef15c510d95d361d63f25f1e
+Merge: 7b590d2 c5f18ba
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Wed May 12 22:24:17 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial
+
+commit 7b590d2e44502c11ad7a4062479785cad2ae1f64
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Wed May 12 22:23:20 2021 +0800
+
+    lesson1 complete
+
+commit c5f18ba514c7186efdf48f20163fdb8a3303639c
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Wed May 12 13:37:24 2021 +0800
+
+    Update routes.py
+
+commit 47010527de2558800c4a875831e82e691e97ab49
+Merge: 4dae85f 235b869
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Wed May 12 13:35:27 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit 4dae85f169fe6f035232d88abe66fbd718f0af70
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Wed May 12 13:35:13 2021 +0800
+
+    Quiz submission attempt 1
+
+commit 235b869ea18f251586b3327471891eee4e93bd5b
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Wed May 12 12:21:06 2021 +0800
+
+    card flipping fully functional
+
+commit c9290509aa217903ef900b2e66c221633c503a7b
+Merge: c384a1b d905609
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Tue May 11 21:44:31 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit c384a1b56c9db6ec714943f886f794351463d658
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Tue May 11 21:43:50 2021 +0800
+
+    added flipper back for some reason
+    
+    i hate this
+
+commit d905609d45456c9811589fd58e05ba538dd2a62f
+Merge: 5f5aee5 e6f4102
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Tue May 11 21:33:37 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit 5f5aee5b68997e8416d7ddd96d0c801ecda277e7
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Tue May 11 21:33:32 2021 +0800
+
+    flipping cards
+
+commit e6f410209bc16138c7895d4967eed554064aa9bd
+Merge: 934bcf4 e430dd9
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Tue May 11 21:29:00 2021 +0800
+
+    Merge branch 'working_Jordan'
+
+commit e430dd9f9f9dc328b23e0cd9fd548f8180a11cf8
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Tue May 11 21:28:35 2021 +0800
+
+    Chart ACTUALLY WORKING
+    
+    nice.
+
+commit 934bcf4b093ff2a89b798d10559025d8feed4249
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Tue May 11 21:19:29 2021 +0800
+
+    fixed the ++ error
+
+commit 0bae60dc1404b0f9983d152e0ea93f05137b9d18
+Merge: 6eb0025 be7ac64
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Tue May 11 19:47:07 2021 +0800
+
+    Merge branch 'working_Jordan'
+
+commit 6eb00256a1d65949dc3fec7f50f239879053a727
+Merge: e05946a e1b3e61
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Tue May 11 19:46:16 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit be7ac645b6de3d62316eeb648f60c0fb6ef1eb5a
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Tue May 11 19:45:56 2021 +0800
+
+    "Working" Charts Update
+    
+    .js not linked
+
+commit e1b3e61f9e20fbf6978eea629f29253fef255252
+Merge: 0c92e61 3ed2ad3
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Tue May 11 19:23:22 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit 3ed2ad3eeed0b8db742e69e2a17d05cd085c3f26
+Merge: 7b099fc 214c3bd
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Tue May 11 19:20:39 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 214c3bd0ad4ce89f6f7021ec236e424d215953e4
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Tue May 11 19:20:12 2021 +0800
+
+    littls JS edits
+
+commit e05946a6878906f3138c02c94d733332a2c8a0e8
+Merge: 8704f29 7b099fc
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Tue May 11 18:57:39 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit 7b099fc070cc35344f880bf3c2ad33c1c66828f9
+Merge: fa93bf8 9851d22
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Tue May 11 17:15:57 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 9851d22c5edef4c4e8db31f319ff45e4b05b34f7
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Tue May 11 17:15:17 2021 +0800
+
+    working quiz for lesson 1
+
+commit 8704f29d141eeb246ffc595ecb34b444a9762362
+Merge: fa93bf8 895ec54
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Tue May 11 16:35:30 2021 +0800
+
+    Merge branch 'working_Jordan'
+
+commit 895ec54c591677cf385b9a509c2112ca2517dc83
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Tue May 11 16:35:05 2021 +0800
+
+    Chart Addition Start
+    
+    Added cool chart. need to link to db results with an array?
+
+commit 0c92e61e2114584df25237e14750fe4427be98e2
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Tue May 11 15:10:56 2021 +0800
+
+    minor css changes
+
+commit fa93bf854612694ab36a7c09e807d62d4facadc0
+Merge: 818c599 4013272
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Tue May 11 12:31:48 2021 +0800
+
+    more lessonshome work
+
+commit 818c599be0d0c36f5aed8c2ca39beb2f9b7ab762
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Tue May 11 12:28:52 2021 +0800
+
+    lesson home work, colour changing options
+
+commit 40132728b0697b3a2ecb36fc41e3fb00c327282f
+Merge: 4d4ef0e 2ab9b78
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 21:11:29 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 2ab9b78b9dbd7fa774ad077a2b145baa058cd54d
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 21:10:44 2021 +0800
+
+    Mostly DB stuff
+
+commit 4d4ef0e84cdefaf1ad1945b92052d8570001d445
+Merge: ab7f007 4b9b82b
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 21:10:13 2021 +0800
+
+    Merge branch 'working_Jordan'
+
+commit 4b9b82bfdd3191f110ee645e0f087c10b3ea8020
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 21:09:44 2021 +0800
+
+    comments
+
+commit ab7f00774bf25a9fa4cc147f6143cc39bdea5ab3
+Merge: 588e49e 6997ffe
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 21:07:48 2021 +0800
+
+    Merge branch 'workingbranch_kane' into main
+
+commit 588e49ef199edd1baf7fcc66058741c03c1bfc6f
+Merge: 210b320 8627bef
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 21:04:50 2021 +0800
+
+    landing page work
+
+commit 6997ffeaf232c80c102525b1d54dd2a497e391f6
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 21:03:54 2021 +0800
+
+    confirmed landing page work
+
+commit e0945e87788a9c8079ea035a1b9a0f4084875689
+Merge: cc7d442 210b320
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 21:02:10 2021 +0800
+
+    merge with working
+
+commit 210b320db951fdf8665b39f98f89e6830ba8b928
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 21:01:38 2021 +0800
+
+     landing page work
+
+commit f80adf77f7fc6d33bae268040968432a5cffa5d3
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 21:01:02 2021 +0800
+
+    landing page work
+
+commit 8627bef5f38c9afac7362646206331d70848f9ab
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 20:49:33 2021 +0800
+
+    lesson updates #itscontenttime
+
+commit e574c167759b63f01c55bde6f263bccbcac76344
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 19:51:21 2021 +0800
+
+    update link begin learning
+
+commit f19a7484e9c2d86455cbd48239fee05efae99843
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 19:51:05 2021 +0800
+
+    Update lessonshome.html
+
+commit f86f0d81584af27f54af08df30cb41df974b9593
+Merge: aa6fd0d 6934ab5
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 19:42:41 2021 +0800
+
+    Merge branch 'main' into working_Jordan
+
+commit 6934ab5a56c7c9706a07d46abffb99163ce2a3af
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 19:41:33 2021 +0800
+
+    good looking quiz
+    
+    update to quiz pages
+
+commit aa6fd0dae42adba021583c0b9a20befe063856f6
+Merge: 296da97 3211234
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 19:32:38 2021 +0800
+
+    Merge branch 'main' into working_Jordan
+
+commit 296da974d91dc18e71cd3419b3e85d28e13b32a5
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 19:32:17 2021 +0800
+
+    removed small things
+
+commit 32112340778a7fd7614a0b82eb912ba2b258039e
+Merge: 461456d 8c9a43a
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 18:20:41 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 8c9a43a0bde18bb8062ac48bc0737950d497b10a
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 18:20:21 2021 +0800
+
+    MCQ update
+
+commit 461456d2a63aa403f7ce3a6fa234eec535ebebee
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 18:19:28 2021 +0800
+
+    leveling with jordan
+
+commit dd0e6268ae59c20fdbaa1de5b78f5e1ea5198053
+Merge: 5cfde47 e520836
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 18:17:39 2021 +0800
+
+    Merge branch 'working_Jordan'
+
+commit e5208369932df651a90932de6f8635bffc0d9fcf
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 18:17:13 2021 +0800
+
+    test git pushing
+
+commit 5cfde47a5466fc09e637dd0f6d2234598c3300f3
+Merge: 27d6d0f 3e24387
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 18:06:25 2021 +0800
+
+    more footer work
+
+commit 27d6d0fa2ceba3ef61be1d81078243820adc494a
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 18:02:43 2021 +0800
+
+     i just committed what do you mean?
+
+commit cc7d44289843349b86b63f124e44a2d32adf5e87
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 17:58:38 2021 +0800
+
+    main page
+
+commit 3e24387d6f98dca98d756fb1182ce9831a3bc54a
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 17:53:12 2021 +0800
+
+    Change from lesson 1 to home
+
+commit 7fc470ac9289100624d518bc20d5d59f81f838d1
+Merge: e548770 1624adf
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 17:52:58 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit e5487705883cc0de87ea44ae06343a26a8d27fae
+Merge: 91b7b41 9045c91
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 17:48:05 2021 +0800
+
+    Merge branch 'working_Jordan'
+
+commit 1624adff3f2f6108c553854756f33f59e5a0ad73
+Merge: 91b7b41 722eb3a
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 17:46:47 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit 9045c912d2dcf1f687aad16762139454048886fe
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 17:46:33 2021 +0800
+
+    Lesson Cards Update
+    
+    Added lesson cards + links.
+
+commit 91b7b412baed73dac4fa3a0efc818e9fd4403103
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 17:46:14 2021 +0800
+
+    required merge
+
+commit 722eb3a586fcdfb22ce2e3d427d94efd081171af
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 17:44:56 2021 +0800
+
+    lesson1 mcq started
+
+commit 87b211f97492b3e7eedf5944950526f7b894b867
+Merge: 9cd79ef 25d615a
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 17:27:28 2021 +0800
+
+    main page updates and footer work
+
+commit 9cd79efff9ffd7aabd3d5723871c480d9bcf8c0c
+Merge: 8aa51fb 04cd13c
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 17:26:29 2021 +0800
+
+    Merge branch 'workingbranch_kane' into main
+
+commit 04cd13c8f6d8b1bbf01a6eda1fae23c429ab7efc
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 17:25:53 2021 +0800
+
+    updated main page and footer work
+
+commit 25d615ac72ee4098575da366acb9f54ece8a6d7a
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 16:40:07 2021 +0800
+
+    lesson blocked, removed unnecessary htmls
+
+commit 8aa51fbecb1e916449eccf2abecfe21d06f73189
+Merge: a9f4231 25ef5ea
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 16:05:03 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit a9f423195708e664827452f2d00d4876c0b4e1e2
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 16:03:14 2021 +0800
+
+    working state
+
+commit 25ef5ea30a99ede45b066ba272221ba5ff53690c
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 16:03:01 2021 +0800
+
+    test commit with lesson 1 link
+    
+    kane broke everything
+
+commit e57ff9321604f0f57eb5d88b9882073f8b680837
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 15:42:48 2021 +0800
+
+    finally fixed
+
+commit d77d762add13df1fe5b920d8cff80ac37894f4bf
+Merge: 6728604 0781850
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 15:37:16 2021 +0800
+
+    Merge branch 'workingbranchJake' into main
+
+commit 0781850e108ef41c29f4f67a87a83c64754ab5df
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 15:36:52 2021 +0800
+
+    kane
+
+commit 67286043f087af1fc708c63afa2e5a0a6a881bbc
+Merge: 017bca1 93df079
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 15:31:20 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial
+
+commit 017bca1f475c24daa26eee847cefc62f8fd0a967
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 15:28:37 2021 +0800
+
+    nice
+
+commit 93df0796836dd19416904173bb6ba259363b9ceb
+Merge: 43851f7 c9d8720
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 15:25:54 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit 43851f70d914f8986252bc9dc1370435278dd130
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 15:25:37 2021 +0800
+
+    splash
+
+commit c9d872016bf0a75a3d455cefa27aa8c11523126f
+Merge: ba6726b 0318a91
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 15:15:44 2021 +0800
+
+    Merge branch 'working_Jordan'
+
+commit 0318a91a00edc4f86439214f388849ab5eb2a424
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 15:15:07 2021 +0800
+
+    small css update
+
+commit ba6726bfd2dccf00b88cb92fabb9116d521eab35
+Merge: 3115874 7081471
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 15:14:18 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit 7081471b0b46eee90f89b5a662e92e3c719af7d7
+Merge: 30d39e0 516a4db
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 15:13:01 2021 +0800
+
+    Merge branch 'workingbranch_kane' into main
+
+commit 30d39e0e76262627fbd2e3511d2258a3ea6c9d35
+Merge: 9d49fc8 359f524
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 15:12:25 2021 +0800
+
+    minor base page changes
+
+commit 516a4db99e57bb0a47d1d482b9d621a64affee28
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 15:09:48 2021 +0800
+
+    base page and footer
+
+commit 359f524f80841dfa725f01cf3e7ec6bdb0fec728
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 15:09:20 2021 +0800
+
+    Content and quiz in lessons
+
+commit 31158745c0ffa1e0c464fa6a60fe87cbe5b3c2b1
+Merge: cf6114b 2c277ab
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 14:40:50 2021 +0800
+
+    Merge branch 'working_Jordan'
+
+commit 2c277ab8c358c0c611a968dea94b04b779c2cd5b
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 14:37:59 2021 +0800
+
+    added lesson links
+
+commit e3dcdd12d3a8a3545c8e5e34dc29c0ef1d5b15e2
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 14:08:29 2021 +0800
+
+    lessonhome update 2.08pm
+
+commit cf6114be590d4f95238b17e5c592677b3600c77f
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 13:43:38 2021 +0800
+
+    db syntax fix
+
+commit 717a6873b543e2a1d5d0d89ab02d9d3239948eee
+Merge: 8414812 cb23caf
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 13:40:08 2021 +0800
+
+    Merge branch 'workingbranchJake'
+
+commit cb23caff8aa16eb5da2ef3b44d7aeecbfe007183
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 13:38:26 2021 +0800
+
+    Added Results Database
+    
+    Added results database
+
+commit 6c2bdd524c19fb403755f86ede9e9a5af07a4b87
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 13:29:12 2021 +0800
+
+    Using Kane's BS template
+
+commit fce9b52ceec93acfd10793f8a37d78dcde86127e
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 13:15:43 2021 +0800
+
+    base site html and css
+
+commit 8414812da0af10acc187a08d97980905aca36c24
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 13:15:02 2021 +0800
+
+    Coming Back from lunch 10/05
+    
+    very minor changes
+
+commit 9d49fc8893470f27187ab4a844e07fd122dc2587
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Mon May 10 13:14:13 2021 +0800
+
+    no real changes
+
+commit 7c03e8da35db0d02fd8b2260061269e3d6bbd6c5
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 12:03:27 2021 +0800
+
+    Lesson Routing
+    
+    must be logged in to access lessons
+
+commit 5484d8d0c965dc8f538b662170d06f97df556abe
+Merge: 9436b9e b133a00
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 12:02:48 2021 +0800
+
+    Merge branch 'main' into working_Jordan
+
+commit 9436b9e641c2f63f556824a0b4e3689b2c7ecdff
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 11:57:14 2021 +0800
+
+    Nav Update #2
+
+commit b133a000ba30b676ea46d7eac11e26846e310ee0
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 11:43:10 2021 +0800
+
+    little update
+
+commit 0cdb98c4671ac4cb75881231e72cc4bed87fdc87
+Merge: 05064b4 001a711
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 11:36:38 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial into main
+
+commit 001a711815e3a4c1372a51ab9db9724018703b38
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 11:33:08 2021 +0800
+
+    Locked lesson
+    
+    added login requirement for full lesson
+
+commit 05064b4a07ce95398d6595cac900c4130719fa51
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 11:32:39 2021 +0800
+
+    Nav Bar Update #1
+    
+    Navbar links work
+
+commit 81340dd690d42d56bb100e794eaf3234f67a9ae5
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Mon May 10 11:16:11 2021 +0800
+
+    test navbar update #1
+
+commit 021beb553953b2d68ce33e739dd2ae30663be7ec
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 10:49:39 2021 +0800
+
+    Quiz page and routing to it
+
+commit 39d1f6c74636fabe88f211a9293b9b84a50a182e
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon May 10 10:16:29 2021 +0800
+
+    custom error pages
+
+commit 500cedc58d813d9f04b1686a5cf6395b27ab6ccb
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun May 9 21:05:35 2021 +0800
+
+    Added profile page
+
+commit 04829b580432c9ac8be6b5fe8f02e05dccd02c23
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sat May 8 20:57:19 2021 +0800
+
+    more HTML fix
+
+commit 089c7ad59838c38b614b40e28925ab6d5778d41a
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sat May 8 20:15:24 2021 +0800
+
+    CSS fix, Jinja optimization
+    
+    register and login page now fit better into the base html, removed excess shit
+
+commit 90908151878f660dc41afa6c7ab5971573bd876e
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri May 7 10:24:02 2021 +0800
+
+    Login System Functional
+    
+    css for the register page is broke tho, need to fix
+
+commit d0ad4e01e0bf74ac3fab511cfb5d507f8428e84f
+Merge: 84ecf68 05e4551
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Thu May 6 19:03:35 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit 05e4551302a7539a4005bf1da78ba96d92717327
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 6 15:54:10 2021 +0800
+
+    testing flask
+
+commit 90824ac84b0f0e054a7be108a8b0ff35f51b74dd
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 6 15:51:00 2021 +0800
+
+    removal of global venv
+
+commit 84ecf68d2ec45538a0ca237023b499b41463f354
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Thu May 6 15:39:21 2021 +0800
+
+    removed venv, slight update gitignore
+
+commit 31367e573e9c01331aa1feeea7bfb90cb5b37180
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 6 15:37:50 2021 +0800
+
+    clean up
+
+commit c1186dd680c5c3b5fd7979d96ccd9d66afcd3f36
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Thu May 6 15:23:02 2021 +0800
+
+    readmeupdate
+
+commit 3d1f34a5a9266a9c9be0cf46d33d851019e8a8c1
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Thu May 6 15:20:28 2021 +0800
+
+    Create .gitignore
+    
+    not meant to have my venv in there whoops
+
+commit 30d3bddff1ab761946304b631a1dbc20e95f0179
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Thu May 6 15:11:34 2021 +0800
+
+    requirements.txt
+    
+    run pip install -r requirements.txt on local machine to install dependencies
+
+commit 73801bc44949018d6da99a7776ee7970d6cc2e49
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Thu May 6 14:16:46 2021 +0800
+
+    Login almost finished
+    
+    Login not quite funcitonal. uploading to combine with main
+
+commit 4e5fc4a851c8b2ebaa241310c20985947730877c
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon Apr 26 22:06:02 2021 +0800
+
+    Flask Update
+    
+    Currently, planning to shift all pages over to flask system. started to do that
+
+commit fa610fe0dbe13313793f7fcf62b4b93689e9255b
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon Apr 26 20:20:43 2021 +0800
+
+    Added Flask
+    
+    Completed the first 3 tutorials from this site: "https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world", put into this folder, will be using this to add flask functionality to the logins
+    Also set up a virtual environment with flask and addons installed. Follow the instructions to use the venv from the link above
+
+commit 173b051f29ddf3fa7c8b08ad58aa09d955e9fc12
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Sat Apr 24 16:22:05 2021 +0800
+
+    Lesson framework #1
+    
+    added lesson into nav, sub folder + link to blank lesson pages
+
+commit 1b3d81cff018c7c04ca07bfb7e9a3d173eb57837
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Sat Apr 24 16:12:55 2021 +0800
+
+    Lesson format begins!
+
+commit a66ba900bb3b820b2495118ae00a7e6f3685ab14
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Sat Apr 24 16:11:33 2021 +0800
+
+    Create lessonshome.html
+
+commit 61d25ea89a2275a519b14dbdf73744b8e9191495
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Sat Apr 24 14:02:42 2021 +0800
+
+    Nav header updates.
+    
+    standardised nav bar at top.
+
+commit 8e638ffb5d4816f66fa7aecdab4c6eea605155f2
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Mon Apr 19 00:02:23 2021 +0800
+
+    Formatting for each page
+    
+    Added the CSS and JS necessary for bootstrap and the theme of the site, to each of the pages
+
+commit 1ffa8f3490851d6f7011e9df3930c62dec3a3bbf
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun Apr 18 23:56:06 2021 +0800
+
+    css adjustments
+    
+    created custom.css for site wide theme, and login.css for the login page
+
+commit e4bc34f1c58fb8a0e0c8acb8f9b6fa0788e2bcb6
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun Apr 18 21:01:27 2021 +0800
+
+    login page update
+    
+    removed bootstrap css, imported in page instead
+
+commit a2885c7126e072c98a0ee274600c11d4fff02881
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Sun Apr 18 20:07:47 2021 +0800
+
+    login page update, custom css creation
+
+commit 7a5716fd2b7eb80f79b22875bd42207f062ffeab
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 17:20:48 2021 +0800
+
+    prelim login setup
+
+commit 30ace9d1dd8927ebb99cd9f1785a22d355bebf8e
+Merge: af21277 32a7a4c
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 16:37:02 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit 32a7a4cf9869a676dc07a9cbd214febb5fc8c1c5
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 16:36:01 2021 +0800
+
+    button
+
+commit af212775cd8ab293e490cacbdfa6055de40ada77
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 16:33:28 2021 +0800
+
+    changed colours back
+
+commit cfcb388f9ff8a1b7e2d0da4a8eed9828e1f0c5a2
+Merge: 35a84e0 f1f20d1
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 16:18:04 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit f1f20d1bb82f5aeecf1ac265979797f1826426b2
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 16:16:02 2021 +0800
+
+    better colour scheme
+
+commit 35a84e0c3abfb33ed1b26d44eec3efce74e115f9
+Merge: 66c23ce cadcd5f
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 16:15:14 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit 66c23ce0e116c277611b6fb716edff98df59584f
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 16:01:02 2021 +0800
+
+    added button test
+
+commit cadcd5f71c1c27fcc6e8ea8b6321c42ec28b16df
+Merge: dfa1b15 1cbe9df
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Fri Apr 16 15:56:16 2021 +0800
+
+    Merge pull request #4 from Kanealex/working_Jordan
+    
+    add nav
+
+commit 1cbe9df1cf2079590c1e08778102546ce2ac6aae
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Fri Apr 16 15:55:57 2021 +0800
+
+    add nav
+
+commit ad9ef56f548de550bfa85b8a9e3ed9be152c0de2
+Merge: 27cddbc dfa1b15
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 15:46:25 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit dfa1b153570c433889ab566a94797a418153bfdc
+Merge: 86c0583 e47193a
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Fri Apr 16 15:43:56 2021 +0800
+
+    Merge pull request #3 from Kanealex/working_Jordan
+    
+    folder creation
+
+commit e47193a63380ad59a1531d6e377a440aa54557f1
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Fri Apr 16 15:43:23 2021 +0800
+
+    folder creation
+
+commit 27cddbc5b21b2c3bf483c81ca71f4a78508448a5
+Merge: 82505d6 86c0583
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 15:39:19 2021 +0800
+
+    Merge branch 'main' into workingbranchJake
+
+commit 86c0583ebe34689151c81a47f4806ce953a9e97c
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 15:38:07 2021 +0800
+
+    Update init.html
+
+commit 7d1bc1c843ca0291e5289a2ac162565ee598c61f
+Merge: 80fa1ca dc3295d
+Author: Kane_Alexander <kanealexander3@gmail.com>
+Date:   Fri Apr 16 15:34:56 2021 +0800
+
+    basic commit
+
+commit 80fa1cab2e13085eb166637b67d0f9ce851d0d87
+Author: Kane_Alexander <kanealexander3@gmail.com>
+Date:   Fri Apr 16 15:34:01 2021 +0800
+
+    basic layout
+
+commit 82505d6d99db238cd3db846e694cf01cccb50be0
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 15:30:08 2021 +0800
+
+    Update test.html
+
+commit dc3295db01a88fd49709deef6fcccc96bfbc2a03
+Merge: e6849e4 89e8dec
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Fri Apr 16 15:30:03 2021 +0800
+
+    Merge pull request #2 from Kanealex/working_Jordan
+    
+    Update splash.html
+
+commit 89e8decb0f34bd5d97e5afc2f6c511ed3ff2a8e4
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Fri Apr 16 15:29:30 2021 +0800
+
+    Update splash.html
+
+commit e6849e4c5941141860b35cdf430d9ab7c80db702
+Merge: b46297e 1066ecd
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 15:24:15 2021 +0800
+
+    Merge branch 'main' of https://github.com/Kanealex/pokertutorial
+
+commit 1066ecdef16f31064ceab3e20cecd8d31d7818cf
+Merge: 66dc884 a81bb5b
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Fri Apr 16 15:23:27 2021 +0800
+
+    Merge pull request #1 from Kanealex/working_Jordan
+    
+    Create splash.html
+
+commit a81bb5ba71f2d0fe3abc7c1c5c4b81400ed270fd
+Author: JLhyun <79490049+JLhyun@users.noreply.github.com>
+Date:   Fri Apr 16 15:21:49 2021 +0800
+
+    Create splash.html
+
+commit b46297e9d0526de015500a7de2cc02cb09c8e4ed
+Author: JakeL1001 <jakelyell@iinet.net.au>
+Date:   Fri Apr 16 15:20:12 2021 +0800
+
+    example upload jake
+
+commit 66dc884b2044637c41fde78038502d34fe5a4b7f
+Author: Kane_Alexander <kanealexander3@gmail.com>
+Date:   Fri Apr 16 15:19:33 2021 +0800
+
+    example upload
+
+commit 144b2fb238258ace32b27e420ac44aaf8487938c
+Author: Kane_Alexander <kanealexander3@gmail.com>
+Date:   Fri Apr 16 15:08:30 2021 +0800
+
+    initial commit
+
+commit 8246b52d73c2839c2c674e93a470a072aec6cdea
+Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
+Date:   Fri Apr 16 15:04:38 2021 +0800
+
+    Initial commit

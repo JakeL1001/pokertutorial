@@ -33,9 +33,10 @@ website can now be accessed on your browser with local host (127.0.0.1:5000)
 Note Updated requirements with selenium and pytest
 Install chromewebdriver from https://sites.google.com/a/chromium.org/chromedriver/downloads
 currently the chromedriver ver is 90 (the one in the project directory)
+Selenium Webdriver tests done through tests.py
 
 Selenium IDE test:
-Opening Poker Tutorial.side in Selenium IDE extension for chrome allows to run 4 more tests. All of which pass as of submission
+Opening Poker Tutorial.side in Selenium IDE extension for chrome allows to run 4 more tests. All of which pass as of submission. Screenshot of completed tests included in zip as register-sign-in-test.png
 
 Open the virtual environment and enter this command to run the unittester.py file
 python -m unittest -v unittester.py
