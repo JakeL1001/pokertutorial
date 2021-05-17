@@ -3,9 +3,7 @@
 ------------------------------------------------------------------------------------------------------------------------------
 ADD LOG FILE.
 
-Make top of User/Profile page prettier
-make drop down menu work when window is very thin
-fix all remaining TODOs
+fix all remaining TODOs (ctrl+shift+f, then search TODO)
 
 Edit the readme to abide by this:
     In addition to the web application, you should create a private GitHub project that includes a readme describing:
@@ -29,7 +27,6 @@ could probably add even more users and quiz results for those users for the stat
 additional extras (if there's time):
 
 add score of previous tests on the card of the lessons page
-
 
 Testing stuff
 
