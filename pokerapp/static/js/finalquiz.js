@@ -1,7 +1,7 @@
-function updateanswers(question, answer) {//makes chosen card glow and updates the current selected answer
+function updateanswers(question, answer) { //makes chosen card glow and updates the current selected answer
     if (!submitted) {
         clientresponse[question] = answer;
-        for (i = 0; i < document.getElementsByClassName("question")[question].getElementsByClassName("answer").length; i++) {
+        for (var i = 0; i < document.getElementsByClassName("question")[question].getElementsByClassName("answer").length; i++) {
             if (document.getElementsByClassName("question")[question].getElementsByClassName("answer")[i].classList.contains("chosen"))
                 document.getElementsByClassName("question")[question].getElementsByClassName("answer")[i].classList.remove("chosen");
         }
@@ -9,10 +9,10 @@ function updateanswers(question, answer) {//makes chosen card glow and updates t
     }
 }
 
-function findresult() {//goes through answer array and selected user array to find user result
+function findresult() { //goes through answer array and selected user array to find user result
     submitted = true;
     var total = 0;
-    for (i = 0; i < answerkey.length; i++) {
+    for (var i = 0; i < answerkey.length; i++) {
         if (answerkey[i] == clientresponse[i]) { //if answer correct
             console.log(document.getElementsByClassName("question")[i].getElementsByClassName("answer")[clientresponse[i]]);
             document.getElementsByClassName("question")[i].getElementsByClassName("answer")[clientresponse[i]].classList.add("correct");
@@ -39,8 +39,8 @@ function findresult() {//goes through answer array and selected user array to fi
 
 
 var output = document.getElementsByClassName("question");
-for (i = 0; i < output.length; i++) { //binds answer classes to correct part of the client response array
-    for (x = 0; x < output[i].getElementsByClassName("answer").length; x++) {
+for (var i = 0; i < output.length; i++) { //binds answer classes to correct part of the client response array
+    for (var x = 0; x < output[i].getElementsByClassName("answer").length; x++) {
         output[i].getElementsByClassName("answer")[x].addEventListener('click', updateanswers.bind(event, i, x));
     }
 }
