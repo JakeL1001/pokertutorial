@@ -62,6 +62,7 @@ ul.list-group {
     min-height: 80px;
 }
 
+/*for lesson quizes*/
 
 li.list-group-item {
     font-size: 18px;
@@ -117,6 +118,7 @@ li.list-group-item {
     overflow: hidden;
 }
 
+/* card flip css*/
 .cardimg {
     width: 100%;
     height: auto;
@@ -145,10 +147,12 @@ li.list-group-item {
     box-shadow: 0px 0px 30px rgb(250, 225, 85);
 }
 
+
 .cardreject {
     filter: brightness(60%);
 }
 
+/* H4 creates the line break on either side*/
 h4 {
     display: flex;
     flex-direction: row;
@@ -173,6 +177,7 @@ p.card-text {
     width: 30%;
 }
 
+/*caption on the poker game images */
 .caption {
     font-size: 15px;
     color: rgb(165, 165, 165);

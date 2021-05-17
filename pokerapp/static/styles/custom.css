@@ -8,6 +8,7 @@
     border-radius: 50px;
 }
 
+/*background gradient*/
 body {
     background-color: #000000;
     background-image: linear-gradient(180deg, #000000, #470303);
@@ -20,7 +21,6 @@ h1 {
     /* white headings */
     color: white;
     text-align: center;
-    font-family: "Sans Serif    ";
     font-size: 30px;
 }
 
@@ -58,9 +58,6 @@ footer {
     opacity: 1;
     margin: 20px;
 }
-
-
-/**kanes**/
 
 .container {
     max-width: 960px;
@@ -103,19 +100,6 @@ footer {
     color: white;
 }
 
-.flex-equal>* {
-    -ms-flex: 1;
-    -webkit-box-flex: 1;
-    flex: 1;
-}
-
-@media (min-width: 768px) {
-    .flex-md-equal>* {
-        -ms-flex: 1;
-        -webkit-box-flex: 1;
-        flex: 1;
-    }
-}
 
 .overflow-hidden {
     overflow: hidden;

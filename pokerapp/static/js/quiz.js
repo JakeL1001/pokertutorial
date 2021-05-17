@@ -181,12 +181,12 @@ const Quiz1Qs = [
 ];
 const Quiz2Qs = [
     { question: "A 'Flush' is 5 of the same number.", answers: { a: "Incorrect", b: "Correct" }, correctAnswer: "a" },
-    { question: "A 'Straight' is what 5 cards of:", answers: { a: "the same suit", b: "consecutive rank order", c: "the same rank" }, correctAnswer: "b" },
+    { question: "A 'Straight' is what 5 cards of:", answers: { a: "The Same Suit", b: "Consecutive Rank Order", c: "The Same Rank" }, correctAnswer: "b" },
     { question: "What hand beats 'Quads'?", answers: { a: "Flush", b: "Full House", c: "Nothing", d: "Straight Flush" }, correctAnswer: "d" }
 ];
 const Quiz3Qs = [
     { question: "What is a fold?", answers: { a: "Betting all your chips", b: "Forfeiting cards out of your hand", c: "Betting half the community pot" }, correctAnswer: "b" },
-    { question: "What is a raise?", answers: { a: "the player does not bet further as they have already put in an amount that satisfies the current bet.", b: "Betting all your chips", c: "Increasing the minimum bet size with a bet" }, correctAnswer: "c" },
+    { question: "What is a raise?", answers: { a: "The player does not bet further as they have already put in an amount that satisfies the current bet.", b: "Betting all your chips", c: "Increasing the minimum bet size with a bet." }, correctAnswer: "c" },
     { question: "What is the next round after the turn?", answers: { a: "flop", b: "raise", c: "river", d: "pre-flop" }, correctAnswer: "c" }
 ];
 
