@@ -1,91 +1,147 @@
-{% extends "base.html" %}{% block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
-<script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
+<!-- base page that all other pages extend from, contains navbar, footer, and necessary JS and CSS -->
+<!DOCTYPE html>
+<html lang="en">
 
 <button class="tablink" onclick="openPage('content', this, 'rgb(39, 42, 200)'); changebackgroundblue();" id="defaultOpen">Lesson 3</button>
 
 
-<div id="content" class="tabcontent">
-    <h3 class="display-4 font-weight-normal header-main">The Game of Poker</h3>
-    <p>Poker is a turn based game. The are stages of play come in an order: pre-flop, flop, turn and then the river. Players make betting actions during these phases. Players can fold, bet, raise or check.</p>
-    <div class="card-group">
-        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-            <div class="card-body">
-                <h2 class="card-title">Fold</h2>
-                <p class="card-text">A fold means the player forfeits the round, places their cards out of their hand and sits out.
-                </p>
-            </div>
-        </div>
-        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-            <div class="card-body">
-                <h2 class="card-title">Bet</h2>
-                <p class="card-text">A bet means the player is placing a bet into the community pot of chips.
-                </p>
-            </div>
-        </div>
-        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-            <div class="card-body">
-                <h2 class="card-title">Raise</h2>
-                <p class="card-text"> A raise means the player is increasing the minimum bet size with their own bet.
-                </p>
-            </div>
-        </div>
-        <div class="card cardtop" style="border-radius: 8px; background-color: transparent">
-            <div class="card-body">
-                <h2 class="card-title">Check</h2>
-                <p class="card-text"> A check is when the player does not bet further as they have already put in an amount that satisfies the current bet.
-                </p>
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <h4>&nbsp;Pre-Flop&nbsp;</h4>
-    <br>
-    <p> 
-        The PreFlop is the first stage of poker, this is where the players are all dealt 2 'hidden' cards. These cards
-        are kept hidden to all players except those to who they belong to. After being dealt these cards, 5 cards are added 
-        face up to the table (in the order shown below). A  player makes their hand.
-        Preflop explanation MUST INCLUDE REFERENCE TO IVEY LEAGUE FOR ANIMATIONS :https://www.youtube.com/watch?v=09jmSZ-lKRM TODO
-    </p>
+<!-- flashes error messages as dialog box -->
+{% with messages = get_flashed_messages() %} {% if messages %}
+<script>
+    var messages = "{{ messages | safe }}";
+    alert(messages);
+</script>
+{% endif %} {% endwith %}
 
-    <br><br>
-    <h4>&nbsp;Flop, Turn and River&nbsp;</h4>
-    <br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col" style = "margin-left: 5px; margin-right: 5px;">
-                <img id="flopAnimate" src='../../static/lesson3animations/flop.jpg' style="min-width: 200px;" alt="flop animation">
-                <p  class = "caption">Hover to animate the flop.</p>
-                <p>
-                    The flop is when the first 3 open cards are placed face up on the table.
-                </p>
-            </div>
-            <div class="col" style = "margin-left: 5px; margin-right: 5px;">
-                <img id="turnAnimate" src='../../static/lesson3animations/turn.jpg' style="min-width: 200px;" alt="turn animation">
-                <p  class = "caption">Hover to animate the turn.</p>
-                <p>The turn is the when the next, 4th, card is turned face up.</p>
-            </div>
-            <div class="col" style = "margin-left: 5px; margin-right: 5px;">
-                <img id="riverAnimate" src='../../static/lesson3animations/river.jpg' style="min-width: 200px;" alt="river animation">
-                <p class = "caption">Hover to animate the river.</p>
-                <p>The river is the 5th and final card.</p>
+<body>
+    <!--Jordan's cool navbar-->
+    <nav class="navbar navbar-dark navbar-expand-sm mt-3" style="background-color: rgb(153, 27, 27);">
+        <a class="navbar-brand" href="{{ url_for('home') }}">
+            <img src='https://images.vexels.com/media/users/3/151229/isolated/preview/3fbd44975e2287324c2ee8d5f4017c67-spades-card-icon-by-vexels.png' width='30' style="height:auto;" alt="logo"> Poker Basics
+        </a>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                    </li>
+                    {% if current_user.is_anonymous %}
+                    <!--different if logged in or out-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
+                    </li>
+                    <li class="nav-item">
+                        <!--Profile Page will be "giving feedback to the user"-->
+                        <a class="nav-link" href="{{ url_for('user', username=current_user.username) }}">Profile</a>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item">
+                        <!--Link to lessons home page-->
+                        <a class="nav-link" href="{{url_for('lessons')}}" tabindex="-1">Lessons</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <!--link to page for aggregate data display-->
+                        <a class="nav-link" href="{{ url_for('stats')}}" tabindex="-1">Stats</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
-</div>
-<div id="quiz2" class="tabcontent">
-    <h3>Quiz 3: The Game</h3>
-    <button id="Quiz3" class="btn btn-dark">Click to Begin!</button>
-    <div id="quiz"></div>
-    <button id="submit" class="btn btn-dark">Mark Quiz</button>
-    <div id="results" style="color: white;"></div>
-    <form action="#" method="post" id="myForm">
-        {{ form.hidden_tag() }}
-        <p id="finalscore"></p>
-        <p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" value="Submit and Continue"> </p>
-    </form>
-</div>
+    </nav>
 
-<button class="tablink" onclick="openPage('quiz2', this, 'green'); changebackgroundgreen();">Quiz</button>
+    {% block content %} {% endblock %}
 
-{% endblock %}
+    <footer>
+        <!--Footer at bottom of page-->
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 footer">
+                    <h5 style="color:rgb(153, 27, 27)">Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="TODO">Login</a></li>
+                        <li><a class="text-muted" href="TODO">Home</a></li>
+                        <li><a class="text-muted" href="TODO">Lessons</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer">
+                    <h5 style="color:rgb(153, 27, 27)">Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="TODO">Login</a></li>
+                        <li><a class="text-muted" href="TODO">Home</a></li>
+                        <li><a class="text-muted" href="TODO">Lessons</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-4 col-md-6 footer">
+                    <h5 style="color:rgb(153, 27, 27)">Contact Us</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="mailto:22710428@student.uwa.edu.au">Kane Alexander</a></li>
+                        <li><a class="text-muted" href="mailto:22705507@student.uwa.edu.au">Jordan Lee</a></li>
+                        <li><a class="text-muted" href="mailto:22704832@student.uwa.edu.au">Jake Lyell</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <a class="text-muted text-center" href="https://teaching.csse.uwa.edu.au/units/CITS3403/">2021 Agile Web
+                Development Project</a>
+        </div>
+        </div>
+        <br><br>
+        <h4>&nbsp;Pre-Flop&nbsp;</h4>
+        <br>
+        <p>
+            The PreFlop is the first stage of poker, this is where the players are all dealt 2 'hidden' cards. These cards are kept hidden to all players except those to who they belong to. After being dealt these cards, 5 cards are added face up to the table (in
+            the order shown below). A player makes their hand. Preflop explanation MUST INCLUDE REFERENCE TO IVEY LEAGUE FOR ANIMATIONS :https://www.youtube.com/watch?v=09jmSZ-lKRM TODO
+        </p>
+
+        <br><br>
+        <h4>&nbsp;Flop, Turn and River&nbsp;</h4>
+        <br>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col" style="margin-left: 5px; margin-right: 5px;">
+                    <img id="flopAnimate" src='../../static/lesson3animations/flop.jpg' style="min-width: 200px;" alt="flop animation">
+                    <p class="caption">Hover to animate the flop.</p>
+                    <p>
+                        The flop is when the first 3 open cards are placed face up on the table.
+                    </p>
+                </div>
+                <div class="col" style="margin-left: 5px; margin-right: 5px;">
+                    <img id="turnAnimate" src='../../static/lesson3animations/turn.jpg' style="min-width: 200px;" alt="turn animation">
+                    <p class="caption">Hover to animate the turn.</p>
+                    <p>The turn is the when the next, 4th, card is turned face up.</p>
+                </div>
+                <div class="col" style="margin-left: 5px; margin-right: 5px;">
+                    <img id="riverAnimate" src='../../static/lesson3animations/river.jpg' style="min-width: 200px;" alt="river animation">
+                    <p class="caption">Hover to animate the river.</p>
+                    <p>The river is the 5th and final card.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="quiz2" class="tabcontent">
+            <h3>Quiz 3: The Game</h3>
+            <button id="Quiz3" class="btn btn-dark">Click to Begin!</button>
+            <div id="quiz"></div>
+            <button id="submit" class="btn btn-dark">Mark Quiz</button>
+            <div id="results" style="color: white;"></div>
+            <form action="#" method="post" id="myForm">
+                {{ form.hidden_tag() }}
+                <p id="finalscore"></p>
+                <p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" value="Submit and Continue"> </p>
+            </form>
+        </div>
+
+        <button class="tablink" onclick="openPage('quiz2', this, 'green'); changebackgroundgreen();">Quiz</button> {% endblock %}
