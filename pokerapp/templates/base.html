@@ -1,3 +1,4 @@
+<!-- base page that all other pages extend from, contains navbar, footer, and necessary JS and CSS -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/custom.css') }}"> {% block style %}{% endblock %}
 </head>
 
+<!-- flashes error messages as dialog box -->
 {% with messages = get_flashed_messages() %} {% if messages %}
 <script>
     var messages = "{{ messages | safe }}";
@@ -18,8 +20,9 @@
 </script>
 {% endif %} {% endwith %}
 
+<!-- The navbar used for navigation across all pages -->
+
 <body>
-    <!--Jordan's cool navbar-->
     <nav class="navbar navbar-dark navbar-expand-sm mt-3" style="background-color: rgb(153, 27, 27);">
         <a class="navbar-brand" href="{{ url_for('home') }}">
             <img src='https://images.vexels.com/media/users/3/151229/isolated/preview/3fbd44975e2287324c2ee8d5f4017c67-spades-card-icon-by-vexels.png' width='30' style="height:auto;" alt="logo"> Poker Basics
@@ -62,6 +65,7 @@
     </nav>
 
     {% block content %} {% endblock %}
+    <!-- this is where each individual page's html is input -->
 
     <footer>
         <!--Footer at bottom of page-->
@@ -104,12 +108,13 @@
         </div>
     </footer>
 
-    <!--Optimisation scripts-->
+    <!-- required JS scripts, placed at bottom for faster loading-->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
     {%block script%} {%endblock%}
+    <!-- spot to input necessary scripts for each page -->
 </body>
 
 </html>

@@ -1,4 +1,4 @@
-import unittest, os
+import unittest
 
 from werkzeug.security import generate_password_hash
 from pokerapp import pokerpack, db
@@ -19,8 +19,10 @@ class UserModelCase(unittest.TestCase):
         Result3 = Results(user_id="932", quiz1="75", quiz2="95", quiz3="80", finalquiz="70")
         db.session.add(User1)
         db.session.add(User2)
+        db.session.add(User3)
         db.session.add(Result1)
         db.session.add(Result2)
+        db.session.add(Result3)
         db.session.commit()
 
     def test_2_user_password_hash(self):

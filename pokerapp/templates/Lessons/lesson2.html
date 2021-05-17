@@ -1,10 +1,13 @@
+<!-- Contains lesson 2 -->
 {% extends "base.html" %}{% block style %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
 <script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
 
 <button class="tablink" onclick="openPage('content', this, 'rgb(39, 42, 200)')" id="defaultOpen">Lesson 2</button>
+<!-- initializes the tabs-->
 <button class="tablink" onclick="openPage('quiz2', this, 'green')">Quiz</button>
 
+<!-- contains the lesson content for lesson 2-->
 <div id="content" class="tabcontent">
     <h3 class="display-4 font-weight-normal header-main">Hand Rankings</h3>
     <p>
@@ -237,10 +240,10 @@
     <br>
     <p>Like the name suggests a 'Straight Flush' is when a player both has a straight and a flush at the same time. The player must have 5 cards in order and of the same suit. This is the strongest hand in poker, and when it starts from the highest card
         (the ace) it is known as the Royal Flush. </p>
-
-
 </div>
 
+<!-- quiz content for lesson 2-->
+<!-- created dynamically with JS-->
 <div id="quiz2" class="tabcontent">
     <h3>Quiz 2</h3>
     <button id="Quiz2" class="btn btn-dark">Begin</button>

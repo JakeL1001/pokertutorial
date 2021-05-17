@@ -1,12 +1,15 @@
 * {
+    /*adds rounded edges to everything */
     border-radius: 8px;
 }
 
 .btn {
+    /* very round buttons */
     border-radius: 50px;
 }
 
 body {
+    /* the site wide css, background colour and font style */
     background-color: black;
     text-align: center;
     font-family: 'Calibri';
@@ -14,6 +17,7 @@ body {
 }
 
 h1 {
+    /* white headings */
     color: white;
     text-align: center;
 }
@@ -23,32 +27,10 @@ audio {
 }
 
 p {
+    /* all p content font and font size */
     font-family: verdana;
     font-size: 20px;
     color: white;
-}
-
-.sidenav {
-    width: 120px;
-    position: fixed;
-    z-index: 1;
-    top: 100px;
-    left: 20px;
-    background: rgb(153, 27, 27);
-    overflow-x: hidden;
-    padding: 8px 0;
-}
-
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    color: rgba(255, 255, 255, .5);
-    display: block;
-}
-
-.sidenav a:hover {
-    color: rgba(255, 255, 255, .75);
 }
 
 .main {
@@ -60,6 +42,7 @@ p {
 }
 
 .responsive {
+    /* allows content to be adaptive to the size of the window */
     width: 100%;
     height: auto;
 }
@@ -74,10 +57,12 @@ p {
 }
 
 footer {
+    /* margins for the footer */
     margin: 55px;
 }
 
 .chart-card {
+    /* makes chart visible */
     opacity: 1;
 }
 
@@ -95,15 +80,11 @@ footer {
 
 
 /*
-   * Dummy devices (replace them with your own or something else entirely!)
-   */
-
-
-/*
    * Extra utilities
    */
 
 .border-top {
+    /* border controls */
     border-top: 1px solid #e5e5e5;
 }
 
@@ -142,6 +123,7 @@ footer {
 }
 
 .button {
+    /* button styling */
     border: none;
     background-color: #555555;
     padding: 15px 32px;
@@ -154,6 +136,7 @@ footer {
 }
 
 .card {
+    /* cards for quizzes */
     background-color: rgb(51, 153, 56);
     margin: 15px;
     padding: 10px;
@@ -161,12 +144,16 @@ footer {
 }
 
 .hightlight:hover,
+
+/* darken the card when hovered over */
+
 .hightlight:hover>a {
     text-decoration: none;
     background-color: rgb(27, 104, 31);
 }
 
 .cardtop {
+    /* makes top card in a set look better */
     margin-top: 0px;
 }
 

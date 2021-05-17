@@ -1,4 +1,4 @@
-/* div.form and form used to center current login page forms, may be removed if login page functionality changes */
+/* CSS for the login and register pages */
 
 div.form {
     display: block;
@@ -7,11 +7,13 @@ div.form {
 }
 
 div h2 {
+    /* h2 formatting */
     margin-top: 100px;
     color: whitesmoke;
 }
 
 form {
+    /* form formatting */
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
@@ -21,6 +23,7 @@ form {
 }
 
 div.logincontainer {
+    /* css for the login and register containers*/
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;

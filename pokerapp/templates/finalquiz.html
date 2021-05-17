@@ -1,3 +1,4 @@
+<!-- html for the final quiz -->
 {% extends "base.html" %}{% block style %}
 <style>
     body {
@@ -32,11 +33,12 @@
         opacity: 100%;
     }
 </style>
+<!-- style needed for only this page, didnt think a css file was necessary -->
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
 <script src="{{url_for('static', filename='js/finalquiz.js') }}"></script> {%endblock%}{% block content %}
 
 <h3 class="display-4 font-weight-normal header-main">The Final Quiz</h3>
-
+<!-- clickable questions -->
 <h4 style="color:white">&nbsp;Pick the Highest Card&nbsp;</h4>
 <div class="container">
     <div class="row question">
@@ -159,9 +161,10 @@
     </div>
 </div>
 
-
 <br>
+<!-- submit and mark buttons for the quiz -->
 <button id="submit" class="btn btn-dark" style="visibility: visible;">Mark Quiz</button>
+<div id="results" style="color: white;"></div>
 <form action="#" method="post" id="myForm">
     {{ form.hidden_tag() }}
     <p id="finalscore" style="display:none;"></p>

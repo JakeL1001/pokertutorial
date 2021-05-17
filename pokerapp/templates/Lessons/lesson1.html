@@ -1,11 +1,14 @@
-{% extends "base.html" %}{% block style %}
+<!-- HTML for the first lesson in the poker tutorial-->
+{% extends "base.html" %}
+<!-- contains the navbar and footer-->{% block style %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 1{% endblock %}{% block script %}
 <script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
 
+<!-- initiates the tabs -->
 <button class="tablink" onclick="openPage('content', this, 'rgb(39, 42, 200)')" id="defaultOpen">Lesson 1</button>
 <button class="tablink" onclick="openPage('quiz2', this, 'green')">Quiz</button>
 
-
+<!-- the content to learn for lesson 1 -->
 <div id="content" class="tabcontent">
     <h1 class="display-4 font-weight-normal header-main">Click to Reveal the Suits</h1>
     <div class="container-fluid">
@@ -129,10 +132,9 @@
             </div>
         </div>
     </div>
-
-
 </div>
-
+<!-- the content for the quiz -->
+<!-- all produced dynamically with JS -->
 <div id="quiz2" class="tabcontent">
     <h2>Quiz 1: The Suits</h2>
     <button id="Quiz1" class="btn btn-dark">Begin</button>
