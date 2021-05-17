@@ -7,9 +7,14 @@ import time
 chrome_PATH = "chromedriver.exe" #for now just chrome web driver but for firefox e.g. similar setup . currently chrome v 90
 driver = webdriver.Chrome(chrome_PATH) 
 
-driver.get("http://localhost:5000/home")
+driver.get("http://localhost:5000/login")
+username = driver.find_element_by_id("Username")
+password = driver.find_element_by_id("Password")
 
-#link = driver.find_element_by_link_text("Begin Learning")
-#link.click()
+username.send_keys("jord")
+password.send_keys("jord")
+
+link = driver.find_element_by_link_text("Sign In")
+link.click()
 time.sleep(10)
 driver.quit()
