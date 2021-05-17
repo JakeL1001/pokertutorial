@@ -1,6 +1,9 @@
 
 --TODO list!--
 ------------------------------------------------------------------------------------------------------------------------------
+ADD LOG FILE.
+
+
 Add more questions to lesson 2 and lesson 3, very easy, just add to the questions arrays in quiz.js
 Make Login and Register pages prettier
 Make top of User/Profile page prettier
