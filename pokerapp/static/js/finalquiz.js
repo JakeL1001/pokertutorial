@@ -21,8 +21,9 @@ function findresult() {//goes through answer array and selected user array to fi
             document.getElementsByClassName("question")[i].getElementsByClassName("answer")[clientresponse[i]].classList.add("incorrect");
         }
     }
-    resultperc = (total / answerkey.length) * 100;
-    resultsContainer = document.getElementById("results");
+    let resultperc = (total / answerkey.length) * 100;
+    resultperc = resultperc.toFixed(2);
+    const resultsContainer = document.getElementById("results");
     if (resultperc < 50.0) { //show in red box if fail
         resultsContainer.innerHTML = `<div class="card card2" style="background-color: red;"><div class=card-body>${total} out of ${answerkey.length} | ${resultperc}</div></div>`;
     } else if (resultperc >= 50.0 && resultperc != 100) { //show in green box if pass but not 100%

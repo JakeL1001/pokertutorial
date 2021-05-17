@@ -2,19 +2,8 @@
 --TODO list!--
 ------------------------------------------------------------------------------------------------------------------------------
 ADD LOG FILE.
-quiz fonts and sizes
-fix footer links
 
-Add more questions to lesson 2 and lesson 3, very easy, just add to the questions arrays in quiz.js 
-Make Login and Register pages prettier -DONE
-Make top of User/Profile page prettier
-fix the login.css containers, make into one (back end boy requires a front end chad to help) - done
-Comment all of the code
-create unittests -DONE
-perform selenium tests (Lecture 12) - IN PROGRESS
-error logging - DONE
-make drop down menu work when window is very thin, same with the cards
-fix all remaining TODOs
+fix all remaining TODOs (ctrl+shift+f, then search TODO)
 
 Edit the readme to abide by this:
     In addition to the web application, you should create a private GitHub project that includes a readme describing:
@@ -38,7 +27,6 @@ could probably add even more users and quiz results for those users for the stat
 additional extras (if there's time):
 
 add score of previous tests on the card of the lessons page
-
 
 Testing stuff
 

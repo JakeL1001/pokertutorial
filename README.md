@@ -1,4 +1,5 @@
 # pokertutorial
+
 Agile Web Development Project; Poker Tutorial.
 
 -- The Website Purpose --
@@ -16,15 +17,15 @@ After doing so lessons are available. On the lesson pages are content and assess
 the profile page for "giving feedback to the user". As well as a page for "aggregate results and usage statistics"
 
 --Setting Up the Virtual Environment --
-To run first time on windows; 
-python -m venv venv              #create a new virtual env
-venv\Scripts\activate            #activate venv
-pip install -r requirements.txt  #install requirements 
-flask run                        #run flask
+To run first time on windows;
+python -m venv venv #create a new virtual env
+venv\Scripts\activate #activate venv
+pip install -r requirements.txt #install requirements
+flask run #run flask
 
 To run consequent times on windows;
-venv\Scripts\activate           #activate venv
-flask run                       #run flask
+venv\Scripts\activate #activate venv
+flask run #run flask
 
 website can now be accessed on your browser with local host (127.0.0.1:5000)
 
@@ -33,8 +34,8 @@ Note Updated requirements with selenium and pytest
 Install chromewebdriver from https://sites.google.com/a/chromium.org/chromedriver/downloads
 currently the chromedriver ver is 90 (the one in the project directory)
 
-
-
+Open the virtual environment and enter this command to run the unittester.py file
+python -m unittest -v unittester.py
 
 -- To Do List --
 TODO: change card titles to one consistent heading (h2?)
