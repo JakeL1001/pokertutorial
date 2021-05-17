@@ -16,11 +16,11 @@
             <span style="color: red;">[{{ error }}]</span> {% endfor %}
         </p>
         <p>
-            <input id="password" class= "input" name="password" placeholder= "email" required size="20" type="password" value=""><br> {% for error in form.password.errors %}
+            <input id="password" class= "input" name="password" placeholder= "password" required size="20" type="password" value=""><br> {% for error in form.password.errors %}
             <span style="color: red;">[{{ error }}]</span> {% endfor %}
         </p>
         <p>
-            <input id="password2" class = "input" name="password2" placeholder = "repeat email" required size="20" type="password" value=""><br> {% for error in form.password2.errors %}
+            <input id="password2" class = "input" name="password2" placeholder = "repeat password" required size="20" type="password" value=""><br> {% for error in form.password2.errors %}
             <span style="color: red;">[{{ error }}]</span> {% endfor %}
         </p>
         <p><input id="submit" class = "submit" name="submit" type="submit" value="Register"></p>
