@@ -5,12 +5,6 @@ Date:   Mon May 17 17:24:05 2021 +0800
 
     Merge branch 'workingbranchJake'
 
-commit 974aaa3fc4afa4451a8b1bbdc9d4a9e72d701a63
-Author: JakeL1001 <jakelyell@iinet.net.au>
-Date:   Mon May 17 17:23:56 2021 +0800
-
-    Update pokerdb.db
-
 commit fee60720adb027e0185be13486a48884de5e7939
 Author: JakeL1001 <jakelyell@iinet.net.au>
 Date:   Mon May 17 17:23:19 2021 +0800
@@ -112,11 +106,6 @@ Date:   Mon May 17 16:26:45 2021 +0800
 
     Merge branch 'workingbranchJake'
 
-commit f7cf50e0b87c7091d05d0d6d954264f0186b11e4
-Author: JakeL1001 <jakelyell@iinet.net.au>
-Date:   Mon May 17 16:26:38 2021 +0800
-
-    Update pokerdb.db
 
 commit 61ba210de4602fe99ee80b9484e3c284dad80417
 Author: JakeL1001 <jakelyell@iinet.net.au>
@@ -148,18 +137,6 @@ Date:   Mon May 17 15:19:16 2021 +0800
 
     readme changes
 
-commit 697edce6106826f2c92488f19129abebfbc9bf90
-Merge: f40a281 90ceaa7
-Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
-Date:   Mon May 17 15:12:56 2021 +0800
-
-    pokerdb conflicts
-
-commit f40a281ac85c589fb7d4464924cc3ea1e9bbbbf5
-Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
-Date:   Mon May 17 15:11:47 2021 +0800
-
-    pokerdb changes
 
 commit 69a3bc8f77e2bd1e5fdba0fb85fc6cda5ee6e58a
 Merge: 52c2bca 90ceaa7
@@ -188,11 +165,6 @@ Date:   Mon May 17 15:06:15 2021 +0800
 
     updated login
 
-commit b3cd180dee4098122c3ecbe7acf6b66ce0231b09
-Author: JakeL1001 <jakelyell@iinet.net.au>
-Date:   Mon May 17 15:05:03 2021 +0800
-
-    Update pokerdb.db
 
 commit 9d793db71a8f0f78c3948211c8204967bf624ae6
 Merge: 4efc533 65d9ea5
@@ -242,12 +214,6 @@ Date:   Mon May 17 13:55:27 2021 +0800
 
     log file added
 
-commit 1986a3fde680921d93136b4b656956e210bd3426
-Merge: 660793d 18d8c54
-Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
-Date:   Mon May 17 13:52:39 2021 +0800
-
-    pokerdb change
 
 commit 18d8c54c4b0953b3cf5d290f8ad6d5cf4e664349
 Author: Kanealex <72069221+Kanealex@users.noreply.github.com>
@@ -268,13 +234,6 @@ Date:   Mon May 17 12:22:33 2021 +0800
 
     Merge branch 'workingbranchJake'
 
-commit 398c1c983ea61cf75586541f72ab23f31d6f32aa
-Author: JakeL1001 <jakelyell@iinet.net.au>
-Date:   Mon May 17 12:22:20 2021 +0800
-
-    Update pokerdb.db
-    
-    updated
 
 commit 3b13c6583806f0c1a20213712e69c838a07075a1
 Author: JakeL1001 <jakelyell@iinet.net.au>
