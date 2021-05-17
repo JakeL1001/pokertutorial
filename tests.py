@@ -15,49 +15,35 @@ driver = webdriver.Chrome(chrome_PATH)
 
 def test_login(): #auto login
     driver.get("http://localhost:5000/login")   
-    username = driver.find_element_by_id("username")
+    username = driver.find_element_by_id("username") #find login fields
     password = driver.find_element_by_id("password")
 
-    username.send_keys("jord")
+    username.send_keys("jord") #input login info
     password.send_keys("jord")
 
     driver.find_element_by_id("submit").click()
     return
 
 def access_lessons(): #testing lesson access with login/out
-    test_login()
+    test_login() #Test lesson access when logged in
     driver.find_element_by_link_text("Begin Learning").click()
     driver.get("http://localhost:5000/lesson1")
 
 
-
+    #test login access when logged out
     driver.find_element_by_link_text("Logout").click()
     driver.get("http://localhost:5000/Home")
     driver.find_element_by_link_text("Begin Learning").click()
-    #driver.get("http://localhost:5000/lesson1")
+    driver.get("http://localhost:5000/lesson1")
     #driver.quit()
 
     return
 
 
-def test_lessons():
-    test_login()
-    driver.get("http://localhost:5000/lesson1")
-    driver.find_element_by_class_name("tablink")[1].click
-    driver.find_element_by_link_text("Click To Begin!").click()
-    driver.find_element_by_link_text("Mark Quiz").click()
-    driver.find_element_by_link_text("Submit and Continue").click()
-
-
-    return
-
 
 def main():
-    #access_lessons() #Test loggedin/out lesson access
-    #driver.close()
-    test_lessons() #Run though lessons
-
-
+    access_lessons() #Test loggedin/out lesson access
+    #see readme for info about other tests
     #Wait then close
     time.sleep(20)
     driver.quit()
