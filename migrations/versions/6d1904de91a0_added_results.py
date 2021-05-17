@@ -23,7 +23,7 @@ def upgrade():
     sa.Column('quiz1', sa.Float(), nullable=True),
     sa.Column('quiz2', sa.Float(), nullable=True),
     sa.Column('quiz3', sa.Float(), nullable=True),
-    sa.Column('total', sa.Float(), nullable=True),
+    sa.Column('finalquiz', sa.Float(), nullable=True),
     sa.ForeignKeyConstraint(['user_id'], ['user.id'], ),
     sa.PrimaryKeyConstraint('user_id')
     )
