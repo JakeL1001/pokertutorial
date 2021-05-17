@@ -30,7 +30,7 @@ class Results(db.Model):
     quiz1 = db.Column(db.Float)
     quiz2 = db.Column(db.Float)
     quiz3 = db.Column(db.Float)
-    total = db.Column(db.Float)
+    finalquiz = db.Column(db.Float)
     
     def __repr__(self):
         return '<Results {}>'.format(self.quiz1)

@@ -1,6 +1,3 @@
-
-
-
 function updateanswers(question, answer) {
     if (!submitted) {
         clientresponse[question] = answer;
@@ -24,10 +21,10 @@ function findresult() {
             document.getElementsByClassName("question")[i].getElementsByClassName("answer")[clientresponse[i]].classList.add("incorrect");
         }
     }
-    resultperc = (total / answerkey.length) * 100
-    console.log(resultperc)
-    document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`;
-    return total
+    resultperc = (total / answerkey.length) * 100;
+    submitButton.style.display = "none";
+    document.getElementById("finalscore").innerHTML = `<input id="score" name="score" display:"none" value=${resultperc}>`;
+    return total;
 
 }
 
@@ -41,9 +38,8 @@ for (i = 0; i < output.length; i++) {
 
 
 var submitted = false;
-var answerkey = [3, 1,1,3,0];
-var clientresponse = [-1, -1,-1,-1,-1];
+var answerkey = [3, 1, 1, 3, 0];
+var clientresponse = [-1, -1, -1, -1, -1];
 const submitButton = document.getElementById('submit');
 submitButton.addEventListener('click', findresult);
-
-
+document.getElementById("myForm").setAttribute("action", "");

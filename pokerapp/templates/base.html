@@ -5,13 +5,10 @@
     <!--Title with icons-->
     <title>{% block title %}{% endblock %} - Poker Basics</title>
     <meta charset="utf-8">
-    <link rel="shortcut icon"
-        href="https://toppng.com/uploads/preview/casino-cards-png-falling-poker-chips-11562995898mdvm5phghg.png">
+    <link rel="shortcut icon" href="https://toppng.com/uploads/preview/casino-cards-png-falling-poker-chips-11562995898mdvm5phghg.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/custom.css') }}"> {% block style
-    %}{% endblock %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/custom.css') }}"> {% block style %}{% endblock %}
 </head>
 
 {% with messages = get_flashed_messages() %} {% if messages %}
@@ -25,12 +22,10 @@
     <!--Jordan's cool navbar-->
     <nav class="navbar navbar-dark navbar-expand-sm mt-3" style="background-color: rgb(153, 27, 27);">
         <a class="navbar-brand" href="{{ url_for('home') }}">
-            <img src='https://images.vexels.com/media/users/3/151229/isolated/preview/3fbd44975e2287324c2ee8d5f4017c67-spades-card-icon-by-vexels.png'
-                width='30px' height='auto' alt="logo"> Poker Basics
+            <img src='https://images.vexels.com/media/users/3/151229/isolated/preview/3fbd44975e2287324c2ee8d5f4017c67-spades-card-icon-by-vexels.png' width='30' style="height:auto;" alt="logo"> Poker Basics
         </a>
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,10 +45,6 @@
                     <li class="nav-item">
                         <!--Profile Page will be "giving feedback to the user"-->
                         <a class="nav-link" href="{{ url_for('user', username=current_user.username) }}">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <!--Link to lessons home page-->
-                        <a class="nav-link" href="{{url_for('finalquiz')}}" tabindex="-1">Final Quiz</a>
                     </li>
                     {% endif %}
                     <li class="nav-item">
@@ -78,7 +69,15 @@
             <div class="row">
 
                 <div class="col-lg-4 col-md-6 footer">
-                    <h5 style="color:rgb(153, 27, 27)">Features</h5>
+                    <h5 style="color:rgb(209, 204, 204)">References</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="text-muted" href="TODO">Images</a></li>
+                        <li><a class="text-muted" href="TODO">Code</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer">
+                    <h5 style="color:rgb(209, 204, 204)">Features</h5>
                     <ul class="list-unstyled text-small">
                         <li><a class="text-muted" href="TODO">Login</a></li>
                         <li><a class="text-muted" href="TODO">Home</a></li>
@@ -86,22 +85,13 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-4 col-md-6 footer">
-                    <h5 style="color:rgb(153, 27, 27)">Features</h5>
-                    <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="TODO">Login</a></li>
-                        <li><a class="text-muted" href="TODO">Home</a></li>
-                        <li><a class="text-muted" href="TODO">Lessons</a></li>
-                    </ul>
-                </div>
-
 
                 <div class="col-lg-4 col-md-6 footer">
-                    <h5 style="color:rgb(153, 27, 27)">Contact Us</h5>
+                    <h5 style="color:rgb(209, 204, 204)">Contact Us</h5>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="mailto: 22710428@student.uwa.edu.au">Kane Alexander</a></li>
-                        <li><a class="text-muted" href="mailto: 22705507@student.uwa.edu.au">Jordan Lee</a></li>
-                        <li><a class="text-muted" href="mailto: 22704832@student.uwa.edu.au">Jake Lyell</a></li>
+                        <li><a class="text-muted" href="mailto:22710428@student.uwa.edu.au">Kane Alexander</a></li>
+                        <li><a class="text-muted" href="mailto:22705507@student.uwa.edu.au">Jordan Lee</a></li>
+                        <li><a class="text-muted" href="mailto:22704832@student.uwa.edu.au">Jake Lyell</a></li>
                     </ul>
                 </div>
 
@@ -114,17 +104,10 @@
     </footer>
 
     <!--Optimisation scripts-->
-    <script src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js"
-        integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg=="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
     {%block script%} {%endblock%}
 </body>
 

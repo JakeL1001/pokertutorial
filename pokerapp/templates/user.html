@@ -1,31 +1,37 @@
 {% extends "base.html" %} {%block title%} Profile {%endblock%}{%block style %}
-<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/charts.css') }}"> {%endblock%}{% block content %}
+<style>
+    .chart-container {
+        position: relative;
+        height: 40vh;
+        width: 80vw;
+    }
+</style>{%endblock%}{% block content %}
 
 <h1>User: {{ user.username }}</h1>
 <p>
-    {{ user.username }} Your Results: 
+    {{ user.username }} Your Results:
 </p>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
 
 
-<div class = 'container'>
-    <div class = 'row'>
-        <div class = 'col-12'>
-            <div class = 'chart-card'>
-                <div class = 'card-body'>
-                    <canvas id = myChart></canvas>
+<div class='container'>
+    <div class='row'>
+        <div class='col-12'>
+            <div class='chart-card'>
+                <div class='card-body'>
+                    <canvas id=myChart></canvas>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class = 'container'>
-    <div class = 'row'>
-        <div class = 'col-12'>
-            <div class = 'chart-card'>
-                <div class = 'card-body'>
-                    <canvas id = barChart></canvas>
+<div class='container'>
+    <div class='row'>
+        <div class='col-12'>
+            <div class='chart-card'>
+                <div class='card-body'>
+                    <canvas id=barChart></canvas>
                 </div>
             </div>
         </div>
@@ -40,7 +46,7 @@
             labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz'],
             datasets: [{
                 label: 'Your % Correct ',
-                data: [`{{userResult.quiz1}}`, `{{userResult.quiz2}}`, `{{userResult.quiz3}}`, `{{userResult.total}}`], //replace 50 with final quiz score
+                data: [`{{userresult.quiz1}}`, `{{userresult.quiz2}}`, `{{userresult.quiz3}}`, `{{userresult.finalquiz}}`], //replace 50 with final quiz score
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)', //0.2 is translucency
                     'rgba(54, 162, 235, 0.2)',
@@ -57,7 +63,7 @@
 
             }, {
                 label: 'Site Average % Correct',
-                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`,`{{avgfinal}}`],
+                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`, `{{avgfinal}}`],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -92,18 +98,18 @@
             labels: ['Lesson 1', 'Lesson 2', 'Lesson 3', 'Final Quiz'],
             datasets: [{
                 label: 'Site Average Results %',
-                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`,`{{avgfinal}}`], //same as 2nd line above graph
+                data: [`{{avg1}}`, `{{avg2}}`, `{{avg3}}`, `{{avgfinal}}`], //same as 2nd line above graph
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
-                    'rgba(75, 192, 192, 0.2)' 
+                    'rgba(75, 192, 192, 0.2)'
                 ],
                 borderColor: [
                     'rgba(255, 99, 132, 1)',
                     'rgba(54, 162, 235, 1)',
                     'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)' 
+                    'rgba(75, 192, 192, 1)'
                 ],
                 borderWidth: 1
             }]

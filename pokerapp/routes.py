@@ -46,12 +46,12 @@ def stats():
     avg1 = db.session.query(func.avg(Results.quiz1)).scalar()
     avg2 = db.session.query(func.avg(Results.quiz2)).scalar()
     avg3 = db.session.query(func.avg(Results.quiz3)).scalar()
-    avgfinal = db.session.query(func.avg(Results.total)).scalar()
+    avgfinal = db.session.query(func.avg(Results.finalquiz)).scalar()
 
     less1total = db.session.query(func.count(Results.quiz1)).scalar()
     less2total = db.session.query(func.count(Results.quiz2)).scalar()
     less3total = db.session.query(func.count(Results.quiz3)).scalar()
-    finaltotal = db.session.query(func.count(Results.total)).scalar()
+    finaltotal = db.session.query(func.count(Results.finalquiz)).scalar()
     totalusers = db.session.query(func.count(User.username)).scalar()
     return render_template("stats.html", title = "Stats",avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal, less1total=less1total, less2total=less2total, less3total=less3total, finaltotal=finaltotal, totalusers=totalusers)
 
@@ -82,38 +82,51 @@ def register():
 @login_required
 def user(username):
     user = User.query.filter_by(username=username).first_or_404()
-    userResult = Results.query.filter_by(user_id=current_user.id).first()
+    userresult = Results.query.filter_by(user_id=current_user.id).first()
     avg1 = db.session.query(func.avg(Results.quiz1)).scalar()
     avg2 = db.session.query(func.avg(Results.quiz2)).scalar()
     avg3 = db.session.query(func.avg(Results.quiz3)).scalar()
-    avgfinal = db.session.query(func.avg(Results.total)).scalar()
-    return render_template("user.html", user=user, userResult=userResult, avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal)
+    avgfinal = db.session.query(func.avg(Results.finalquiz)).scalar()
+    return render_template("user.html", user=user, userresult=userresult, avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal)
 
 @pokerpack.route("/lessons")
 def lessons():
+    quiz1bool = False
+    quiz2bool = False
+    quiz3bool = False
     if current_user.is_authenticated:
-        return render_template("/Lessons/lessonshome.html")
+        loggedin = True
+        userresult = Results.query.filter_by(user_id=current_user.id).first()
+        if userresult is not None:
+            if userresult.quiz1 is not None:
+                if userresult.quiz1 >= 50:
+                    quiz1bool = True
+            if userresult.quiz2 is not None:
+                if userresult.quiz2 >= 50:
+                    quiz2bool = True
+            if userresult.quiz3 is not None:
+                if userresult.quiz3 >= 50:
+                    quiz3bool = True
+        return render_template("/Lessons/lessonshome.html", loggedin=loggedin, quiz1bool=quiz1bool, quiz2bool=quiz2bool, quiz3bool=quiz3bool)
     else:
-        return render_template("/Lessons/lessonshomeLOCKED.html")#return render_template("/Lessons/lesson1.html") #change routing
+        loggedin = False
+        return render_template("/Lessons/lessonshome.html", loggedin=loggedin, quiz1bool=quiz1bool, quiz2bool=quiz2bool, quiz3bool=quiz3bool)
 
 @pokerpack.route("/lesson1", methods=["GET", "POST"])
 @login_required
 def lesson1():
-    #return render_template("/Lessons/lessonshomeLOCKED.html")
     form = QuizForm()
     if form.validate_on_submit():
         accountcheck = Results.query.filter_by(user_id=current_user.id).first()
         if accountcheck is not None:
             accountcheck.quiz1=form.score.data
             db.session.commit()
-            return redirect(url_for("lesson2"))
+            return redirect(url_for("lessons"))
         else:
             userscore = Results(user_id=current_user.id, quiz1=form.score.data)
             db.session.add(userscore)   
             db.session.commit()
-            return redirect(url_for("lesson2"))
-    #else:
-        #return render_template("/Lessons/lessonshomeLOCKED.html")
+            return redirect(url_for("lessons"))
     return render_template("/Lessons/lesson1.html", form=form)
 
 @pokerpack.route("/lesson2", methods=["GET", "POST"])
@@ -125,12 +138,12 @@ def lesson2():
         if accountcheck is not None:
             accountcheck.quiz2=form.score.data
             db.session.commit()
-            return redirect(url_for("lesson3"))
+            return redirect(url_for("lessons"))
         else:
             userscore = Results(user_id=current_user.id, quiz2=form.score.data)
             db.session.add(userscore)   
             db.session.commit()
-            return redirect(url_for("lesson3"))
+            return redirect(url_for("lessons"))
     return render_template("/Lessons/lesson2.html", form=form)
 
 @pokerpack.route("/lesson3", methods=["GET", "POST"])
@@ -157,11 +170,11 @@ def finalquiz():
     if form.validate_on_submit():
         accountcheck = Results.query.filter_by(user_id=current_user.id).first()
         if accountcheck is not None:
-            accountcheck.total=form.score.data
+            accountcheck.finalquiz=form.score.data
             db.session.commit()
             return redirect(url_for('user', username=current_user.username))
         else:
-            userscore = Results(user_id=current_user.id, total=form.score.data)
+            userscore = Results(user_id=current_user.id, finalquiz=form.score.data)
             db.session.add(userscore)   
             db.session.commit()
             return redirect(url_for('user', username=current_user.username))

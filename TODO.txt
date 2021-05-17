@@ -1,20 +1,41 @@
-Jake
----------------------
-store the results from the quiz in the database X
-find a way to calculate the total score with the individual quizes ?
----------------------
 
-Jordan
----------------------
+--TODO list!--
+------------------------------------------------------------------------------------------------------------------------------
+Add more questions to lesson 2 and lesson 3, very easy, just add to the questions arrays in quiz.js
+Make Login and Register pages prettier
+Make top of User/Profile page prettier
+fix the login.css containers, make into one (back end boy requires a front end chad to help)
+Comment all of the code
+create unittests
+perform selenium tests (Lecture 12) - IN PROGRESS
+error logging - DONE
+make drop down menu work when window is very thin, same with the cards
+fix all remaining TODOs
 
----------------------
+Edit the readme to abide by this:
+    In addition to the web application, you should create a private GitHub project that includes a readme describing:
+        the purpose of the web application, explaining both the context and the assessment mechanism used.
+        the architecture of the web application.
+        describe how to launch the web application.
+        describe some unit tests for the web application, and how to run them.
+        Include commit logs, showing contributions and review from both contributing students
 
-Kane
----------------------
+Must reference every external thing we used (somehow, idk how exactly)
 
----------------------
+Prepare a zip folder including all these:
+    a full readme.md, describing the design and development of the application, and giving instructions on how to launch from local host.
+    the git log, showing commits from both partners
+    all source code, with comments and attributions for any external libraries.
+    a requirements.txt file, listing all packages used. To build the requirements.txt file for your virtual environment, use the command: pip freeze > requirements.txt while your virtual environment is active.
 
-All
----------------------
-have database be accessable to the graph jordan makes ?
----------------------
+could probably add even more users and quiz results for those users for the stats page
+------------------------------------------------------------------------------------------------------------------------------
+
+additional extras (if there's time):
+
+add score of previous tests on the card of the lessons page
+
+
+Testing stuff
+
+python -m unittest -v unittester.py

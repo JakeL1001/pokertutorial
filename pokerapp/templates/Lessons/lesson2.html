@@ -2,8 +2,8 @@
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/lessons.css') }}"> {% endblock %}{%block title %}Lesson 2{% endblock %}{% block script %}
 <script src="{{url_for('static', filename='js/quiz.js') }}"></script> {%endblock%}{% block content %}
 
-<button class="tablink" onclick="openPage('content', this, 'rgb(39, 42, 200)')" id="defaultOpen">Lesson 2</button>
-<button class="tablink" onclick="openPage('quiz2', this, 'green')">Quiz</button>
+<button class="tablink" onclick="openPage('content', this, 'rgb(39, 42, 200)');changebackgroundblue();" id="defaultOpen">Lesson 2</button>
+
 
 <div id="content" class="tabcontent">
     <h3 class="display-4 font-weight-normal header-main">Hand Rankings</h3>
@@ -17,19 +17,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png" class="responsive normalcard glow" alt="clubs ace" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" class="responsive normalcard reject" alt="clubs 2" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_8.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_8.png" class="responsive normalcard reject" alt="diamonds 8" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_6.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_6.png" class="responsive normalcard reject" alt="spades 6" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_5.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_5.png" class="responsive normalcard reject" alt="hearts 5" />
             </div>
         </div>
     </div>
@@ -45,19 +45,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_queen.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_queen.png" class="responsive normalcard glow" alt="spades queen" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_5.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_5.png" class="responsive normalcard reject" alt="diamonds 5" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_jack.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_jack.png" class="responsive normalcard reject" alt="hearts jack" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_queen.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_queen.png" class="responsive normalcard glow" alt="diamonds queen" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" class="responsive normalcard reject" alt="clubs 4" />
             </div>
         </div>
     </div>
@@ -70,19 +70,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" class="responsive normalcard glow" alt="clubs 2" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_2.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_2.png" class="responsive normalcard glow" alt="spades 2" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" class="responsive normalcard reject" alt="clubs queen" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" class="responsive normalcard glow" alt="clubs jack" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_jack.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_jack.png" class="responsive normalcard glow" alt="diamonds jack" />
             </div>
         </div>
     </div>
@@ -95,19 +95,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png" class="responsive normalcard reject" alt="clubs 3" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_8.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_8.png" class="responsive normalcard glow" alt=" spades 8" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png" class="responsive normalcard reject" alt="clubs king" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_8.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_8.png" class="responsive normalcard glow" alt="diamonds 8" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_8.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_8.png" class="responsive normalcard glow" alt="clubs 8" />
             </div>
         </div>
     </div>
@@ -120,19 +120,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png" class="responsive normalcard glow" alt="hearts 3" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_6.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_6.png" class="responsive normalcard glow" alt="hearts 6" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_4.png" class="responsive normalcard glow" alt="diamonds 4" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_2.png" class="responsive normalcard glow" alt="clubs 2" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_5.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_5.png" class="responsive normalcard glow" alt="spades 5" />
             </div>
         </div>
     </div>
@@ -145,19 +145,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_10.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_10.png" class="responsive normalcard glow" alt="hearts 10" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_king.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_king.png" class="responsive normalcard glow" alt="hearts king" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_2.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_2.png" class="responsive normalcard glow" alt="hearts 2" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_7.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_7.png" class="responsive normalcard glow" alt="hearts 7" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_ace.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_ace.png" class="responsive normalcard glow" alt="hearts ace" />
             </div>
         </div>
     </div>
@@ -169,19 +169,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_4.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_4.png" class="responsive normalcard glow" alt="spades 4" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_jack.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_jack.png" class="responsive normalcard glow" alt="diamonds jack" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_4.png" class="responsive normalcard glow" alt="clubs 4" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" class="responsive normalcard glow" alt="clubs jack" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_jack.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_jack.png" class="responsive normalcard glow" alt="hearts jack" />
             </div>
         </div>
     </div>
@@ -193,19 +193,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_3.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_3.png" class="responsive normalcard glow" alt="spades 3" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/hearts_3.png" class="responsive normalcard glow" alt="hearts 3" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" class="responsive normalcard reject" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" class="responsive normalcard reject" alt="clubs queen" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_3.png" class="responsive normalcard glow" alt="clubs 3" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_3.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_3.png" class="responsive normalcard glow" alt="diamonds 3" />
             </div>
         </div>
     </div>
@@ -217,19 +217,19 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_ace.png" class="responsive normalcard glow" alt="club ace" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_king.png" class="responsive normalcard glow" alt="club king" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_queen.png" class="responsive normalcard glow" alt="club queen" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_jack.png" class="responsive normalcard glow" alt="club jack" />
             </div>
             <div class="col">
-                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_10.png" class="responsive normalcard glow" alt="" />
+                <img src="https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/clubs_10.png" class="responsive normalcard glow" alt="club 10" />
             </div>
         </div>
     </div>
@@ -242,18 +242,18 @@
 </div>
 
 <div id="quiz2" class="tabcontent">
-    <h3>Quiz 2</h3>
-    <button id="Quiz2" class="btn btn-dark">Begin</button>
+    <h3>Quiz 2: Hand Rankings</h3>
+    
+    <button id="Quiz2" class="btn btn-dark">Click to Begin!</button>
     <div id="quiz"></div>
     <button id="submit" class="btn btn-dark">Mark Quiz</button>
     <div id="results" style="color: white;"></div>
-    <form action="" method="post">
+    <form action="#" method="post" id="myForm">
         {{ form.hidden_tag() }}
         <p id="finalscore"></p>
         <p id="submit-continue"><input id="submit2" class="btn btn-dark" name="submit2" type="submit" value="Submit and Continue"> </p>
     </form>
 </div>
 
-</div>
-
+<button class="tablink" onclick="openPage('quiz2', this, 'green'); changebackgroundgreen();">Quiz</button>
 {% endblock %}
