@@ -20,7 +20,7 @@ form {
     color: rgba(255, 255, 255, .5);
 }
 
-div.logincontainer {
+.logincontainer {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
@@ -34,13 +34,6 @@ div.logincontainer {
 
 /* TODO make this better please, sincearly, the back-end boy */
 
-div.regcontainer {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 350px;
+.regcontainer {
     height: 500px;
-    border-color: rgb(153, 27, 27);
-    background-color: rgb(153, 27, 27);
 }
