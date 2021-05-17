@@ -66,6 +66,7 @@ footer {
 .chart-card {
     /* makes chart visible */
     opacity: 1;
+    margin: 20px;
 }
 
 

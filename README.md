@@ -34,7 +34,23 @@ Install chromewebdriver from https://sites.google.com/a/chromium.org/chromedrive
 currently the chromedriver ver is 90 (the one in the project directory)
 
 
+---References---
+Top Png, 2019. casino cards png - falling poker chips PNG image with transparent background. Available at: <https://toppng.com/uploads/preview/casino-cards-png-falling-poker-chips-11562995898mdvm5phghg.png> [Accessed 12 May 2021]
 
+Wikipedia, 2005. A plot of normal distribution (or bell-shaped curve) where each band has a width of 1 standard deviation. Available at: <https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Standard_deviation_diagram.svg/1280px-Standard_deviation_diagram.svg.png> [Accessed 13 May 2021].
+
+dribbble.com, n.d. Poker. Available at: <https://cdn.dribbble.com/users/1981371/screenshots/6547432/poker_dribbble.gif> [Accessed 13 May 2021].
+
+legalbetting.com, n.d. Legal Online Poker in the USA. Available at: <https://www.legalbetting.com/app/uploads/2020/03/hero-img-poker.png> [Accessed 12 May 2021].
+
+Fowler, D., 2020. Poker Hands The Ranking. [images] Available at: <https://tekeye.uk/playing_cards/poker-hands-the-rankings> [Accessed 15 May 2021].
+
+
+Vexels.com, 2018. Spades Card Icon. Available at: <https://images.vexels.com/media/users/3/151229/isolated/preview/3fbd44975e2287324c2ee8d5f4017c67-spades-card-icon-by-vexels.png> [Accessed 13 May 2021].
+
+pngpix.com, 2016. Playing Card Symbols. Available at: <https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png> [Accessed 16 May 2021].
+
+PokerStars, n.d. Poker Hands Texas Holdem. [image] Available at: <https://cmsstorage.rationalcdn.com/assets/ps/assets/common/images/how-to-play/content/poker-hands/texas-holdem/royal-flush.png> [Accessed 15 May 2021].
 
 -- To Do List --
 TODO: change card titles to one consistent heading (h2?)
