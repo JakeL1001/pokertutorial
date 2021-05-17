@@ -1,6 +1,11 @@
 # pokertutorial
 
 Agile Web Development Project; Poker Tutorial.
+--Contributors-- 
+Kane Alexander - 22710428
+Jake Lyell - 22704832
+Jordan Lee - 22705507
+
 
 -- The Website Purpose --
 We developed this website to be used as an introduction into the basics of poker. During the various
