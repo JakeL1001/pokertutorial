@@ -187,7 +187,7 @@ const Quiz2Qs = [
 const Quiz3Qs = [
     { question: "What is a fold?", answers: { a: "Betting all your chips", b: "Forfeiting cards out of your hand", c: "Betting half the community pot" }, correctAnswer: "b" },
     { question: "What is a raise?", answers: { a: "The player does not bet further as they have already put in an amount that satisfies the current bet.", b: "Betting all your chips", c: "Increasing the minimum bet size with a bet." }, correctAnswer: "c" },
-    { question: "What is the next round after the turn?", answers: { a: "flop", b: "raise", c: "river", d: "pre-flop" }, correctAnswer: "c" }
+    { question: "What is the next round after the turn?", answers: { a: "Flop", b: "Raise", c: "River", d: "Preflop" }, correctAnswer: "c" }
 ];
 
 submitButton.addEventListener('click', showResults); //mark and show results for all the questions

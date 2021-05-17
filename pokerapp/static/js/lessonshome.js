@@ -19,9 +19,9 @@ const lesson2link = document.getElementById("lesson2link");
 const lesson3link = document.getElementById("lesson3link");
 const finalquizlink = document.getElementById("finalquizlink");
 
-lesson1text.innerHTML = "Learn the difference between spades, diamonds, clubs and hearts.<br>" + test1 + "%";
-lesson2text.innerHTML = "In this lesson you will learn the hands and their ranking.<br>" + test2 + "%";
-lesson3text.innerHTML = "In this lesson you will learn how texas hold 'em no limit is played.<br>" + test3 + "%";
+lesson1text.innerHTML = "Learn the difference between spades, diamonds, clubs and hearts.<br> <br> Your Score: " + test1 + "%";
+lesson2text.innerHTML = "In this lesson you will learn the hands and their ranking.<br> <br> Your Score: " + test2 + "%";
+lesson3text.innerHTML = "In this lesson you will learn how texas hold 'em no limit is played.<br> <br> Your Score: " + test3 + "%";
 
 if (loggedin == "False") { //blocks all if not logged it
     lesson1.style.filter = "grayscale(100%)";
