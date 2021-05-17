@@ -55,5 +55,8 @@ pngpix.com, 2016. Playing Card Symbols. Available at: <https://www.pngpix.com/wp
 
 PokerStars, n.d. Poker Hands Texas Holdem. [image] Available at: <https://cmsstorage.rationalcdn.com/assets/ps/assets/common/images/how-to-play/content/poker-hands/texas-holdem/royal-flush.png> [Accessed 15 May 2021].
 
+Ivey League. Flop, Turn & River. (2014). [Video]. Youtube. Available at: https://youtu.be/09jmSZ-lKRM [Accessed 16 May 2021].
+
+
 -- To Do List --
 TODO: change card titles to one consistent heading (h2?)
