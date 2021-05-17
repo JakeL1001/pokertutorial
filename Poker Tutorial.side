@@ -1,0 +1,911 @@
+{
+  "id": "8d32ec4b-0a82-4db9-abd6-066b17c33c8a",
+  "version": "2.0",
+  "name": "Poker Tutorial",
+  "url": "http://localhost:5000",
+  "tests": [{
+    "id": "872d2fed-1377-4b0f-9190-9e581c828f66",
+    "name": "register and sign in",
+    "commands": [{
+      "id": "1e2d8b91-f863-493e-befb-e3711894ce27",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "14d91bf4-f2a9-485a-94f4-1a26c5d850b8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa73f126-9003-4791-859a-179cc5cb08c2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27cb5112-80ae-447b-abc4-242c497fafb1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Click to Register!",
+      "targets": [
+        ["linkText=Click to Register!", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Click to Register!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Click to Register!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6001244-32d5-447d-8a03-c157bf7d5172",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "534c9e27-2c09-4379-a9c6-fa7a091c33da",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "jaketest"
+    }, {
+      "id": "3bf21328-17f5-4cca-8e14-fbf17db5a018",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9c187f17-7952-41da-9de8-71973409c786",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "jaketest@example.com"
+    }, {
+      "id": "250721c2-b6f0-4eed-b5a3-7207fbfe08df",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//p[3]/input", "xpath:position"]
+      ],
+      "value": "jaketest"
+    }, {
+      "id": "04e3ac8c-defc-4708-8a36-2c330b9c0153",
+      "comment": "",
+      "command": "type",
+      "target": "id=password2",
+      "targets": [
+        ["id=password2", "id"],
+        ["name=password2", "name"],
+        ["css=#password2", "css:finder"],
+        ["xpath=//input[@id='password2']", "xpath:attributes"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": "jaketest"
+    }, {
+      "id": "29a2b9d5-9635-4b03-8d55-3e06fd4a4fb9",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password2",
+      "targets": [
+        ["id=password2", "id"],
+        ["name=password2", "name"],
+        ["css=#password2", "css:finder"],
+        ["xpath=//input[@id='password2']", "xpath:attributes"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "ceece297-c21c-4c94-ad88-9da6b1143428",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1742874-7617-4323-adf6-23048ba49261",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "jaketest"
+    }, {
+      "id": "2521bc55-2882-4ed5-9d3e-a6f2dafd8769",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "jaketest"
+    }, {
+      "id": "82da2a65-3603-4d8d-9ab5-09495bb9ff74",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7830c0fe-788b-48a3-93c0-2d86fd542583",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lessons",
+      "targets": [
+        ["linkText=Lessons", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Lessons')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lessons')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lessons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "99384e1c-f18d-4475-aff9-47e1038c9f3b",
+    "name": "complete lesson1-3",
+    "commands": [{
+      "id": "4f46583c-fee0-4a41-a275-6e56906509af",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15d114d2-4975-4e88-b1c6-fed1769b8ff0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1e5bba39-6062-4264-b9ff-b68ad82fab82",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lessons",
+      "targets": [
+        ["linkText=Lessons", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Lessons')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lessons')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lessons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "552b3e92-066a-42d5-8ae4-383797980050",
+      "comment": "",
+      "command": "click",
+      "target": "css=#lesson1link > .card-img-top",
+      "targets": [
+        ["css=#lesson1link > .card-img-top", "css:finder"],
+        ["xpath=//img[@alt='...']", "xpath:img"],
+        ["xpath=//a[@id='lesson1link']/img", "xpath:idRelative"],
+        ["xpath=//div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99c64f14-ab02-436d-83fb-aec99d3b8e1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tablink:nth-child(3)",
+      "targets": [
+        ["css=.tablink:nth-child(3)", "css:finder"],
+        ["xpath=//button[@onclick=\"openPage('quiz2', this, 'green')\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6fb0aa6-d378-431c-be1d-709c0f04b0ea",
+      "comment": "",
+      "command": "click",
+      "target": "id=Quiz1",
+      "targets": [
+        ["id=Quiz1", "id"],
+        ["css=#Quiz1", "css:finder"],
+        ["xpath=//button[@id='Quiz1']", "xpath:attributes"],
+        ["xpath=//div[@id='quiz2']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Begin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "de49bc08-8296-4f2e-b31b-97c329694486",
+      "comment": "",
+      "command": "click",
+      "target": "name=question0",
+      "targets": [
+        ["name=question0", "name"],
+        ["css=.card:nth-child(1) .list-group:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='question0']", "xpath:attributes"],
+        ["xpath=//div[@id='quiz']/div/div/div/div[2]/div[2]/ul/li/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1105db22-07a8-4389-964d-1039a6d24bd8",
+      "comment": "",
+      "command": "click",
+      "target": "name=question1",
+      "targets": [
+        ["name=question1", "name"],
+        ["css=.card:nth-child(2) .list-group:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='question1']", "xpath:attributes"],
+        ["xpath=//div[@id='quiz']/div/div[2]/div/div[2]/div[2]/ul/li/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47f083f7-fad7-419b-854c-cdf6771ecb2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(3) .list-group:nth-child(3) input",
+      "targets": [
+        ["css=.card:nth-child(3) .list-group:nth-child(3) input", "css:finder"],
+        ["xpath=(//input[@name='question2'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='quiz']/div/div[3]/div/div[2]/div[2]/ul[3]/li/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div[2]/div[2]/ul[3]/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3483008b-4cb5-44fb-b58e-335c7eb3fa60",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(4) .list-group:nth-child(2) input",
+      "targets": [
+        ["css=.card:nth-child(4) .list-group:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='question3'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='quiz']/div/div[4]/div/div[2]/div[2]/ul[2]/li/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div[2]/div[2]/ul[2]/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f07cd18c-0cda-4ca6-ac1d-714421b46a7b",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='quiz2']/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Mark Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24c4fbc2-47d1-44c8-864b-8834395db702",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit2",
+      "targets": [
+        ["id=submit2", "id"],
+        ["name=submit2", "name"],
+        ["css=#submit2", "css:finder"],
+        ["xpath=//input[@id='submit2']", "xpath:attributes"],
+        ["xpath=//p[@id='submit-continue']/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc4f55b9-b4db-4162-bb97-21b81e49753a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#lesson2link .card-title",
+      "targets": [
+        ["css=#lesson2link .card-title", "css:finder"],
+        ["xpath=//a[@id='lesson2link']/div/h5", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div/h5", "xpath:position"],
+        ["xpath=//h5[contains(.,'The Hands')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "89793d69-98c8-48d8-aa4b-600416ec661e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tablink:nth-child(3)",
+      "targets": [
+        ["css=.tablink:nth-child(3)", "css:finder"],
+        ["xpath=//button[@onclick=\"openPage('quiz2', this, 'green')\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffb746f8-f6f0-4e70-974a-173756e015ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=Quiz2",
+      "targets": [
+        ["id=Quiz2", "id"],
+        ["css=#Quiz2", "css:finder"],
+        ["xpath=//button[@id='Quiz2']", "xpath:attributes"],
+        ["xpath=//div[@id='quiz2']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Begin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "988c5dd9-7b67-4372-bbb0-f2854a0e3887",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) .list-group:nth-child(2) input",
+      "targets": [
+        ["css=.card:nth-child(1) .list-group:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='question0'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='quiz']/div/div/div/div[2]/div[2]/ul[2]/li/input", "xpath:idRelative"],
+        ["xpath=//ul[2]/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3bdfceb-1a62-497e-bdc3-9eed87247441",
+      "comment": "",
+      "command": "click",
+      "target": "name=question0",
+      "targets": [
+        ["name=question0", "name"],
+        ["css=.card:nth-child(1) .list-group:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='question0']", "xpath:attributes"],
+        ["xpath=//div[@id='quiz']/div/div/div/div[2]/div[2]/ul/li/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf8747ca-52ff-4258-b508-55c34e81f6d9",
+      "comment": "",
+      "command": "click",
+      "target": "name=question1",
+      "targets": [
+        ["name=question1", "name"],
+        ["css=.card:nth-child(2) .list-group:nth-child(1) input", "css:finder"],
+        ["xpath=//input[@name='question1']", "xpath:attributes"],
+        ["xpath=//div[@id='quiz']/div/div[2]/div/div[2]/div[2]/ul/li/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/ul/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3aad0e3-d78c-4e9d-8c9a-ce949d0a68e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='quiz2']/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Mark Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "40ed93a5-3df1-4382-aad5-4448e5f0ac24",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit2",
+      "targets": [
+        ["id=submit2", "id"],
+        ["name=submit2", "name"],
+        ["css=#submit2", "css:finder"],
+        ["xpath=//input[@id='submit2']", "xpath:attributes"],
+        ["xpath=//p[@id='submit-continue']/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1f75ed7-de08-422f-ae3c-4185b4c94b90",
+      "comment": "",
+      "command": "click",
+      "target": "css=#lesson3link > .card-img-top",
+      "targets": [
+        ["css=#lesson3link > .card-img-top", "css:finder"],
+        ["xpath=(//img[@alt='...'])[3]", "xpath:img"],
+        ["xpath=//a[@id='lesson3link']/img", "xpath:idRelative"],
+        ["xpath=//div[3]/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bde66d14-fa43-45b6-91aa-2204b232e878",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tablink:nth-child(3)",
+      "targets": [
+        ["css=.tablink:nth-child(3)", "css:finder"],
+        ["xpath=//button[@onclick=\"openPage('quiz2', this, 'green')\"]", "xpath:attributes"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5fbba95-c901-4ab7-a789-a737e0758e5e",
+      "comment": "",
+      "command": "click",
+      "target": "id=Quiz3",
+      "targets": [
+        ["id=Quiz3", "id"],
+        ["css=#Quiz3", "css:finder"],
+        ["xpath=//button[@id='Quiz3']", "xpath:attributes"],
+        ["xpath=//div[@id='quiz2']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Begin')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "08e03d54-9c3a-4f23-9c1a-62aa7ddffb0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(1) .list-group:nth-child(2) input",
+      "targets": [
+        ["css=.card:nth-child(1) .list-group:nth-child(2) input", "css:finder"],
+        ["xpath=(//input[@name='question0'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='quiz']/div/div/div/div[2]/div[2]/ul[2]/li/input", "xpath:idRelative"],
+        ["xpath=//ul[2]/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92e7909f-0357-44e3-9429-be41423040de",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .list-group:nth-child(3) input",
+      "targets": [
+        ["css=.card:nth-child(2) .list-group:nth-child(3) input", "css:finder"],
+        ["xpath=(//input[@name='question1'])[3]", "xpath:attributes"],
+        ["xpath=//div[@id='quiz']/div/div[2]/div/div[2]/div[2]/ul[3]/li/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div[2]/ul[3]/li/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fe9b97a-ce19-4610-8b20-9c9775cb6ac9",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='quiz2']/button[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Mark Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4883a85-002f-4b07-86f3-dd3dd9cf038f",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit2",
+      "targets": [
+        ["id=submit2", "id"],
+        ["name=submit2", "name"],
+        ["css=#submit2", "css:finder"],
+        ["xpath=//input[@id='submit2']", "xpath:attributes"],
+        ["xpath=//p[@id='submit-continue']/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ad97078a-0e0d-41b3-b5cf-825137bbcaf1",
+    "name": "final quiz",
+    "commands": [{
+      "id": "88cda235-5991-489e-8e05-55ec4e84d750",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2daa698-2cbb-4a1d-bf26-c8862fa2d0f8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5115f2cd-dd14-4cca-8e97-3fc85ab5212f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lessons",
+      "targets": [
+        ["linkText=Lessons", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Lessons')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lessons')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lessons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed787480-8110-496b-ae57-05e658fa4481",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-body:nth-child(1)",
+      "targets": [
+        ["css=.card-body:nth-child(1)", "css:finder"],
+        ["xpath=//a[@id='finalquizlink']/div", "xpath:idRelative"],
+        ["xpath=//body/div[2]/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ce7df0e-9f63-48f8-8d53-738eadf6ea4d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(4) .col:nth-child(4) > .responsive",
+      "targets": [
+        ["css=.container:nth-child(4) .col:nth-child(4) > .responsive", "css:finder"],
+        ["xpath=//img[contains(@src,'https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png')]", "xpath:img"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36700662-c74e-457d-bbbb-c8d71ed6abd6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-group:nth-child(7) > .card:nth-child(2) > .card-body",
+      "targets": [
+        ["css=.card-group:nth-child(7) > .card:nth-child(2) > .card-body", "css:finder"],
+        ["xpath=//div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5a88973-1546-45b7-b3dc-dc937da7ec6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-group:nth-child(10) > .card:nth-child(1) > .card-body",
+      "targets": [
+        ["css=.card-group:nth-child(10) > .card:nth-child(1) > .card-body", "css:finder"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edb97c42-a5be-4b5f-b6d6-1e3f00f3c595",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card:nth-child(2) .responsive:nth-child(1)",
+      "targets": [
+        ["css=.card:nth-child(2) .responsive:nth-child(1)", "css:finder"],
+        ["xpath=//img[contains(@src,'https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_king.png')]", "xpath:img"],
+        ["xpath=//div[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "90cf8e75-202d-4800-a36f-49b55b8e602a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(13) .col:nth-child(3) > .responsive",
+      "targets": [
+        ["css=.container:nth-child(13) .col:nth-child(3) > .responsive", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/diamonds_ace.png')])[2]", "xpath:img"],
+        ["xpath=//div[4]/div/div[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5ebf825d-f923-4c51-a21b-f485001f6e37",
+      "comment": "",
+      "command": "click",
+      "target": "css=.container:nth-child(13) .col:nth-child(4) > .responsive",
+      "targets": [
+        ["css=.container:nth-child(13) .col:nth-child(4) > .responsive", "css:finder"],
+        ["xpath=(//img[contains(@src,'https://tekeye.uk/playing_cards/images/svg_playing_cards/fronts/png_96_dpi/spades_ace.png')])[3]", "xpath:img"],
+        ["xpath=//div[4]/div/div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6ae8dfc7-c7fa-4eff-a5af-438d002a91f4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-group:nth-child(16) > .card:nth-child(1) .card-title",
+      "targets": [
+        ["css=.card-group:nth-child(16) > .card:nth-child(1) .card-title", "css:finder"],
+        ["xpath=//div[5]/div/div/h2", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf67e39c-d194-47d1-9b6c-9d0462e47294",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//button[@id='submit']", "xpath:attributes"],
+        ["xpath=//body/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Mark Quiz')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13640b75-8686-491e-89db-b5318ae37bf4",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit2",
+      "targets": [
+        ["id=submit2", "id"],
+        ["name=submit2", "name"],
+        ["css=#submit2", "css:finder"],
+        ["xpath=//input[@id='submit2']", "xpath:attributes"],
+        ["xpath=//p[@id='submit-continue']/input", "xpath:idRelative"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "881953a8-ae0c-4a42-8db4-3f83525c2316",
+    "name": "all tabs test - not logged in",
+    "commands": [{
+      "id": "ea4d8bc3-2f66-4a6e-9dd2-52f73b7b0032",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50134e79-3782-4e60-8e03-9a1d53ef4bbd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.nav-item:nth-child(1) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/Home')])[2]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "54ab867c-0c34-4835-8a91-01e2a07e0f41",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "407660de-1eea-4d18-ba91-149522fa3c76",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Click to Register!",
+      "targets": [
+        ["linkText=Click to Register!", "linkText"],
+        ["css=p > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Click to Register!')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/register')]", "xpath:href"],
+        ["xpath=//p/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Click to Register!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a59e69c4-0bbf-4138-b601-0f3c38ecfb98",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lessons",
+      "targets": [
+        ["linkText=Lessons", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Lessons')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lessons')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lessons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1495524-49f0-4564-97cc-acaa5c4a5887",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Stats",
+      "targets": [
+        ["linkText=Stats", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Stats')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/stats')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Stats')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "94fda259-3704-40c7-bb32-d5ffa781629d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Lessons",
+      "targets": [
+        ["linkText=Lessons", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Lessons')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/lessons')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Lessons')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f4d4c7d-c540-4255-a607-d986f47b58d2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Login",
+      "targets": [
+        ["linkText=Login", "linkText"],
+        ["css=.nav-item:nth-child(2) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Login')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "85a7e615-f4e1-489c-ad5d-6b836987284d",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7da4cd42-1d40-41f4-84d6-86ae59a8171d",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//p/input", "xpath:position"]
+      ],
+      "value": "jaketest"
+    }, {
+      "id": "cc5414cd-6550-4093-a059-ee3cca43a12a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//p[2]/input", "xpath:position"]
+      ],
+      "value": "jaketest"
+    }, {
+      "id": "ea2bd763-c94b-4243-8332-ffb6e34e9fbe",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit",
+      "targets": [
+        ["id=submit", "id"],
+        ["name=submit", "name"],
+        ["css=#submit", "css:finder"],
+        ["xpath=//input[@id='submit']", "xpath:attributes"],
+        ["xpath=//p[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "078325fb-d772-4ca1-9dcb-92ec0a8e85b0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Profile",
+      "targets": [
+        ["linkText=Profile", "linkText"],
+        ["css=.nav-item:nth-child(3) > .nav-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Profile')]", "xpath:link"],
+        ["xpath=//div[@id='navbarSupportedContent']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/user/jaketest')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Profile')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "704ccaf6-3b12-4134-a1d6-9ecf55b22934",
+      "comment": "",
+      "command": "click",
+      "target": "id=barChart",
+      "targets": [
+        ["id=barChart", "id"],
+        ["css=#barChart", "css:finder"],
+        ["xpath=//canvas[@id='barChart']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/div/div/canvas", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "192b3045-7ce6-451e-bb04-404e16f25b03",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f5133277-4d4a-4b5a-9710-5091fe4a4d1f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:5000/"],
+  "plugins": []
+}

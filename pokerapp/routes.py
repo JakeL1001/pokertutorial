@@ -87,26 +87,23 @@ def user(username): #passes the user information for the charts on the profile p
 
 @pokerpack.route("/lessons") #contains the lesson links, blocked off if not passed previous lessons or not logged in
 def lessons():
-    quiz1bool = False
-    quiz2bool = False
-    quiz3bool = False
+    quiz1result = 0
+    quiz2result = 0
+    quiz3result = 0
     if current_user.is_authenticated:
         loggedin = True
         userresult = Results.query.filter_by(user_id=current_user.id).first()
         if userresult is not None:
             if userresult.quiz1 is not None:
-                if userresult.quiz1 >= 50:
-                    quiz1bool = True
+                quiz1result = userresult.quiz1
             if userresult.quiz2 is not None:
-                if userresult.quiz2 >= 50:
-                    quiz2bool = True
+                quiz2result = userresult.quiz2
             if userresult.quiz3 is not None:
-                if userresult.quiz3 >= 50:
-                    quiz3bool = True
-        return render_template("/Lessons/lessonshome.html", loggedin=loggedin, quiz1bool=quiz1bool, quiz2bool=quiz2bool, quiz3bool=quiz3bool)
+                quiz3result = userresult.quiz3
+        return render_template("/Lessons/lessonshome.html", loggedin=loggedin, quiz1result=quiz1result, quiz2result=quiz2result, quiz3result=quiz3result)
     else:
         loggedin = False
-        return render_template("/Lessons/lessonshome.html", loggedin=loggedin, quiz1bool=quiz1bool, quiz2bool=quiz2bool, quiz3bool=quiz3bool)
+        return render_template("/Lessons/lessonshome.html", loggedin=loggedin, quiz1result=quiz1result, quiz2result=quiz2result, quiz3result=quiz3result)
 
 @pokerpack.route("/lesson1", methods=["GET", "POST"]) #directs to lesson 1 with form for database entry
 @login_required

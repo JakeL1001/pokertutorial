@@ -94,13 +94,14 @@ function showResults() {
         }
     });
     let resultperc = (numCorrect / QuizQuestions.length) * 100;
+    resultperc = resultperc.toFixed(2);
     // show number of correct answers out of total number
     if (resultperc < 50.0) { //show in red box if fail
-        resultsContainer.innerHTML = `<div class="card card2" style="background-color: red;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
+        resultsContainer.innerHTML = `<div class="card card2" style="background-color: red;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}%</div></div>`;
     } else if (resultperc >= 50.0 && resultperc != 100) { //show in green box if pass but not 100%
-        resultsContainer.innerHTML = `<div class="card card2" style="background-color: green;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
+        resultsContainer.innerHTML = `<div class="card card2" style="background-color: green;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}%</div></div>`;
     } else if (resultperc == 100) { //show in gold box if 100%
-        resultsContainer.innerHTML = `<div class="card card2" style="background-color: gold;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}</div></div>`;
+        resultsContainer.innerHTML = `<div class="card card2" style="background-color: gold;"><div class=card-body>${numCorrect} out of ${QuizQuestions.length} | ${resultperc}%</div></div>`;
     }
     document.getElementById("finalscore").innerHTML = `<input id="score" name="score" type="hidden" value=${resultperc}>`; //Sends the result to a hidden field in the html so it can be accessed by the form for the database
     document.getElementById("submit-continue").style.visibility = "visible"; //makes continue button visible
