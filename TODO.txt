@@ -3,16 +3,8 @@
 ------------------------------------------------------------------------------------------------------------------------------
 ADD LOG FILE.
 
-
-Add more questions to lesson 2 and lesson 3, very easy, just add to the questions arrays in quiz.js 
-Make Login and Register pages prettier
 Make top of User/Profile page prettier
-fix the login.css containers, make into one (back end boy requires a front end chad to help) - done
-Comment all of the code
-create unittests - DONE
-perform selenium tests (Lecture 12) - IN PROGRESS
-error logging - DONE
-make drop down menu work when window is very thin, same with the cards
+make drop down menu work when window is very thin
 fix all remaining TODOs
 
 Edit the readme to abide by this:
