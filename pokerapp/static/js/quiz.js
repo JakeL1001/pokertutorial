@@ -13,6 +13,21 @@ $(".reject").click(function() {
     return false;
 });
 
+function changebackgroundblue() {
+    if(document.getElementsByTagName('body')[0].classList.contains('greenbackground')){
+        document.getElementsByTagName('body')[0].classList.remove('greenbackground');
+    }
+    document.getElementsByTagName('body')[0].classList.add('bluebackground');
+    window.scrollTo(0,0);
+}
+
+function changebackgroundgreen(){
+    if(document.getElementsByTagName('body')[0].classList.contains('bluebackground')){
+        document.getElementsByTagName('body')[0].classList.remove('bluebackground');
+    }
+   document.getElementsByTagName('body')[0].classList.add('greenbackground');
+   window.scrollTo(0,0);
+}
 
 $(document).ready(function() {
     $("#flopAnimate").hover(
@@ -110,10 +125,9 @@ function buildQuiz() {
             const answers = [];
             output.push(
                 `<div class="card">
+                    <div class = "card-header">${currentQuestion.question}</div>
                         <div class="card-body">
-                            <div class="card-title">Question ${questionNumber + 1}</div>
-                            <div class="card-text">
-                                <div class="question">${currentQuestion.question}</div>`);
+                            <div class="card-text">`);
             // and for each available answer...
             let letter = "";
             for (letter in currentQuestion.answers) {
@@ -122,7 +136,9 @@ function buildQuiz() {
                 answers.push(
                     `<ul class="list-group">
                         <li class="list-group-item"> 
+                        <label class = "option">
                         <input type="radio" name="question${questionNumber}" value="${letter}"> ${letter} : ${currentQuestion.answers[letter]}
+                        </label>
                         </li>
                     </ul>`
                 );
@@ -161,18 +177,20 @@ const startQuiz2 = document.getElementById("Quiz2");
 const startQuiz3 = document.getElementById("Quiz3");
 let QuizQuestions = "";
 const Quiz1Qs = [
-    { question: "Which card has the highest value in the suit?", answers: { a: "Ace!", b: "Queen", c: "Draw Four" }, correctAnswer: "a" },
-    { question: "Which of the three is a real suit?", answers: { a: "Spades", b: "Red", c: "Blue" }, correctAnswer: "a" },
+    { question: "Which card has the highest value in the suit?", answers: { a: "Ace", b: "Queen", c: "Ten" }, correctAnswer: "a" },
+    { question: "What values can an ace take?", answers: { a:"Highest and Lowest Value", b: "Highest Value", c: "Lowest Value" }, correctAnswer: "a" },
     { question: "Which of these four is a real suit?", answers: { a: "Triangles", b: "Reverse", c: "Diamonds", d: "Spells" }, correctAnswer: "c" },
     { question: "Which is a valid card?", answers: { a: "Joker", b: "Jack", c: "Jill", d: "Jester" }, correctAnswer: "b" }
 ];
 const Quiz2Qs = [
-    { question: "A flush is four of the same card", answers: { a: "No", b: "Yes", c: "Trick Question!" }, correctAnswer: "a" },
-    { question: "A Straight is five cards in consecutive rank order", answers: { a: "Correct", b: "No", c: "Wrong that's a penta pair" }, correctAnswer: "a" }
+    { question: "A 'Flush' is 5 of the same type of card", answers: { a: "Incorrect", b: "Correct"}, correctAnswer: "a" },
+    { question: "A 'Straight' is what 5 cards of:", answers: { a: "the same suit", b: "consecutive rank order", c: "the same rank" }, correctAnswer: "b" },
+    { question: "What hand beats 'Quads'?", answers: { a: "Flush", b: "Full House", c: "Nothing", d: "Straight Flush"}, correctAnswer: "d"}
 ];
 const Quiz3Qs = [
     { question: "What is a fold?", answers: { a: "Betting all your chips", b: "Forfeiting cards out of your hand", c: "Betting half the community pot" }, correctAnswer: "b" },
-    { question: "Wnat is a raise?", answers: { a: "the player does not bet further as they have already put in an amount that satisfies the current bet.", b: "Betting all your chips", c: "Increasing the minimum bet size with a bet" }, correctAnswer: "c" }
+    { question: "What is a raise?", answers: { a: "the player does not bet further as they have already put in an amount that satisfies the current bet.", b: "Betting all your chips", c: "Increasing the minimum bet size with a bet" }, correctAnswer: "c" },
+    { question: "What is the next round after the turn?", answers: { a: "flop", b: "raise", c: "river", d: "pre-flop"}, correctAnswer: "c" }
 ];
 
 // on submit, show results
