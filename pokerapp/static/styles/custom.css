@@ -7,9 +7,10 @@
 }
 
 body {
-    background-color: black;
+    background-color: #000000;
+    background-image: linear-gradient(180deg,#000000,#470303);
     text-align: center;
-    font-family: 'Calibri';
+    font-family: "Roboto", sans-serif;
     margin: 15px;
 }
 
