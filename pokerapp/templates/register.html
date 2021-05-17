@@ -1,3 +1,4 @@
+<!-- Page for registering a new account -->
 {% extends "base.html" %} {% block style %}
 <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/login.css') }}"> {% endblock %} {% block title %}Register{% endblock %}{% block content %}
 
@@ -6,24 +7,25 @@
     <form action="#" method="post">
         {{ form.hidden_tag() }}
         <p>
-            {{form.username.label }}<br> {{form.username(size=20)}}
+            <input id="username" class = "input" name="username" placeholder = "username" required size="20" type="text" value="">
             <br> {%for error in form.username.errors %}
             <span style="color:red;">[{{error}}]</span> {% endfor %}
         </p>
         <p>
-            {{ form.email.label }}<br> {{ form.email(size=20) }}<br> {% for error in form.email.errors %}
+            <input id="email" class= "input" name="email" placeholder="email" required size="20" type="text" value=""><br> {% for error in form.email.errors %}
             <span style="color: red;">[{{ error }}]</span> {% endfor %}
         </p>
         <p>
-            {{ form.password.label }}<br> {{ form.password(size=20) }}<br> {% for error in form.password.errors %}
+            <input id="password" class= "input" name="password" placeholder= "password" required size="20" type="password" value=""><br> {% for error in form.password.errors %}
             <span style="color: red;">[{{ error }}]</span> {% endfor %}
         </p>
         <p>
-            {{ form.password2.label }}<br> {{ form.password2(size=20) }}<br> {% for error in form.password2.errors %}
+            <input id="password2" class = "input" name="password2" placeholder = "repeat password" required size="20" type="password" value=""><br> {% for error in form.password2.errors %}
             <span style="color: red;">[{{ error }}]</span> {% endfor %}
         </p>
-        <p>{{ form.submit() }}</p>
+        <p><input id="submit" class = "submit" name="submit" type="submit" value="Register"></p>
     </form>
+    <p style = "font-size: 15px;">Already a User? <a href="{{ url_for('login') }}">Click to Sign in!</a></p>
 </div>
 
 {% endblock %}

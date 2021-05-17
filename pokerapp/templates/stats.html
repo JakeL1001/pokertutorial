@@ -1,3 +1,4 @@
+<!-- Page containing site wide user statistics -->
 {% extends "base.html" %} {%block title%} Stats {%endblock%}{%block style %}
 <style>
     .chart-container {
@@ -8,7 +9,7 @@
 </style> {%endblock%}{% block content %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.min.js" integrity="sha512-VMsZqo0ar06BMtg0tPsdgRADvl0kDHpTbugCBBrL55KmucH6hP9zWdLIWY//OTfMnzz6xWQRxQqsUFefwHuHyg==" crossorigin="anonymous"></script>
 
-
+<!-- Interactive charts containing data -->
 <div class='container'>
     <div class='row'>
         <div class='col-12'>
@@ -112,4 +113,5 @@
         }
     });
 </script>
+
 {% endblock %}
