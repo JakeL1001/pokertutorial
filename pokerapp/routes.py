@@ -46,12 +46,12 @@ def stats():
     avg1 = db.session.query(func.avg(Results.quiz1)).scalar()
     avg2 = db.session.query(func.avg(Results.quiz2)).scalar()
     avg3 = db.session.query(func.avg(Results.quiz3)).scalar()
-    avgfinal = db.session.query(func.avg(Results.total)).scalar()
+    avgfinal = db.session.query(func.avg(Results.finalquiz)).scalar()
 
     less1total = db.session.query(func.count(Results.quiz1)).scalar()
     less2total = db.session.query(func.count(Results.quiz2)).scalar()
     less3total = db.session.query(func.count(Results.quiz3)).scalar()
-    finaltotal = db.session.query(func.count(Results.total)).scalar()
+    finaltotal = db.session.query(func.count(Results.finalquiz)).scalar()
     totalusers = db.session.query(func.count(User.username)).scalar()
     return render_template("stats.html", title = "Stats",avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal, less1total=less1total, less2total=less2total, less3total=less3total, finaltotal=finaltotal, totalusers=totalusers)
 
@@ -86,7 +86,7 @@ def user(username):
     avg1 = db.session.query(func.avg(Results.quiz1)).scalar()
     avg2 = db.session.query(func.avg(Results.quiz2)).scalar()
     avg3 = db.session.query(func.avg(Results.quiz3)).scalar()
-    avgfinal = db.session.query(func.avg(Results.total)).scalar()
+    avgfinal = db.session.query(func.avg(Results.finalquiz)).scalar()
     return render_template("user.html", user=user, userresult=userresult, avg1=avg1, avg2=avg2, avg3=avg3, avgfinal=avgfinal)
 
 @pokerpack.route("/lessons")
@@ -170,11 +170,11 @@ def finalquiz():
     if form.validate_on_submit():
         accountcheck = Results.query.filter_by(user_id=current_user.id).first()
         if accountcheck is not None:
-            accountcheck.total=form.score.data
+            accountcheck.finalquiz=form.score.data
             db.session.commit()
             return redirect(url_for('user', username=current_user.username))
         else:
-            userscore = Results(user_id=current_user.id, total=form.score.data)
+            userscore = Results(user_id=current_user.id, finalquiz=form.score.data)
             db.session.add(userscore)   
             db.session.commit()
             return redirect(url_for('user', username=current_user.username))
