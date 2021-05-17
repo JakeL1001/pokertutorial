@@ -34,6 +34,9 @@ Note Updated requirements with selenium and pytest
 Install chromewebdriver from https://sites.google.com/a/chromium.org/chromedriver/downloads
 currently the chromedriver ver is 90 (the one in the project directory)
 
+Selenium IDE test:
+Opening Poker Tutorial.side in Selenium IDE extension for chrome allows to run 4 more tests. All of which pass as of submission
+
 Open the virtual environment and enter this command to run the unittester.py file
 python -m unittest -v unittester.py
 
@@ -48,7 +51,6 @@ legalbetting.com, n.d. Legal Online Poker in the USA. Available at: <https://www
 
 Fowler, D., 2020. Poker Hands The Ranking. [images] Available at: <https://tekeye.uk/playing_cards/poker-hands-the-rankings> [Accessed 15 May 2021].
 
-
 Vexels.com, 2018. Spades Card Icon. Available at: <https://images.vexels.com/media/users/3/151229/isolated/preview/3fbd44975e2287324c2ee8d5f4017c67-spades-card-icon-by-vexels.png> [Accessed 13 May 2021].
 
 pngpix.com, 2016. Playing Card Symbols. Available at: <https://www.pngpix.com/wp-content/uploads/2016/11/PNGPIX-COM-Playing-Card-Symbols-PNG-Transparent-Image.png> [Accessed 16 May 2021].
@@ -56,7 +58,3 @@ pngpix.com, 2016. Playing Card Symbols. Available at: <https://www.pngpix.com/wp
 PokerStars, n.d. Poker Hands Texas Holdem. [image] Available at: <https://cmsstorage.rationalcdn.com/assets/ps/assets/common/images/how-to-play/content/poker-hands/texas-holdem/royal-flush.png> [Accessed 15 May 2021].
 
 Ivey League. Flop, Turn & River. (2014). [Video]. Youtube. Available at: https://youtu.be/09jmSZ-lKRM [Accessed 16 May 2021].
-
-
--- To Do List --
-TODO: change card titles to one consistent heading (h2?)
